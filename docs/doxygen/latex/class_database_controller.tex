@@ -1,0 +1,2660 @@
+\hypertarget{class_database_controller}{\section{\-Database\-Controller \-Class \-Reference}
+\label{class_database_controller}\index{\-Database\-Controller@{\-Database\-Controller}}
+}
+
+
+\-Controller for database.  
+
+
+
+
+{\ttfamily \#include $<$databasecontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_controller_a7815dd17cfa10ea03ff4a700fcde7c13}{$\sim$\-Database\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open} ()
+\item 
+\hypertarget{class_database_controller_a216cd964dca3a4eb77e26b8d089ea7f2}{\hyperlink{class_store}{\-Store} $\ast$ {\bfseries get\-Default\-Store} ()}\label{class_database_controller_a216cd964dca3a4eb77e26b8d089ea7f2}
+
+\item 
+bool \hyperlink{class_database_controller_a26b95409ccbc9070f1d8f955bffa2362}{validate\-Login} (\-Q\-String cpf, \-Q\-String password)
+\item 
+bool \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists} (\-Q\-String cpf)
+\item 
+bool \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User} (\-Q\-String cpf, \hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-::\-User\-Role} role, \-Q\-String name, \-Q\-String password)
+\item 
+bool \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User} (\-Q\-String cpf, \hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-::\-User\-Role} role, \-Q\-String name, \-Q\-String password)
+\item 
+bool \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User} (\-Q\-String cpf)
+\item 
+\hyperlink{class_user}{\-User} $\ast$ \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F} (\-Q\-String cpf)
+\item 
+\-Q\-List$<$ \hyperlink{class_user}{\-User} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users} ()
+\item 
+\-Q\-String \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name} (\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-::\-User\-Role} id)
+\item 
+\-Q\-String\-List $\ast$ \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles} ()
+\item 
+bool \hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists} (\-Q\-String cnpj)
+\item 
+bool \hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer} (\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$manufacturer)
+\item 
+bool \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer} (\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$manufacturer)
+\item 
+bool \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$ \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_manufacturer}{\-Manufacturer} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers} ()
+\item 
+bool \hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists} (\-Q\-String cnpj)
+\item 
+bool \hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider} (\hyperlink{class_provider}{\-Provider} $\ast$provider)
+\item 
+bool \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider} (\hyperlink{class_provider}{\-Provider} $\ast$provider)
+\item 
+bool \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_provider}{\-Provider} $\ast$ \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_provider}{\-Provider} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers} ()
+\item 
+bool \hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists} (\-Q\-String name)
+\item 
+bool \hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category} (\hyperlink{class_product_category}{\-Product\-Category} $\ast$product\-Category)
+\item 
+bool \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category} (\hyperlink{class_product_category}{\-Product\-Category} $\ast$product\-Category)
+\item 
+bool \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category} (int id)
+\item 
+\hyperlink{class_product_category}{\-Product\-Category} $\ast$ \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id} (int id)
+\item 
+\-Q\-List$<$ \hyperlink{class_product_category}{\-Product\-Category} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories} ()
+\item 
+bool \hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists} (\-Q\-String bar\-Code)
+\item 
+bool \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product} (\hyperlink{class_product}{\-Product} $\ast$product)
+\item 
+bool \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product} (\-Q\-String code, \hyperlink{class_product}{\-Product} $\ast$product)
+\item 
+bool \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product} (\-Q\-String code)
+\item 
+\hyperlink{class_product}{\-Product} $\ast$ \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_product}{\-Product} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products} ()
+\item 
+bool \hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists} (\-Q\-String cnpj)
+\item 
+bool \hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer} (\hyperlink{class_enterprise_customer}{\-Enterprise\-Customer} $\ast$enterprise\-Customer)
+\item 
+bool \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer} (\hyperlink{class_enterprise_customer}{\-Enterprise\-Customer} $\ast$enterprise\-Customer)
+\item 
+bool \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_enterprise_customer}{\-Enterprise\-Customer} $\ast$ \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_enterprise_customer}{\-Enterprise\-Customer} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers} ()
+\item 
+bool \hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists} (\-Q\-String cpf)
+\item 
+bool \hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer} (\hyperlink{class_physical_customer}{\-Physical\-Customer} $\ast$physical\-Customer)
+\item 
+bool \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer} (\hyperlink{class_physical_customer}{\-Physical\-Customer} $\ast$physical\-Customer)
+\item 
+bool \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer} (\-Q\-String cpf)
+\item 
+\hyperlink{class_physical_customer}{\-Physical\-Customer} $\ast$ \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F} (\-Q\-String cpf)
+\item 
+\-Q\-List$<$ \hyperlink{class_physical_customer}{\-Physical\-Customer} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers} ()
+\item 
+bool \hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists} (\-Q\-String name)
+\item 
+bool \hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit} (\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$stock\-Unit)
+\item 
+bool \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit} (\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$stock\-Unit)
+\item 
+bool \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit} (int id)
+\item 
+\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$ \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id} (int id)
+\item 
+\-Q\-List$<$ \hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units} ()
+\item 
+bool \hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin} (\hyperlink{class_product_origin}{\-Product\-Origin} $\ast$product\-Origin)
+\item 
+bool \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin} (\-Q\-String code, \hyperlink{class_product_origin}{\-Product\-Origin} $\ast$product\-Origin)
+\item 
+bool \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin} (\-Q\-String code)
+\item 
+\hyperlink{class_product_origin}{\-Product\-Origin} $\ast$ \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_product_origin}{\-Product\-Origin} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins} ()
+\item 
+bool \hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms} (\hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$cst\-Icms)
+\item 
+bool \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms} (\-Q\-String code, \hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$cst\-Icms)
+\item 
+bool \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$ \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss} ()
+\item 
+bool \hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi} (\hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$cst\-Ipi)
+\item 
+bool \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi} (\-Q\-String code, \hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$cst\-Ipi)
+\item 
+bool \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$ \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis} ()
+\item 
+bool \hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis} (\hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$cst\-Pis)
+\item 
+bool \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis} (\-Q\-String code, \hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$cst\-Pis)
+\item 
+bool \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$ \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss} ()
+\item 
+bool \hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists} (\-Q\-String code)
+\item 
+bool \hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins} (\hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$cst\-Cofins)
+\item 
+bool \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins} (\-Q\-String code, \hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$cst\-Cofins)
+\item 
+bool \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$ \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss} ()
+\item 
+bool \hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists} (\-Q\-String name)
+\item 
+bool \hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate} (\hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$tax\-Rate)
+\item 
+bool \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate} (\-Q\-String name, \hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$tax\-Rate)
+\item 
+bool \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate} (\-Q\-String name)
+\item 
+\hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$ \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name} (\-Q\-String name)
+\item 
+\-Q\-List$<$ \hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates} ()
+\item 
+bool \hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists} (\-Q\-String cfop)
+\item 
+bool \hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop} (\hyperlink{class_cfop}{\-Cfop} $\ast$cfop\-Obj)
+\item 
+bool \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop} (\-Q\-String cfop, \hyperlink{class_cfop}{\-Cfop} $\ast$cfop\-Obj)
+\item 
+bool \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop} (\-Q\-String cfop)
+\item 
+\hyperlink{class_cfop}{\-Cfop} $\ast$ \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop} (\-Q\-String cfop)
+\item 
+\-Q\-List$<$ \hyperlink{class_cfop}{\-Cfop} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops} ()
+\item 
+bool \hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists} (\-Q\-String product\-Code, \-Q\-String store\-Cnpj)
+\item 
+bool \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists} (\-Q\-String name)
+\item 
+bool \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price} (\hyperlink{class_price}{\-Price} $\ast$price)
+\item 
+bool \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price} (\hyperlink{class_price}{\-Price} $\ast$price)
+\item 
+bool \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price} (int id)
+\item 
+\hyperlink{class_price}{\-Price} $\ast$ \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id} (int id)
+\item 
+\hyperlink{class_price}{\-Price} $\ast$ \hyperlink{class_database_controller_a684a5e27222954a049486e0920efac43}{get\-Price\-By\-Name} (\-Q\-String name)
+\item 
+\-Q\-List$<$ \hyperlink{class_price}{\-Price} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices} ()
+\item 
+bool \hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists} (\-Q\-String cnpj)
+\item 
+bool \hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store} (\hyperlink{class_store}{\-Store} $\ast$store)
+\item 
+bool \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store} (\hyperlink{class_store}{\-Store} $\ast$store)
+\item 
+bool \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_store}{\-Store} $\ast$ \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_store}{\-Store} $\ast$ $>$ $\ast$ \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_controller}{\-Database\-Controller} $\ast$ \hyperlink{class_database_controller_aba19d53a1a0298bb18901e42315feb99}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em \-Returns unique instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_controller_a055f05ef8c794f4e3569cbd8e1294fa5}{\-Database\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for database. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for database management. 
+
+\-Definition at line 46 of file databasecontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_database_controller_a7815dd17cfa10ea03ff4a700fcde7c13}{\index{\-Database\-Controller@{\-Database\-Controller}!$\sim$\-Database\-Controller@{$\sim$\-Database\-Controller}}
+\index{$\sim$\-Database\-Controller@{$\sim$\-Database\-Controller}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{$\sim$\-Database\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Database\-Controller\-::$\sim$\-Database\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a7815dd17cfa10ea03ff4a700fcde7c13}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 47 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a055f05ef8c794f4e3569cbd8e1294fa5}{\index{\-Database\-Controller@{\-Database\-Controller}!\-Database\-Controller@{\-Database\-Controller}}
+\index{\-Database\-Controller@{\-Database\-Controller}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{\-Database\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Database\-Controller\-::\-Database\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit, protected\mbox{]}}}}\label{class_database_controller_a055f05ef8c794f4e3569cbd8e1294fa5}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_database_controller}{\-Database\-Controller}. 
+
+\-Definition at line 21 of file databasecontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{\index{\-Database\-Controller@{\-Database\-Controller}!bar\-Code\-Already\-Exists@{bar\-Code\-Already\-Exists}}
+\index{bar\-Code\-Already\-Exists@{bar\-Code\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{bar\-Code\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::bar\-Code\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{bar\-Code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}
+\-Check if the bar code belongs to a product that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em bar\-Code} & \-The \hyperlink{class_product}{\-Product}'s bar code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()}, \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 620 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{\index{\-Database\-Controller@{\-Database\-Controller}!cfop\-Already\-Exists@{cfop\-Already\-Exists}}
+\index{cfop\-Already\-Exists@{cfop\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{cfop\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::cfop\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}
+\-Check if the cfop belongs to a cfop that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop's cfop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop()}, \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop()}, \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop()}, \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1542 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Cfop@{create\-New\-Cfop}}
+\index{create\-New\-Cfop@{create\-New\-Cfop}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cfop} $\ast$}]{cfop\-Obj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}
+\-Stores a new cfop at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop\-Obj} & \-The new cfop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists()}, \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop()}, \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop()}, \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1552 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Cst\-Cofins@{create\-New\-Cst\-Cofins}}
+\index{create\-New\-Cst\-Cofins@{create\-New\-Cst\-Cofins}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Cofins} $\ast$}]{cst\-Cofins}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}
+\-Stores a new cst cofins at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Cofins} & \-The new cst cofins. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists()}, \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins()}, \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins()}, \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1394 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a686d0968468e51b698017b8d9e767b49}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Cst\-Icms@{create\-New\-Cst\-Icms}}
+\index{create\-New\-Cst\-Icms@{create\-New\-Cst\-Icms}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Icms} $\ast$}]{cst\-Icms}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a686d0968468e51b698017b8d9e767b49}
+\-Stores a new cst icms at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Icms} & \-The new cst icms. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists()}, \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms()}, \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms()}, \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1157 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Cst\-Ipi@{create\-New\-Cst\-Ipi}}
+\index{create\-New\-Cst\-Ipi@{create\-New\-Cst\-Ipi}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Ipi} $\ast$}]{cst\-Ipi}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}
+\-Stores a new cst ipi at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Ipi} & \-The new cst ipi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists()}, \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi()}, \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi()}, \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1236 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Cst\-Pis@{create\-New\-Cst\-Pis}}
+\index{create\-New\-Cst\-Pis@{create\-New\-Cst\-Pis}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Pis} $\ast$}]{cst\-Pis}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a3715e2288761e2337328ec4aabd464fd}
+\-Stores a new cst pis at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Pis} & \-The new cst pis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists()}, \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis()}, \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis()}, \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1315 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Enterprise\-Customer@{create\-New\-Enterprise\-Customer}}
+\index{create\-New\-Enterprise\-Customer@{create\-New\-Enterprise\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Enterprise\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Enterprise\-Customer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Enterprise\-Customer} $\ast$}]{enterprise\-Customer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}
+\-Stores a new enterprise customer at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em enterprise\-Customer} & \-The new enterprise customer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers()} and \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 726 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a54844c72da5949212f675f0889366eec}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Manufacturer@{create\-New\-Manufacturer}}
+\index{create\-New\-Manufacturer@{create\-New\-Manufacturer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Manufacturer} $\ast$}]{manufacturer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a54844c72da5949212f675f0889366eec}
+\-Stores a new manufacturer at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em manufacturer} & \-The new manufacturer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists()}, \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer()}, \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer()}, \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers()} and \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 273 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Physical\-Customer@{create\-New\-Physical\-Customer}}
+\index{create\-New\-Physical\-Customer@{create\-New\-Physical\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Physical\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Physical\-Customer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Physical\-Customer} $\ast$}]{physical\-Customer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}
+\-Stores a new physical customer at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em physical\-Customer} & \-The new physical customer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer()}, \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer()}, \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers()} and \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 862 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ab62daba7d86d94d34e30350a22808199}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Price@{create\-New\-Price}}
+\index{create\-New\-Price@{create\-New\-Price}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Price}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Price} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ab62daba7d86d94d34e30350a22808199}
+\-Stores a new price at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em price} & \-The new price. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1645 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Product@{create\-New\-Product}}
+\index{create\-New\-Product@{create\-New\-Product}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Product}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Product} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product} $\ast$}]{product}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}
+\-Stores a new product at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em product} & \-The new product. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()}, \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 630 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Product\-Category@{create\-New\-Product\-Category}}
+\index{create\-New\-Product\-Category@{create\-New\-Product\-Category}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Category} $\ast$}]{product\-Category}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}
+\-Stores a new product category at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Category} & \-The new product category. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists()}, \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category()}, \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category()}, \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 543 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Product\-Origin@{create\-New\-Product\-Origin}}
+\index{create\-New\-Product\-Origin@{create\-New\-Product\-Origin}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Origin} $\ast$}]{product\-Origin}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}
+\-Stores a new product origin at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Origin} & \-The new product origin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists()}, \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin()}, \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin()}, \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1078 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Provider@{create\-New\-Provider}}
+\index{create\-New\-Provider@{create\-New\-Provider}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Provider} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Provider} $\ast$}]{provider}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}
+\-Stores a new provider at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em provider} & \-The new provider. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists()}, \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider()}, \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider()}, \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers()} and \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 408 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a38bb84c61c69283b06573226174bf20f}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Stock\-Unit@{create\-New\-Stock\-Unit}}
+\index{create\-New\-Stock\-Unit@{create\-New\-Stock\-Unit}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Stock\-Unit} $\ast$}]{stock\-Unit}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a38bb84c61c69283b06573226174bf20f}
+\-Stores a new stock unit at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em stock\-Unit} & \-The new stock unit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists()}, \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit()}, \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit()}, \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1001 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Store@{create\-New\-Store}}
+\index{create\-New\-Store@{create\-New\-Store}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Store}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Store} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}
+\-Stores a new store at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em store} & \-The new store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists()}, \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store()}, \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store()}, \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores()} and \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1749 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-Tax\-Rate@{create\-New\-Tax\-Rate}}
+\index{create\-New\-Tax\-Rate@{create\-New\-Tax\-Rate}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Tax\-Rate} $\ast$}]{tax\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}
+\-Stores a new tax rate at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em tax\-Rate} & \-The new tax rate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists()}, \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate()}, \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate()}, \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1473 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{\index{\-Database\-Controller@{\-Database\-Controller}!create\-New\-User@{create\-New\-User}}
+\index{create\-New\-User@{create\-New\-User}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{create\-New\-User}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::create\-New\-User} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{{\bf \-User\-::\-User\-Role}}]{role, }
+\item[{\-Q\-String}]{name, }
+\item[{\-Q\-String}]{password}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}
+\-Stores a new user at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+{\em role} & \-The \hyperlink{class_user}{\-User}'s \-Role. \\
+\hline
+{\em name} & \-The \hyperlink{class_user}{\-User}'s \-Name. \\
+\hline
+{\em password} & \-The \hyperlink{class_user}{\-User}'s \-Password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 149 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{\index{\-Database\-Controller@{\-Database\-Controller}!cst\-Cofins\-Already\-Exists@{cst\-Cofins\-Already\-Exists}}
+\index{cst\-Cofins\-Already\-Exists@{cst\-Cofins\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{cst\-Cofins\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::cst\-Cofins\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}
+\-Check if the name belongs to a cst cofins that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst cofins' code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins()}, \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins()}, \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins()}, \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1384 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_acd947c01fd1478dd7938b68229811e08}{\index{\-Database\-Controller@{\-Database\-Controller}!cst\-Icms\-Already\-Exists@{cst\-Icms\-Already\-Exists}}
+\index{cst\-Icms\-Already\-Exists@{cst\-Icms\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{cst\-Icms\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::cst\-Icms\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_acd947c01fd1478dd7938b68229811e08}
+\-Check if the name belongs to a cst icms that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst icms' code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms()}, \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms()}, \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms()}, \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1147 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{\index{\-Database\-Controller@{\-Database\-Controller}!cst\-Ipi\-Already\-Exists@{cst\-Ipi\-Already\-Exists}}
+\index{cst\-Ipi\-Already\-Exists@{cst\-Ipi\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{cst\-Ipi\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::cst\-Ipi\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}
+\-Check if the name belongs to a cst ipi that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst ipi's code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi()}, \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi()}, \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi()}, \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1226 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{\index{\-Database\-Controller@{\-Database\-Controller}!cst\-Pis\-Already\-Exists@{cst\-Pis\-Already\-Exists}}
+\index{cst\-Pis\-Already\-Exists@{cst\-Pis\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{cst\-Pis\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::cst\-Pis\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}
+\-Check if the name belongs to a cst pis that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst pis' code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis()}, \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis()}, \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis()}, \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1305 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{\index{\-Database\-Controller@{\-Database\-Controller}!enterprise\-Customer\-Already\-Exists@{enterprise\-Customer\-Already\-Exists}}
+\index{enterprise\-Customer\-Already\-Exists@{enterprise\-Customer\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{enterprise\-Customer\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::enterprise\-Customer\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}
+\-Check if the cnpj belongs to a enterprise customer that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \-Enterprise \hyperlink{class_customer}{\-Customer}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers()} and \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 716 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cfop\-By\-Cfop@{get\-Cfop\-By\-Cfop}}
+\index{get\-Cfop\-By\-Cfop@{get\-Cfop\-By\-Cfop}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cfop\-By\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cfop} $\ast$ {\bf \-Database\-Controller\-::get\-Cfop\-By\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a17d113832dafecc3a602e35da5abc78e}
+\-Get a cfop by its cfop. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop cfop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cfop object associated with the given cfop. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists()}, \hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop()}, \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop()}, \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop()} and \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1596 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cfops@{get\-Cfops}}
+\index{get\-Cfops@{get\-Cfops}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cfops}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cfop} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Cfops} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}
+\-This method returns all the cfops that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cfops. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists()}, \hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop()}, \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop()}, \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop()} and \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1609 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Cofins\-By\-Code@{get\-Cst\-Cofins\-By\-Code}}
+\index{get\-Cst\-Cofins\-By\-Code@{get\-Cst\-Cofins\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Cofins\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Cofins} $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Cofins\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}
+\-Get a cst cofins by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst cofins code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cst cofins object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists()}, \hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins()}, \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins()}, \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins()} and \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1436 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Cofinss@{get\-Cst\-Cofinss}}
+\index{get\-Cst\-Cofinss@{get\-Cst\-Cofinss}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Cofinss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Cofins} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Cofinss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}
+\-This method returns all the cst cofins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cst cofins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists()}, \hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins()}, \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins()}, \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins()} and \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1448 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a634d59dab209c83925f224f579682cd4}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Icms\-By\-Code@{get\-Cst\-Icms\-By\-Code}}
+\index{get\-Cst\-Icms\-By\-Code@{get\-Cst\-Icms\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Icms\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Icms} $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Icms\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a634d59dab209c83925f224f579682cd4}
+\-Get a cst icms by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst icms code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cst icms object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists()}, \hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms()}, \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms()}, \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms()} and \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1199 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad2e597e343d29b5611a3597eed179433}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Icmss@{get\-Cst\-Icmss}}
+\index{get\-Cst\-Icmss@{get\-Cst\-Icmss}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Icmss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Icms} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Icmss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad2e597e343d29b5611a3597eed179433}
+\-This method returns all the cst icms that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cst icms. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists()}, \hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms()}, \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms()}, \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms()} and \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1211 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Ipi\-By\-Code@{get\-Cst\-Ipi\-By\-Code}}
+\index{get\-Cst\-Ipi\-By\-Code@{get\-Cst\-Ipi\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Ipi\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Ipi} $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Ipi\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}
+\-Get a cst ipi by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst ipi code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cst ipi object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists()}, \hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi()}, \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi()}, \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi()} and \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1278 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Ipis@{get\-Cst\-Ipis}}
+\index{get\-Cst\-Ipis@{get\-Cst\-Ipis}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Ipis}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Ipi} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Ipis} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}
+\-This method returns all the cst ipis that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cst ipi. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists()}, \hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi()}, \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi()}, \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi()} and \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1290 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Pis\-By\-Code@{get\-Cst\-Pis\-By\-Code}}
+\index{get\-Cst\-Pis\-By\-Code@{get\-Cst\-Pis\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Pis\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Pis} $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Pis\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}
+\-Get a cst pis by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst pis code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cst pis object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists()}, \hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis()}, \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis()}, \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis()} and \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1357 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Cst\-Piss@{get\-Cst\-Piss}}
+\index{get\-Cst\-Piss@{get\-Cst\-Piss}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Cst\-Piss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Pis} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Cst\-Piss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}
+\-This method returns all the cst pis that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cst pis. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists()}, \hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis()}, \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis()}, \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis()} and \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1369 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Enterprise\-Customer\-By\-C\-N\-P\-J@{get\-Enterprise\-Customer\-By\-C\-N\-P\-J}}
+\index{get\-Enterprise\-Customer\-By\-C\-N\-P\-J@{get\-Enterprise\-Customer\-By\-C\-N\-P\-J}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Enterprise\-Customer\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Enterprise\-Customer} $\ast$ {\bf \-Database\-Controller\-::get\-Enterprise\-Customer\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}
+\-Get a enterprise customer by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The enterprise customer's \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the enterprise customer object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer()} and \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 793 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Enterprise\-Customers@{get\-Enterprise\-Customers}}
+\index{get\-Enterprise\-Customers@{get\-Enterprise\-Customers}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Enterprise\-Customers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Enterprise\-Customer} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Enterprise\-Customers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}
+\-This method returns all the enterprise customers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored enterprise customers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer()} and \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 821 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aba19d53a1a0298bb18901e42315feb99}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Database\-Controller} $\ast$ {\bf \-Database\-Controller\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_database_controller_aba19d53a1a0298bb18901e42315feb99}
+
+
+\-Returns unique instance. 
+
+\-This method returns the unique instance of database controller singleton. 
+
+\-Definition at line 67 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Manufacturer\-By\-C\-N\-P\-J@{get\-Manufacturer\-By\-C\-N\-P\-J}}
+\index{get\-Manufacturer\-By\-C\-N\-P\-J@{get\-Manufacturer\-By\-C\-N\-P\-J}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Manufacturer\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Manufacturer} $\ast$ {\bf \-Database\-Controller\-::get\-Manufacturer\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}
+\-Get a manufacturer by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The manufacturer's \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the manufacturer object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists()}, \hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer()}, \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer()}, \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer()} and \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 340 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Manufacturers@{get\-Manufacturers}}
+\index{get\-Manufacturers@{get\-Manufacturers}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Manufacturers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Manufacturer} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Manufacturers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}
+\-This method returns all the manufacturers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored manufacturers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists()}, \hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer()}, \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer()}, \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer()} and \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 368 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Physical\-Customer\-By\-C\-P\-F@{get\-Physical\-Customer\-By\-C\-P\-F}}
+\index{get\-Physical\-Customer\-By\-C\-P\-F@{get\-Physical\-Customer\-By\-C\-P\-F}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Physical\-Customer\-By\-C\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Physical\-Customer} $\ast$ {\bf \-Database\-Controller\-::get\-Physical\-Customer\-By\-C\-P\-F} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}
+\-Get a physical customer by its \-C\-P\-F. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The physical customer's \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the physical customer object associated with the given \-C\-P\-F. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer()}, \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer()}, \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer()} and \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 923 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_af63c735fd481762203ccd96f024d5842}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Physical\-Customers@{get\-Physical\-Customers}}
+\index{get\-Physical\-Customers@{get\-Physical\-Customers}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Physical\-Customers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Physical\-Customer} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Physical\-Customers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_af63c735fd481762203ccd96f024d5842}
+\-This method returns all the physical customers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored physical customers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer()}, \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer()}, \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer()} and \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 956 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Price\-By\-Id@{get\-Price\-By\-Id}}
+\index{get\-Price\-By\-Id@{get\-Price\-By\-Id}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Price\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price} $\ast$ {\bf \-Database\-Controller\-::get\-Price\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}
+\-Get a price by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The price id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the price object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1691 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a684a5e27222954a049486e0920efac43}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Price\-By\-Name@{get\-Price\-By\-Name}}
+\index{get\-Price\-By\-Name@{get\-Price\-By\-Name}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Price\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price} $\ast$ {\bf \-Database\-Controller\-::get\-Price\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a684a5e27222954a049486e0920efac43}
+\-Get a price by its name. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The price name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the price object associated with the given name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()} and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1706 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Prices@{get\-Prices}}
+\index{get\-Prices@{get\-Prices}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Prices}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Price} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Prices} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}
+\-This method returns all the prices that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored prices. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()} and get\-Price\-By\-Product\-Code() 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1721 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Product\-By\-Code@{get\-Product\-By\-Code}}
+\index{get\-Product\-By\-Code@{get\-Product\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Product\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product} $\ast$ {\bf \-Database\-Controller\-::get\-Product\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}
+\-Get a product by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The product code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists()}, \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 680 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Product\-Categories@{get\-Product\-Categories}}
+\index{get\-Product\-Categories@{get\-Product\-Categories}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Product\-Categories}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Product\-Category} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Product\-Categories} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}
+\-This method returns all the product categories that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product categories. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists()}, \hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category()}, \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category()}, \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category()} and \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 595 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Product\-Category\-By\-Id@{get\-Product\-Category\-By\-Id}}
+\index{get\-Product\-Category\-By\-Id@{get\-Product\-Category\-By\-Id}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Product\-Category\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Category} $\ast$ {\bf \-Database\-Controller\-::get\-Product\-Category\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}
+\-Get a product category by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The product category id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product category object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists()}, \hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category()}, \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category()}, \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category()} and \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 583 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Product\-Origin\-By\-Code@{get\-Product\-Origin\-By\-Code}}
+\index{get\-Product\-Origin\-By\-Code@{get\-Product\-Origin\-By\-Code}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Product\-Origin\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Origin} $\ast$ {\bf \-Database\-Controller\-::get\-Product\-Origin\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}
+\-Get a product origin by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The product origin code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product origin object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists()}, \hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin()}, \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin()}, \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin()} and \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1120 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4591da28f8eed152a84271e76e28d493}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Product\-Origins@{get\-Product\-Origins}}
+\index{get\-Product\-Origins@{get\-Product\-Origins}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Product\-Origins}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Product\-Origin} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Product\-Origins} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4591da28f8eed152a84271e76e28d493}
+\-This method returns all the product origins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product origins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists()}, \hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin()}, \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin()}, \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin()} and \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1132 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae74f1211762753d8a99878b76ed17428}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Products@{get\-Products}}
+\index{get\-Products@{get\-Products}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Products}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Product} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Products} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae74f1211762753d8a99878b76ed17428}
+\-This method returns all the products that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored products. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists()}, \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()} and \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 697 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Provider\-By\-C\-N\-P\-J@{get\-Provider\-By\-C\-N\-P\-J}}
+\index{get\-Provider\-By\-C\-N\-P\-J@{get\-Provider\-By\-C\-N\-P\-J}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Provider\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Provider} $\ast$ {\bf \-Database\-Controller\-::get\-Provider\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}
+\-Get a provider by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The provider's \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the provider object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists()}, \hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider()}, \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider()}, \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider()} and \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 475 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Providers@{get\-Providers}}
+\index{get\-Providers@{get\-Providers}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Providers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Provider} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Providers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}
+\-This method returns all the providers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored providers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists()}, \hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider()}, \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider()}, \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider()} and \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 503 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Stock\-Unit\-By\-Id@{get\-Stock\-Unit\-By\-Id}}
+\index{get\-Stock\-Unit\-By\-Id@{get\-Stock\-Unit\-By\-Id}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Stock\-Unit\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Unit} $\ast$ {\bf \-Database\-Controller\-::get\-Stock\-Unit\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}
+\-Get a stock unit by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The stock unit id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the stock unit object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists()}, \hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit()}, \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit()}, \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit()} and \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1041 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Stock\-Units@{get\-Stock\-Units}}
+\index{get\-Stock\-Units@{get\-Stock\-Units}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Stock\-Units}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Stock\-Unit} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Stock\-Units} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}
+\-This method returns all the stock units that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored stock units. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists()}, \hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit()}, \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit()}, \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit()} and \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1053 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Store\-By\-C\-N\-P\-J@{get\-Store\-By\-C\-N\-P\-J}}
+\index{get\-Store\-By\-C\-N\-P\-J@{get\-Store\-By\-C\-N\-P\-J}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Store\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Store} $\ast$ {\bf \-Database\-Controller\-::get\-Store\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}
+\-Get a store by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The store's \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the store object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists()}, \hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store()}, \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store()}, \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store()} and \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1816 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aebafb03238320dd3374924ff60784df3}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Stores@{get\-Stores}}
+\index{get\-Stores@{get\-Stores}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Stores}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Store} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Stores} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aebafb03238320dd3374924ff60784df3}
+\-This method returns all the stores that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored stores. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists()}, \hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store()}, \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store()}, \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store()} and \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1844 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae177eee22180277701b0615d134d98a1}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Tax\-Rate\-By\-Name@{get\-Tax\-Rate\-By\-Name}}
+\index{get\-Tax\-Rate\-By\-Name@{get\-Tax\-Rate\-By\-Name}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Tax\-Rate\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tax\-Rate} $\ast$ {\bf \-Database\-Controller\-::get\-Tax\-Rate\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae177eee22180277701b0615d134d98a1}
+\-Get a tax rate by its name. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The tax rate name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the tax rate object associated with the given name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists()}, \hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate()}, \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate()}, \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate()} and \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1515 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Tax\-Rates@{get\-Tax\-Rates}}
+\index{get\-Tax\-Rates@{get\-Tax\-Rates}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Tax\-Rates}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Tax\-Rate} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Tax\-Rates} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}
+\-This method returns all the tax rates that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored tax rates. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists()}, \hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate()}, \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate()}, \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate()} and \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1527 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-User\-By\-C\-P\-F@{get\-User\-By\-C\-P\-F}}
+\index{get\-User\-By\-C\-P\-F@{get\-User\-By\-C\-P\-F}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-User\-By\-C\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User} $\ast$ {\bf \-Database\-Controller\-::get\-User\-By\-C\-P\-F} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a420cde5e14fb8949cefe9d5984535636}
+\-Get an user by his \-C\-P\-F. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the user object associated with the given \-C\-P\-F. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 194 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-User\-Role\-Name@{get\-User\-Role\-Name}}
+\index{get\-User\-Role\-Name@{get\-User\-Role\-Name}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-User\-Role\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Database\-Controller\-::get\-User\-Role\-Name} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User\-::\-User\-Role}}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}
+\-This method returns the user's role name by its id. \begin{DoxyReturn}{\-Returns}
+\-Returns the role name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 226 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8092515456915cdf013b4e45a7335f04}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Users@{get\-Users}}
+\index{get\-Users@{get\-Users}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Users}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-User} $\ast$ $>$ $\ast$ {\bf \-Database\-Controller\-::get\-Users} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8092515456915cdf013b4e45a7335f04}
+\-This method returns all the users that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored users. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 209 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{\index{\-Database\-Controller@{\-Database\-Controller}!get\-Users\-Roles@{get\-Users\-Roles}}
+\index{get\-Users\-Roles@{get\-Users\-Roles}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{get\-Users\-Roles}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String\-List $\ast$ {\bf \-Database\-Controller\-::get\-Users\-Roles} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}
+\-This method returns all the user's roles that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored user's roles. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()} and \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 237 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{\index{\-Database\-Controller@{\-Database\-Controller}!is\-Connection\-Open@{is\-Connection\-Open}}
+\index{is\-Connection\-Open@{is\-Connection\-Open}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{is\-Connection\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::is\-Connection\-Open} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}
+\-This method tells if the database connection is already stablished. \begin{DoxyReturn}{\-Returns}
+\-Returns if it is connected to database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 80 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a029f51270695bec012f32b47a557cde3}{\index{\-Database\-Controller@{\-Database\-Controller}!manufacturer\-Already\-Exists@{manufacturer\-Already\-Exists}}
+\index{manufacturer\-Already\-Exists@{manufacturer\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{manufacturer\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::manufacturer\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a029f51270695bec012f32b47a557cde3}
+\-Check if the cnpj belongs to a manufacturer that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_manufacturer}{\-Manufacturer}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer()}, \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer()}, \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer()}, \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers()} and \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 263 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_abdddf03f7380b3915392f9be39845740}{\index{\-Database\-Controller@{\-Database\-Controller}!physical\-Customer\-Already\-Exists@{physical\-Customer\-Already\-Exists}}
+\index{physical\-Customer\-Already\-Exists@{physical\-Customer\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{physical\-Customer\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::physical\-Customer\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_abdddf03f7380b3915392f9be39845740}
+\-Check if the cpf belongs to a physical customer that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \-Physical \hyperlink{class_customer}{\-Customer}'s \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer()}, \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer()}, \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer()}, \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers()} and \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 852 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{\index{\-Database\-Controller@{\-Database\-Controller}!price\-Already\-Exists@{price\-Already\-Exists}}
+\index{price\-Already\-Exists@{price\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{price\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::price\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{product\-Code, }
+\item[{\-Q\-String}]{store\-Cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}
+\-Check if the pair product-\/store belongs to a price that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Code} & \-The product code of the price. \\
+\hline
+{\em store\-Cnpj} & \-The store where the price is defined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1625 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{\index{\-Database\-Controller@{\-Database\-Controller}!price\-Name\-Already\-Exists@{price\-Name\-Already\-Exists}}
+\index{price\-Name\-Already\-Exists@{price\-Name\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{price\-Name\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::price\-Name\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}
+\-Check if the name belongs to a price that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The name of the price. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1635 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{\index{\-Database\-Controller@{\-Database\-Controller}!product\-Already\-Exists@{product\-Already\-Exists}}
+\index{product\-Already\-Exists@{product\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{product\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::product\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4e56ca88671780de9c8f34408de15fda}
+\-Check if the code belongs to a product that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_product}{\-Product}'s code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()}, \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 610 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_af8818a55383bc6b4927c20088768ca09}{\index{\-Database\-Controller@{\-Database\-Controller}!product\-Category\-Already\-Exists@{product\-Category\-Already\-Exists}}
+\index{product\-Category\-Already\-Exists@{product\-Category\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{product\-Category\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::product\-Category\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_af8818a55383bc6b4927c20088768ca09}
+\-Check if the name belongs to a product category that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The \hyperlink{class_product}{\-Product} \-Categories' name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category()}, \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category()}, \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category()}, \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 533 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{\index{\-Database\-Controller@{\-Database\-Controller}!product\-Origin\-Already\-Exists@{product\-Origin\-Already\-Exists}}
+\index{product\-Origin\-Already\-Exists@{product\-Origin\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{product\-Origin\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::product\-Origin\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}
+\-Check if the name belongs to a product origin that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_product}{\-Product} \-Origins' code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin()}, \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin()}, \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin()}, \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1068 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a46dea4903e25bcfba747d183abecd389}{\index{\-Database\-Controller@{\-Database\-Controller}!provider\-Already\-Exists@{provider\-Already\-Exists}}
+\index{provider\-Already\-Exists@{provider\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{provider\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::provider\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a46dea4903e25bcfba747d183abecd389}
+\-Check if the cnpj belongs to a provider that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_provider}{\-Provider}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider()}, \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider()}, \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider()}, \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers()} and \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 398 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Cfop@{remove\-Cfop}}
+\index{remove\-Cfop@{remove\-Cfop}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}
+\-Removes a cfop from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop cfop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists()}, \hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop()}, \hyperlink{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{update\-Cfop()}, \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1583 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Cst\-Cofins@{remove\-Cst\-Cofins}}
+\index{remove\-Cst\-Cofins@{remove\-Cst\-Cofins}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}
+\-Removes a cst cofins from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst cofins code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists()}, \hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins()}, \hyperlink{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{update\-Cst\-Cofins()}, \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1423 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Cst\-Icms@{remove\-Cst\-Icms}}
+\index{remove\-Cst\-Icms@{remove\-Cst\-Icms}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}
+\-Removes a cst icms from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst icms code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists()}, \hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms()}, \hyperlink{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{update\-Cst\-Icms()}, \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1186 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Cst\-Ipi@{remove\-Cst\-Ipi}}
+\index{remove\-Cst\-Ipi@{remove\-Cst\-Ipi}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}
+\-Removes a cst ipi from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst ipi code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists()}, \hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi()}, \hyperlink{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{update\-Cst\-Ipi()}, \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1265 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Cst\-Pis@{remove\-Cst\-Pis}}
+\index{remove\-Cst\-Pis@{remove\-Cst\-Pis}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}
+\-Removes a cst pis from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The cst pis code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists()}, \hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis()}, \hyperlink{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{update\-Cst\-Pis()}, \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1344 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Enterprise\-Customer@{remove\-Enterprise\-Customer}}
+\index{remove\-Enterprise\-Customer@{remove\-Enterprise\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Enterprise\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Enterprise\-Customer} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a2f08da87cc66bb03de3171131702cd81}
+\-Removes a enterprise customer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The enterprise customer's \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{update\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers()} and \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 780 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Manufacturer@{remove\-Manufacturer}}
+\index{remove\-Manufacturer@{remove\-Manufacturer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}
+\-Removes a manufacturer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_manufacturer}{\-Manufacturer}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists()}, \hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer()}, \hyperlink{class_database_controller_a42a8014107204b27e4be3083b4127454}{update\-Manufacturer()}, \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers()} and \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 327 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Physical\-Customer@{remove\-Physical\-Customer}}
+\index{remove\-Physical\-Customer@{remove\-Physical\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Physical\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Physical\-Customer} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}
+\-Removes a physical customer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The physical customer's \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer()}, \hyperlink{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{update\-Physical\-Customer()}, \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers()} and \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 910 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a827f4fa829550a150511cc135534150d}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Price@{remove\-Price}}
+\index{remove\-Price@{remove\-Price}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Price}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Price} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a827f4fa829550a150511cc135534150d}
+\-Removes a price from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The price id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{update\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1678 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Product@{remove\-Product}}
+\index{remove\-Product@{remove\-Product}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Product}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Product} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}
+\-Removes a product from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The product code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists()}, \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{update\-Product()}, \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 667 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Product\-Category@{remove\-Product\-Category}}
+\index{remove\-Product\-Category@{remove\-Product\-Category}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}
+\-Removes a product category from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The product category id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists()}, \hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category()}, \hyperlink{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{update\-Product\-Category()}, \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 570 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Product\-Origin@{remove\-Product\-Origin}}
+\index{remove\-Product\-Origin@{remove\-Product\-Origin}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}
+\-Removes a product origin from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The product origin code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists()}, \hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin()}, \hyperlink{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{update\-Product\-Origin()}, \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1107 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Provider@{remove\-Provider}}
+\index{remove\-Provider@{remove\-Provider}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Provider} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}
+\-Removes a provider from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_provider}{\-Provider}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists()}, \hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider()}, \hyperlink{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{update\-Provider()}, \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers()} and \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 462 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Stock\-Unit@{remove\-Stock\-Unit}}
+\index{remove\-Stock\-Unit@{remove\-Stock\-Unit}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}
+\-Removes a stock unit from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The stock unit id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists()}, \hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit()}, \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit()}, \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1028 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Store@{remove\-Store}}
+\index{remove\-Store@{remove\-Store}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Store}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Store} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}
+\-Removes a store from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_store}{\-Store}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists()}, \hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store()}, \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store()}, \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores()} and \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1803 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-Tax\-Rate@{remove\-Tax\-Rate}}
+\index{remove\-Tax\-Rate@{remove\-Tax\-Rate}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}
+\-Removes a tax rate from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The tax rate name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists()}, \hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate()}, \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate()}, \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1502 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{\index{\-Database\-Controller@{\-Database\-Controller}!remove\-User@{remove\-User}}
+\index{remove\-User@{remove\-User}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{remove\-User}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::remove\-User} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}
+\-Removes an user from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 181 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a60e620723b648b5a830aa522225ccfad}{\index{\-Database\-Controller@{\-Database\-Controller}!stock\-Unit\-Already\-Exists@{stock\-Unit\-Already\-Exists}}
+\index{stock\-Unit\-Already\-Exists@{stock\-Unit\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{stock\-Unit\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::stock\-Unit\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a60e620723b648b5a830aa522225ccfad}
+\-Check if the name belongs to a stock unit that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The stock units' name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit()}, \hyperlink{class_database_controller_a4e48353bf332493432458977bc41817f}{update\-Stock\-Unit()}, \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit()}, \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 991 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{\index{\-Database\-Controller@{\-Database\-Controller}!store\-Already\-Exists@{store\-Already\-Exists}}
+\index{store\-Already\-Exists@{store\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{store\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::store\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}
+\-Check if the cnpj belongs to a store that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_store}{\-Store}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store()}, \hyperlink{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{update\-Store()}, \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store()}, \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores()} and \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1739 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{\index{\-Database\-Controller@{\-Database\-Controller}!tax\-Rate\-Already\-Exists@{tax\-Rate\-Already\-Exists}}
+\index{tax\-Rate\-Already\-Exists@{tax\-Rate\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{tax\-Rate\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::tax\-Rate\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}
+\-Check if the name belongs to a tax rate that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The tax rate's name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate()}, \hyperlink{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{update\-Tax\-Rate()}, \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate()}, \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1463 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Cfop@{update\-Cfop}}
+\index{update\-Cfop@{update\-Cfop}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop, }
+\item[{{\bf \-Cfop} $\ast$}]{cfop\-Obj}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a57e9e36d56eaa86f7efbb4956ec0c244}
+\-Updates a cfop from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop whose cfop will be updated. \\
+\hline
+{\em cfop\-Obj} & \-The cfop to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a526c1329c00039eb2ce56ff3290baa74}{cfop\-Already\-Exists()}, \hyperlink{class_database_controller_a5ec7415cc7cdc1e6d617d1d455ce408b}{create\-New\-Cfop()}, \hyperlink{class_database_controller_a4ad9ec00c42e3ef48d6512fb575524d3}{remove\-Cfop()}, \hyperlink{class_database_controller_a17d113832dafecc3a602e35da5abc78e}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_database_controller_a38c3b74cbaad4394c402a33aa1d787fd}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1567 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Cst\-Cofins@{update\-Cst\-Cofins}}
+\index{update\-Cst\-Cofins@{update\-Cst\-Cofins}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Cofins} $\ast$}]{cst\-Cofins}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a5c4a3e170632556c0ab76238c60a9815}
+\-Updates a cst cofins from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cst cofins will be updated. \\
+\hline
+{\em cst\-Cofins} & \-The cst cofins to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac07a39fb27350ca7b006e2edf3483936}{cst\-Cofins\-Already\-Exists()}, \hyperlink{class_database_controller_a97c4e322edc3a80071c52566b54adcf8}{create\-New\-Cst\-Cofins()}, \hyperlink{class_database_controller_a9926d742e99cb82a0b45b70e120c3116}{remove\-Cst\-Cofins()}, \hyperlink{class_database_controller_a83fa5494eac66bd00e1eb3899103e2a5}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_database_controller_aa63f4379ede870c58dbbe64066ada4e2}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1408 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Cst\-Icms@{update\-Cst\-Icms}}
+\index{update\-Cst\-Icms@{update\-Cst\-Icms}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Icms} $\ast$}]{cst\-Icms}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_ae71d405e6bbff28a53f44d1919589a5f}
+\-Updates a cst icms from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cst icms will be updated. \\
+\hline
+{\em cst\-Icms} & \-The cst icms to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_acd947c01fd1478dd7938b68229811e08}{cst\-Icms\-Already\-Exists()}, \hyperlink{class_database_controller_a686d0968468e51b698017b8d9e767b49}{create\-New\-Cst\-Icms()}, \hyperlink{class_database_controller_a167550ee1bf1f223b97736fac20ebdba}{remove\-Cst\-Icms()}, \hyperlink{class_database_controller_a634d59dab209c83925f224f579682cd4}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_database_controller_ad2e597e343d29b5611a3597eed179433}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1171 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Cst\-Ipi@{update\-Cst\-Ipi}}
+\index{update\-Cst\-Ipi@{update\-Cst\-Ipi}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Ipi} $\ast$}]{cst\-Ipi}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a52ae322bc6022baa4f84a4d7f329cc9b}
+\-Updates a cst ipi from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cst ipi will be updated. \\
+\hline
+{\em cst\-Ipi} & \-The cst ipi to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a7b4b39b7eff7597fb48ef8c7db8bc0c0}{cst\-Ipi\-Already\-Exists()}, \hyperlink{class_database_controller_a10d89cd12f08d7f1644ac5f1ae259db4}{create\-New\-Cst\-Ipi()}, \hyperlink{class_database_controller_a37a2ce12d280a43572784236dc1b9eaa}{remove\-Cst\-Ipi()}, \hyperlink{class_database_controller_a10892f7e7b63d2257bf2461707dc9c4b}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_database_controller_a1aa4959d26014bef2bb6798ae413f16e}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1250 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Cst\-Pis@{update\-Cst\-Pis}}
+\index{update\-Cst\-Pis@{update\-Cst\-Pis}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Pis} $\ast$}]{cst\-Pis}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a01466e11cad8792c3a6aaca2786f7d9e}
+\-Updates a cst pis from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cst pis will be updated. \\
+\hline
+{\em cst\-Pis} & \-The cst pis to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ad98d37e6b16e0eab7a8a4cde455c21db}{cst\-Pis\-Already\-Exists()}, \hyperlink{class_database_controller_a3715e2288761e2337328ec4aabd464fd}{create\-New\-Cst\-Pis()}, \hyperlink{class_database_controller_aed50b995f598acd86fb69d1b69b4575d}{remove\-Cst\-Pis()}, \hyperlink{class_database_controller_a088a17f504e8e92aaa54ce5af0f9e19c}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_database_controller_ab87b0573ddcb82a3412126fe7eaf318f}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1329 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8c886cf20b33be6a16276890dc64a381}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Enterprise\-Customer@{update\-Enterprise\-Customer}}
+\index{update\-Enterprise\-Customer@{update\-Enterprise\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Enterprise\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Enterprise\-Customer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Enterprise\-Customer} $\ast$}]{enterprise\-Customer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8c886cf20b33be6a16276890dc64a381}
+\-Updates a enterprise customer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em enterprise\-Customer} & \-The enterprise customer to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af1d0f2de9e28eb26556299cc7781c95a}{enterprise\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a2109030ee813e32e0b23f5116a23c53c}{create\-New\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a2f08da87cc66bb03de3171131702cd81}{remove\-Enterprise\-Customer()}, \hyperlink{class_database_controller_a5fa00fca0d6f3bc624776d14ad9af382}{get\-Enterprise\-Customers()} and \hyperlink{class_database_controller_ae86cb1117c55766d63dcb9b99f0079a2}{get\-Enterprise\-Customer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 753 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a42a8014107204b27e4be3083b4127454}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Manufacturer@{update\-Manufacturer}}
+\index{update\-Manufacturer@{update\-Manufacturer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Manufacturer} $\ast$}]{manufacturer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a42a8014107204b27e4be3083b4127454}
+\-Updates a manufacturer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em manufacturer} & \-The manufacturer to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a029f51270695bec012f32b47a557cde3}{manufacturer\-Already\-Exists()}, \hyperlink{class_database_controller_a54844c72da5949212f675f0889366eec}{create\-New\-Manufacturer()}, \hyperlink{class_database_controller_a258f73f95e802dc0fbd079124097a5d1}{remove\-Manufacturer()}, \hyperlink{class_database_controller_aa4d744bc3659c202686b9cdf4f32a3f4}{get\-Manufacturers()} and \hyperlink{class_database_controller_a42b7c72500ee24b9bb5c020356086b67}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 300 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Physical\-Customer@{update\-Physical\-Customer}}
+\index{update\-Physical\-Customer@{update\-Physical\-Customer}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Physical\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Physical\-Customer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Physical\-Customer} $\ast$}]{physical\-Customer}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4a485c3dec3f6202bd6fe88e7f4a01c3}
+\-Updates a physical customer from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em physical\-Customer} & \-The physical customer to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_abdddf03f7380b3915392f9be39845740}{physical\-Customer\-Already\-Exists()}, \hyperlink{class_database_controller_a5fe9d26cea506b3b657752aeabb290d4}{create\-New\-Physical\-Customer()}, \hyperlink{class_database_controller_a8b6873e12fc3fbe473f96d7b4b367fd8}{remove\-Physical\-Customer()}, \hyperlink{class_database_controller_af63c735fd481762203ccd96f024d5842}{get\-Physical\-Customers()} and \hyperlink{class_database_controller_a593862e3a00f8751ce2d0dc4ea13ba29}{get\-Physical\-Customer\-By\-C\-P\-F()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 886 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aa095a494ed6be37b294fb813cee905c5}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Price@{update\-Price}}
+\index{update\-Price@{update\-Price}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Price}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Price} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aa095a494ed6be37b294fb813cee905c5}
+\-Updates a price from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em price} & \-The price to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a095ef9a6e7ee6144305e0e9ecff3bd11}{price\-Already\-Exists()}, \hyperlink{class_database_controller_ad565afaed244bca1b8bce14aa9ad56b8}{price\-Name\-Already\-Exists()}, \hyperlink{class_database_controller_ab62daba7d86d94d34e30350a22808199}{create\-New\-Price()}, \hyperlink{class_database_controller_a827f4fa829550a150511cc135534150d}{remove\-Price()}, \hyperlink{class_database_controller_a32192b0edeea17ef7697dc4c651d4797}{get\-Price\-By\-Id()}, get\-Price\-By\-Product\-Code() and \hyperlink{class_database_controller_aa337a2b4584aa7075062ed2c3b228368}{get\-Prices()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1661 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Product@{update\-Product}}
+\index{update\-Product@{update\-Product}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Product}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Product} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Product} $\ast$}]{product}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_af1afa55cfc341f31bd3918ecac6f534a}
+\-Updates a product from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product will be updated. \\
+\hline
+{\em product} & \-The product to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a4e56ca88671780de9c8f34408de15fda}{product\-Already\-Exists()}, \hyperlink{class_database_controller_a5ca316c830f686cc20cc61c7bd40bbb9}{bar\-Code\-Already\-Exists()}, \hyperlink{class_database_controller_a60bffb7dbde15af30200e8c50d64936d}{create\-New\-Product()}, \hyperlink{class_database_controller_a714940a2c00aabf5fc8c7a5c86aa2dd9}{remove\-Product()}, \hyperlink{class_database_controller_ad6059dc18e8887203fe23ff63613ef78}{get\-Product\-By\-Code()} and \hyperlink{class_database_controller_ae74f1211762753d8a99878b76ed17428}{get\-Products()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 648 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Product\-Category@{update\-Product\-Category}}
+\index{update\-Product\-Category@{update\-Product\-Category}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Category} $\ast$}]{product\-Category}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a61bd3bc281f2f8c60ed6ace228f1d9d3}
+\-Updates a product category from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Category} & \-The product category to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af8818a55383bc6b4927c20088768ca09}{product\-Category\-Already\-Exists()}, \hyperlink{class_database_controller_a02861c615a9e9f9d40986ee04703e2d9}{create\-New\-Product\-Category()}, \hyperlink{class_database_controller_a1ffc18354fd3435e67cedf1e38c6c010}{remove\-Product\-Category()}, \hyperlink{class_database_controller_a3a35e6d723b3e47fb6e6a12bb0408c4b}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_database_controller_ab657f783d27b7e113a8015d7dca0b90a}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 556 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Product\-Origin@{update\-Product\-Origin}}
+\index{update\-Product\-Origin@{update\-Product\-Origin}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Product\-Origin} $\ast$}]{product\-Origin}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a86974ac6f21f2429fb167f0d811e31e2}
+\-Updates a product origin from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be updated. \\
+\hline
+{\em product\-Origin} & \-The product origin to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_afce9c192908ddd82b5d86d380ad765c9}{product\-Origin\-Already\-Exists()}, \hyperlink{class_database_controller_a1073c86d3d7dcc26cf8a38b03a9fda76}{create\-New\-Product\-Origin()}, \hyperlink{class_database_controller_a9ae788eb6a00b517e2d093fa68197ebf}{remove\-Product\-Origin()}, \hyperlink{class_database_controller_a8e584db9e45bc18c4c8f2c5e4170f654}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_database_controller_a4591da28f8eed152a84271e76e28d493}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1092 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Provider@{update\-Provider}}
+\index{update\-Provider@{update\-Provider}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Provider} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Provider} $\ast$}]{provider}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aace732ea7a728ecc2b3e56309f25901a}
+\-Updates a provider from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em provider} & \-The provider to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a46dea4903e25bcfba747d183abecd389}{provider\-Already\-Exists()}, \hyperlink{class_database_controller_a5d1aee33390137b1f57b25f9eb9525b4}{create\-New\-Provider()}, \hyperlink{class_database_controller_ac892c8792946daeeac29f8d09ce9b658}{remove\-Provider()}, \hyperlink{class_database_controller_ab1f229dea327d0bf95b8dbe0992c77b3}{get\-Providers()} and \hyperlink{class_database_controller_a68c9a76f752cedf10eab274dba20cce3}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 435 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a4e48353bf332493432458977bc41817f}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Stock\-Unit@{update\-Stock\-Unit}}
+\index{update\-Stock\-Unit@{update\-Stock\-Unit}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Stock\-Unit} $\ast$}]{stock\-Unit}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a4e48353bf332493432458977bc41817f}
+\-Updates a stock unit from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em stock\-Unit} & \-The stock unit to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a60e620723b648b5a830aa522225ccfad}{stock\-Unit\-Already\-Exists()}, \hyperlink{class_database_controller_a38bb84c61c69283b06573226174bf20f}{create\-New\-Stock\-Unit()}, \hyperlink{class_database_controller_a8314c6b66bf638f30fce689a2d2420ea}{remove\-Stock\-Unit()}, \hyperlink{class_database_controller_ae3008735fbd78dd2229f3e75e921df94}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_database_controller_ae9fbca4ab45505e7026985614d1f3b2b}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1014 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Store@{update\-Store}}
+\index{update\-Store@{update\-Store}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Store}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Store} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a9ad06463ea90c1e89914a73dc678d5dc}
+\-Updates a store from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em store} & \-The store to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_a245f62a19f0781a5dcdcc6fd8ca0b758}{store\-Already\-Exists()}, \hyperlink{class_database_controller_a3049c420c83a5c7917e929a2f7e77174}{create\-New\-Store()}, \hyperlink{class_database_controller_a0d1b5746b43a69f7579c6b36fcbe8da1}{remove\-Store()}, \hyperlink{class_database_controller_aebafb03238320dd3374924ff60784df3}{get\-Stores()} and \hyperlink{class_database_controller_ad7f3a9f62b39d9fe169ed75164d135f7}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1776 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-Tax\-Rate@{update\-Tax\-Rate}}
+\index{update\-Tax\-Rate@{update\-Tax\-Rate}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name, }
+\item[{{\bf \-Tax\-Rate} $\ast$}]{tax\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a3a2e150b585b20e66949a7d2921aef96}
+\-Updates a tax rate from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The name whose tax rate will be updated. \\
+\hline
+{\em tax\-Rate} & \-The tax rate to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_af0baf47f127cc9f3d8f3a8276e915684}{tax\-Rate\-Already\-Exists()}, \hyperlink{class_database_controller_aa86120d9f2362e0d402b90d04eb09c3c}{create\-New\-Tax\-Rate()}, \hyperlink{class_database_controller_a4f5935fdd1501cf15f5e4c6a52c0d922}{remove\-Tax\-Rate()}, \hyperlink{class_database_controller_ae177eee22180277701b0615d134d98a1}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_database_controller_ad33d2490b8cedf288552dda19aa6bbcc}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 1487 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{\index{\-Database\-Controller@{\-Database\-Controller}!update\-User@{update\-User}}
+\index{update\-User@{update\-User}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{update\-User}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::update\-User} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{{\bf \-User\-::\-User\-Role}}]{role, }
+\item[{\-Q\-String}]{name, }
+\item[{\-Q\-String}]{password}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}
+\-Updates an user from database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+{\em role} & \-The \hyperlink{class_user}{\-User}'s \-Role. \\
+\hline
+{\em name} & \-The \hyperlink{class_user}{\-User}'s \-Name. \\
+\hline
+{\em password} & \-The \hyperlink{class_user}{\-User}'s \-Password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is succeeded or not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{user\-Already\-Exists()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 165 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}{\index{\-Database\-Controller@{\-Database\-Controller}!user\-Already\-Exists@{user\-Already\-Exists}}
+\index{user\-Already\-Exists@{user\-Already\-Exists}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{user\-Already\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::user\-Already\-Exists} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a8f337ea178400ba7212cd47af0f04a47}
+\-Check if the cpf belongs to an user that is already stored at database. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns if it is already stored at database. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_database_controller_ac3dfc1a7e25dce68b01684f23747e748}{is\-Connection\-Open()}, \hyperlink{class_database_controller_aba650bf05743f9fd02afa5a20f06c765}{create\-New\-User()}, \hyperlink{class_database_controller_aec1a5d3b45341ae1fd600c8c7d1bd345}{update\-User()}, \hyperlink{class_database_controller_a6e70f75d6438f8b9174ce8d3f10eeef7}{remove\-User()}, \hyperlink{class_database_controller_a8092515456915cdf013b4e45a7335f04}{get\-Users()}, \hyperlink{class_database_controller_a420cde5e14fb8949cefe9d5984535636}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_database_controller_a82a98e4be056a922fd0c0cc114e24d76}{get\-User\-Role\-Name()} and \hyperlink{class_database_controller_a532811bc79b53eab2a51bb3d713d1ee5}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 139 of file databasecontroller.\-cpp.
+
+\hypertarget{class_database_controller_a26b95409ccbc9070f1d8f955bffa2362}{\index{\-Database\-Controller@{\-Database\-Controller}!validate\-Login@{validate\-Login}}
+\index{validate\-Login@{validate\-Login}!DatabaseController@{\-Database\-Controller}}
+\subsubsection[{validate\-Login}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Database\-Controller\-::validate\-Login} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{\-Q\-String}]{password}
+\end{DoxyParamCaption}
+)}}\label{class_database_controller_a26b95409ccbc9070f1d8f955bffa2362}
+\-Validates the user login. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+{\em password} & \-The \hyperlink{class_user}{\-User}'s encrypted password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns true if the credentials match, otherwise return false. 
+\end{DoxyReturn}
+
+
+\-Definition at line 249 of file databasecontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/databasecontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/databasecontroller.\-cpp\end{DoxyCompactItemize}

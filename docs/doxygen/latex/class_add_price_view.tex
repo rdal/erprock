@@ -1,0 +1,210 @@
+\hypertarget{class_add_price_view}{\section{\-Add\-Price\-View \-Class \-Reference}
+\label{class_add_price_view}\index{\-Add\-Price\-View@{\-Add\-Price\-View}}
+}
+
+
+\-View for adding/updating prices.  
+
+
+
+
+{\ttfamily \#include $<$addpriceview.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_add_price_view_a1f273247f2121a74aea3c723a7e73ef8}{proceed\-To\-Add\-Price} ()
+\begin{DoxyCompactList}\small\item\em \-Proceed to add tax rate. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_price_view_afd903d276c8d66f9e35946cf928de91c}{hide\-And\-Clear\-Fields\-Data} ()
+\begin{DoxyCompactList}\small\item\em \-Hides the dialog. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_price_view_a7d6f616d7d272b6635cfc0d1227982d3}{open\-Products\-Window} ()
+\begin{DoxyCompactList}\small\item\em \-Choose a product. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_price_view_a39ceec41f0494f4ce57a823250bc422c}{on\-Product\-Chosen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_product}{\-Product} chosen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_add_price_view_a56c853c6d7ddc9e06796d8a1cca4f69d}{about\-To\-Close} ()
+\begin{DoxyCompactList}\small\item\em \-About to close. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_add_price_view_a2681abb6ea29b2533a75dba71b4df7e3}{\-Add\-Price\-View} (\-Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_add_price_view_a0371725d58442e9fc43f02b7cf46d59b}{\-Add\-Price\-View} (\hyperlink{class_price}{\-Price} $\ast$price, \-Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_add_price_view_a7ad095e14323928e0b7c521cd05e1e71}{$\sim$\-Add\-Price\-View} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_price_view_afb28e835e815955ef7eadd95819ef05b}{set\-Parent\-Main\-Window} (\hyperlink{class_i_main_window}{\-I\-Main\-Window} $\ast$parent\-Main\-Window)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-View for adding/updating prices. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for adding/updating prices. 
+
+\-Definition at line 21 of file addpriceview.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_add_price_view_a2681abb6ea29b2533a75dba71b4df7e3}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!\-Add\-Price\-View@{\-Add\-Price\-View}}
+\index{\-Add\-Price\-View@{\-Add\-Price\-View}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{\-Add\-Price\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Add\-Price\-View\-::\-Add\-Price\-View} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_add_price_view_a2681abb6ea29b2533a75dba71b4df7e3}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_add_price_view}{\-Add\-Price\-View}. \-When creating a new tax rate, use this constructor. 
+
+\-Definition at line 8 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_a0371725d58442e9fc43f02b7cf46d59b}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!\-Add\-Price\-View@{\-Add\-Price\-View}}
+\index{\-Add\-Price\-View@{\-Add\-Price\-View}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{\-Add\-Price\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Add\-Price\-View\-::\-Add\-Price\-View} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price, }
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_add_price_view_a0371725d58442e9fc43f02b7cf46d59b}
+
+
+\-Constructor. 
+
+\-Create a new instance of \hyperlink{class_add_price_view}{\-Add\-Price\-View}. \-When editing tax rate use this constructor. 
+
+\-Definition at line 23 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_a7ad095e14323928e0b7c521cd05e1e71}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!$\sim$\-Add\-Price\-View@{$\sim$\-Add\-Price\-View}}
+\index{$\sim$\-Add\-Price\-View@{$\sim$\-Add\-Price\-View}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{$\sim$\-Add\-Price\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Add\-Price\-View\-::$\sim$\-Add\-Price\-View} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_add_price_view_a7ad095e14323928e0b7c521cd05e1e71}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 56 of file addpriceview.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_add_price_view_a56c853c6d7ddc9e06796d8a1cca4f69d}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!about\-To\-Close@{about\-To\-Close}}
+\index{about\-To\-Close@{about\-To\-Close}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{about\-To\-Close}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::about\-To\-Close} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}\label{class_add_price_view_a56c853c6d7ddc9e06796d8a1cca4f69d}
+
+
+\-About to close. 
+
+\-Emit this signal when the dialog is about to close. \-So, the \hyperlink{class_main_window}{\-Main\-Window} that have subscribed to it, via \hyperlink{class_add_price_view_afb28e835e815955ef7eadd95819ef05b}{set\-Parent\-Main\-Window()}, can perform some action. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_add_price_view_afb28e835e815955ef7eadd95819ef05b}{set\-Parent\-Main\-Window()} 
+\end{DoxySeeAlso}
+\hypertarget{class_add_price_view_afd903d276c8d66f9e35946cf928de91c}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!hide\-And\-Clear\-Fields\-Data@{hide\-And\-Clear\-Fields\-Data}}
+\index{hide\-And\-Clear\-Fields\-Data@{hide\-And\-Clear\-Fields\-Data}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{hide\-And\-Clear\-Fields\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::hide\-And\-Clear\-Fields\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_add_price_view_afd903d276c8d66f9e35946cf928de91c}
+
+
+\-Hides the dialog. 
+
+\-Closes the dialog and clear all fields. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_add_price_view_a1f273247f2121a74aea3c723a7e73ef8}{proceed\-To\-Add\-Price()} and \hyperlink{class_add_price_view_a7d6f616d7d272b6635cfc0d1227982d3}{open\-Products\-Window()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 180 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_a39ceec41f0494f4ce57a823250bc422c}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!on\-Product\-Chosen@{on\-Product\-Chosen}}
+\index{on\-Product\-Chosen@{on\-Product\-Chosen}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{on\-Product\-Chosen}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::on\-Product\-Chosen} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_add_price_view_a39ceec41f0494f4ce57a823250bc422c}
+
+
+\hyperlink{class_product}{\-Product} chosen. 
+
+\-This slot is called when a product is chosen 
+
+\-Definition at line 195 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_a7d6f616d7d272b6635cfc0d1227982d3}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!open\-Products\-Window@{open\-Products\-Window}}
+\index{open\-Products\-Window@{open\-Products\-Window}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{open\-Products\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::open\-Products\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_add_price_view_a7d6f616d7d272b6635cfc0d1227982d3}
+
+
+\-Choose a product. 
+
+\-This slot opens an window to let user choose a product \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_add_price_view_a1f273247f2121a74aea3c723a7e73ef8}{proceed\-To\-Add\-Price()} and \hyperlink{class_add_price_view_afd903d276c8d66f9e35946cf928de91c}{hide\-And\-Clear\-Fields\-Data()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 185 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_a1f273247f2121a74aea3c723a7e73ef8}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!proceed\-To\-Add\-Price@{proceed\-To\-Add\-Price}}
+\index{proceed\-To\-Add\-Price@{proceed\-To\-Add\-Price}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{proceed\-To\-Add\-Price}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::proceed\-To\-Add\-Price} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_add_price_view_a1f273247f2121a74aea3c723a7e73ef8}
+
+
+\-Proceed to add tax rate. 
+
+\-This slot is called to proceed with the inclusion of the tax rate, into database. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_add_price_view_afd903d276c8d66f9e35946cf928de91c}{hide\-And\-Clear\-Fields\-Data()} and \hyperlink{class_add_price_view_a7d6f616d7d272b6635cfc0d1227982d3}{open\-Products\-Window()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 99 of file addpriceview.\-cpp.
+
+\hypertarget{class_add_price_view_afb28e835e815955ef7eadd95819ef05b}{\index{\-Add\-Price\-View@{\-Add\-Price\-View}!set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}}
+\index{set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}!AddPriceView@{\-Add\-Price\-View}}
+\subsubsection[{set\-Parent\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Add\-Price\-View\-::set\-Parent\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Main\-Window} $\ast$}]{parent\-Main\-Window}
+\end{DoxyParamCaption}
+)}}\label{class_add_price_view_afb28e835e815955ef7eadd95819ef05b}
+\-Set parent \hyperlink{class_main_window}{\-Main\-Window}. \-When a dialog is opened, it may be necessary to do some actions at the window who called it. \-Actions like refreshing a list of users or setting the current user logged in, when this dialog is about to close.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em parent\-Main\-Window} & \-Parent \hyperlink{class_main_window}{\-Main\-Window} \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 93 of file addpriceview.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/addpriceview.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/addpriceview.\-cpp\end{DoxyCompactItemize}

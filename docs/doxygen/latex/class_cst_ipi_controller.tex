@@ -1,0 +1,191 @@
+\hypertarget{class_cst_ipi_controller}{\section{\-Cst\-Ipi\-Controller \-Class \-Reference}
+\label{class_cst_ipi_controller}\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}}
+}
+
+
+\-Controller for product origins.  
+
+
+
+
+{\ttfamily \#include $<$cstipicontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cst_ipi_controller_a49b99024d63b57f36c17089fe890bd93}{\-Cst\-Ipi\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cst_ipi_controller_a0d5a2a52c9d0e6c5059f1705774f7dd8}{$\sim$\-Cst\-Ipi\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{add\-Cst\-Ipi} (\hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$cst\-Ipi)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{update\-Cst\-Ipi} (\-Q\-String code, \hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$cst\-Ipi)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{remove\-Cst\-Ipi} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$ \hyperlink{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{get\-Cst\-Ipi\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$ $>$ $\ast$ \hyperlink{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{get\-Cst\-Ipis} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for product origins. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product origins management. 
+
+\-Definition at line 14 of file cstipicontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cst_ipi_controller_a49b99024d63b57f36c17089fe890bd93}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}}
+\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{\-Cst\-Ipi\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Ipi\-Controller\-::\-Cst\-Ipi\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_cst_ipi_controller_a49b99024d63b57f36c17089fe890bd93}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_cst_ipi_controller}{\-Cst\-Ipi\-Controller}. 
+
+\-Definition at line 3 of file cstipicontroller.\-cpp.
+
+\hypertarget{class_cst_ipi_controller_a0d5a2a52c9d0e6c5059f1705774f7dd8}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!$\sim$\-Cst\-Ipi\-Controller@{$\sim$\-Cst\-Ipi\-Controller}}
+\index{$\sim$\-Cst\-Ipi\-Controller@{$\sim$\-Cst\-Ipi\-Controller}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{$\sim$\-Cst\-Ipi\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Ipi\-Controller\-::$\sim$\-Cst\-Ipi\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_a0d5a2a52c9d0e6c5059f1705774f7dd8}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file cstipicontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!add\-Cst\-Ipi@{add\-Cst\-Ipi}}
+\index{add\-Cst\-Ipi@{add\-Cst\-Ipi}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{add\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Ipi\-Controller\-::add\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Ipi} $\ast$}]{cst\-Ipi}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}
+\-Beforing adding a product origin, this method checks if there is already a product origins with that code and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Ipi} & \-The \hyperlink{class_cst_ipi}{\-Cst\-Ipi} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{update\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{remove\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file cstipicontroller.\-cpp.
+
+\hypertarget{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!get\-Cst\-Ipi\-By\-Code@{get\-Cst\-Ipi\-By\-Code}}
+\index{get\-Cst\-Ipi\-By\-Code@{get\-Cst\-Ipi\-By\-Code}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{get\-Cst\-Ipi\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Ipi} $\ast$ {\bf \-Cst\-Ipi\-Controller\-::get\-Cst\-Ipi\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}
+\-Get an product origin by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_cst_ipi}{\-Cst\-Ipi} code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product origin object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{add\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{update\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{remove\-Cst\-Ipi()} and \hyperlink{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file cstipicontroller.\-cpp.
+
+\hypertarget{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!get\-Cst\-Ipis@{get\-Cst\-Ipis}}
+\index{get\-Cst\-Ipis@{get\-Cst\-Ipis}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{get\-Cst\-Ipis}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Ipi} $\ast$ $>$ $\ast$ {\bf \-Cst\-Ipi\-Controller\-::get\-Cst\-Ipis} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}
+\-This method returns all the product origins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product origins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{add\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{update\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{remove\-Cst\-Ipi()} and \hyperlink{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{get\-Cst\-Ipi\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file cstipicontroller.\-cpp.
+
+\hypertarget{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!remove\-Cst\-Ipi@{remove\-Cst\-Ipi}}
+\index{remove\-Cst\-Ipi@{remove\-Cst\-Ipi}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{remove\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Ipi\-Controller\-::remove\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}
+\-Beforing removing an product origin, this method checks if there is a product origin with that code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{add\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{update\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file cstipicontroller.\-cpp.
+
+\hypertarget{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}{\index{\-Cst\-Ipi\-Controller@{\-Cst\-Ipi\-Controller}!update\-Cst\-Ipi@{update\-Cst\-Ipi}}
+\index{update\-Cst\-Ipi@{update\-Cst\-Ipi}!CstIpiController@{\-Cst\-Ipi\-Controller}}
+\subsubsection[{update\-Cst\-Ipi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Ipi\-Controller\-::update\-Cst\-Ipi} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Ipi} $\ast$}]{cst\-Ipi}
+\end{DoxyParamCaption}
+)}}\label{class_cst_ipi_controller_af6e321228c9d8e31959d96f666830890}
+\-Beforing updating a product origin, this method checks if there is a product origin with that code, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be updated. \\
+\hline
+{\em cst\-Ipi} & \-The \hyperlink{class_cst_ipi}{\-Cst\-Ipi} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_ipi_controller_a3cdea1d587382201466e650bcfd3a6df}{add\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_ae5aae4c40b714fcbdc5c888b715aa97b}{remove\-Cst\-Ipi()}, \hyperlink{class_cst_ipi_controller_a9f3b2e207f4ff2b853eb78e1ec5ddcec}{get\-Cst\-Ipi\-By\-Code()} and \hyperlink{class_cst_ipi_controller_a6eefc6ed60bc98c119b2b126ebf1af92}{get\-Cst\-Ipis()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file cstipicontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstipicontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstipicontroller.\-cpp\end{DoxyCompactItemize}

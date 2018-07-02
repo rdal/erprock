@@ -1,0 +1,311 @@
+\hypertarget{class_user}{\section{\-User \-Class \-Reference}
+\label{class_user}\index{\-User@{\-User}}
+}
+
+
+\hyperlink{class_user}{\-User} basic class.  
+
+
+
+
+{\ttfamily \#include $<$user.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-Role} \{ \*
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0a5cabe47a239f4de61e963cad9085186a}{\-M\-A\-N\-A\-G\-E\-R}, 
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0afc6d2f03c65ece2c4c0d23cb56715173}{\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R}, 
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0a45f2c2b96e074703a1b0db034ee7a4b6}{\-S\-T\-O\-C\-K}, 
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0ab5c4888daf5151f7ae2b4c9a3e56d71a}{\-S\-E\-L\-L\-E\-R}, 
+\*
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0af27b376d36b3828c197fa3d4ae855766}{\-C\-A\-S\-H}
+ \}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_user}{\-User} \-Role. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_a3f4c4c6996209aa3a40c131cfa264698}{\-User} (\-Q\-String cpf, \hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-Role} role, \-Q\-String name, \-Q\-String password, \-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{$\sim$\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_user_a96fb32bc43251b22da3b05f1b65ea89c}{get\-Cpf} ()
+\begin{DoxyCompactList}\small\item\em \-Get user's \-C\-P\-F. \end{DoxyCompactList}\item 
+\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-Role} \hyperlink{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}{get\-Role} ()
+\begin{DoxyCompactList}\small\item\em \-Get user's \-Role. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_user_a08223b0b137e3fc264d94f2d746a4fc9}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em \-Get user's \-Name. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_user_a96d673c7c62ecdfdd4c509db8350262d}{get\-Password} ()
+\begin{DoxyCompactList}\small\item\em \-Get user's \-Password. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_ab49ad34cb5981d0b646078f8695c6260}{set\-Cpf} (\-Q\-String cpf)
+\begin{DoxyCompactList}\small\item\em \-Set user's \-C\-P\-F. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_a5b8189e98500dcad4801ed0e6f9a9388}{set\-Role} (\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-Role} role)
+\begin{DoxyCompactList}\small\item\em \-Set user's \-Role. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_afd2983930e39003d6d65a909bf36f8b7}{set\-Name} (\-Q\-String name)
+\begin{DoxyCompactList}\small\item\em \-Set user's \-Name. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}{set\-Password} (\-Q\-String password)
+\begin{DoxyCompactList}\small\item\em \-Set user's \-Password. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_user}{\-User} basic class. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is the data model for \hyperlink{class_user}{\-User}. 
+
+\-Definition at line 12 of file user.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\index{\-User@{\-User}!\-User\-Role@{\-User\-Role}}
+\index{\-User\-Role@{\-User\-Role}!User@{\-User}}
+\subsubsection[{\-User\-Role}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-User\-::\-User\-Role}}}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0}
+
+
+\hyperlink{class_user}{\-User} \-Role. 
+
+\-This enum is used to indicate the user role. \begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-M\-A\-N\-A\-G\-E\-R@{\-M\-A\-N\-A\-G\-E\-R}!\-User@{\-User}}\index{\-User@{\-User}!\-M\-A\-N\-A\-G\-E\-R@{\-M\-A\-N\-A\-G\-E\-R}}\item[{\em 
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0a5cabe47a239f4de61e963cad9085186a}{\-M\-A\-N\-A\-G\-E\-R}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0a5cabe47a239f4de61e963cad9085186a}
+}]\-Manager. \-This is the super user of the system \index{\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R@{\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R}!\-User@{\-User}}\index{\-User@{\-User}!\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R@{\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R}}\item[{\em 
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0afc6d2f03c65ece2c4c0d23cb56715173}{\-S\-U\-P\-E\-R\-V\-I\-S\-O\-R}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0afc6d2f03c65ece2c4c0d23cb56715173}
+}]\-Supervisor. \-Almost everything is granted to this user, except core system operations. \index{\-S\-T\-O\-C\-K@{\-S\-T\-O\-C\-K}!\-User@{\-User}}\index{\-User@{\-User}!\-S\-T\-O\-C\-K@{\-S\-T\-O\-C\-K}}\item[{\em 
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0a45f2c2b96e074703a1b0db034ee7a4b6}{\-S\-T\-O\-C\-K}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0a45f2c2b96e074703a1b0db034ee7a4b6}
+}]\-Stock. \-This user has access to everything that deals with stock module. \index{\-S\-E\-L\-L\-E\-R@{\-S\-E\-L\-L\-E\-R}!\-User@{\-User}}\index{\-User@{\-User}!\-S\-E\-L\-L\-E\-R@{\-S\-E\-L\-L\-E\-R}}\item[{\em 
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0ab5c4888daf5151f7ae2b4c9a3e56d71a}{\-S\-E\-L\-L\-E\-R}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0ab5c4888daf5151f7ae2b4c9a3e56d71a}
+}]\-Seller. \index{\-C\-A\-S\-H@{\-C\-A\-S\-H}!\-User@{\-User}}\index{\-User@{\-User}!\-C\-A\-S\-H@{\-C\-A\-S\-H}}\item[{\em 
+\hypertarget{class_user_a43f49d6a3bf5f000aea476bc641949b0af27b376d36b3828c197fa3d4ae855766}{\-C\-A\-S\-H}\label{class_user_a43f49d6a3bf5f000aea476bc641949b0af27b376d36b3828c197fa3d4ae855766}
+}]\-Cash. \end{description}
+\end{Desc}
+
+
+
+\-Definition at line 18 of file user.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_user_a3f4c4c6996209aa3a40c131cfa264698}{\index{\-User@{\-User}!\-User@{\-User}}
+\index{\-User@{\-User}!User@{\-User}}
+\subsubsection[{\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User\-::\-User} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{{\bf \-User\-Role}}]{role, }
+\item[{\-Q\-String}]{name, }
+\item[{\-Q\-String}]{password, }
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_user_a3f4c4c6996209aa3a40c131cfa264698}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_user}{\-User}. 
+
+\-Definition at line 3 of file user.\-cpp.
+
+\hypertarget{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{\index{\-User@{\-User}!$\sim$\-User@{$\sim$\-User}}
+\index{$\sim$\-User@{$\sim$\-User}!User@{\-User}}
+\subsubsection[{$\sim$\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User\-::$\sim$\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 12 of file user.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_user_a96fb32bc43251b22da3b05f1b65ea89c}{\index{\-User@{\-User}!get\-Cpf@{get\-Cpf}}
+\index{get\-Cpf@{get\-Cpf}!User@{\-User}}
+\subsubsection[{get\-Cpf}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-User\-::get\-Cpf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a96fb32bc43251b22da3b05f1b65ea89c}
+
+
+\-Get user's \-C\-P\-F. 
+
+\-Return the user's \-C\-P\-F \begin{DoxyReturn}{\-Returns}
+\-Returns the user's \-C\-P\-F 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}{get\-Role()}, \hyperlink{class_user_a08223b0b137e3fc264d94f2d746a4fc9}{get\-Name()} and \hyperlink{class_user_a96d673c7c62ecdfdd4c509db8350262d}{get\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 17 of file user.\-cpp.
+
+\hypertarget{class_user_a08223b0b137e3fc264d94f2d746a4fc9}{\index{\-User@{\-User}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!User@{\-User}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-User\-::get\-Name} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a08223b0b137e3fc264d94f2d746a4fc9}
+
+
+\-Get user's \-Name. 
+
+\-Return the user's \-Name \begin{DoxyReturn}{\-Returns}
+\-Returns the user's \-Name 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_a96fb32bc43251b22da3b05f1b65ea89c}{get\-Cpf()}, \hyperlink{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}{get\-Role()} and \hyperlink{class_user_a96d673c7c62ecdfdd4c509db8350262d}{get\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 27 of file user.\-cpp.
+
+\hypertarget{class_user_a96d673c7c62ecdfdd4c509db8350262d}{\index{\-User@{\-User}!get\-Password@{get\-Password}}
+\index{get\-Password@{get\-Password}!User@{\-User}}
+\subsubsection[{get\-Password}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-User\-::get\-Password} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a96d673c7c62ecdfdd4c509db8350262d}
+
+
+\-Get user's \-Password. 
+
+\-Return the user's \-Password \begin{DoxyReturn}{\-Returns}
+\-Returns the user's \-Password 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_a96fb32bc43251b22da3b05f1b65ea89c}{get\-Cpf()}, \hyperlink{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}{get\-Role()} and \hyperlink{class_user_a08223b0b137e3fc264d94f2d746a4fc9}{get\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 32 of file user.\-cpp.
+
+\hypertarget{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}{\index{\-User@{\-User}!get\-Role@{get\-Role}}
+\index{get\-Role@{get\-Role}!User@{\-User}}
+\subsubsection[{get\-Role}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User\-::\-User\-Role} {\bf \-User\-::get\-Role} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a9894d40a8d8b99682d93ec1cb4305cd3}
+
+
+\-Get user's \-Role. 
+
+\-Return the user's \-Role \begin{DoxyReturn}{\-Returns}
+\-Returns the user's \-Role 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_a96fb32bc43251b22da3b05f1b65ea89c}{get\-Cpf()}, \hyperlink{class_user_a08223b0b137e3fc264d94f2d746a4fc9}{get\-Name()} and \hyperlink{class_user_a96d673c7c62ecdfdd4c509db8350262d}{get\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 22 of file user.\-cpp.
+
+\hypertarget{class_user_ab49ad34cb5981d0b646078f8695c6260}{\index{\-User@{\-User}!set\-Cpf@{set\-Cpf}}
+\index{set\-Cpf@{set\-Cpf}!User@{\-User}}
+\subsubsection[{set\-Cpf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-User\-::set\-Cpf} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_user_ab49ad34cb5981d0b646078f8695c6260}
+
+
+\-Set user's \-C\-P\-F. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \hyperlink{class_user}{\-User}'s \-C\-P\-F \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_a5b8189e98500dcad4801ed0e6f9a9388}{set\-Role()}, \hyperlink{class_user_afd2983930e39003d6d65a909bf36f8b7}{set\-Name()} and \hyperlink{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}{set\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 37 of file user.\-cpp.
+
+\hypertarget{class_user_afd2983930e39003d6d65a909bf36f8b7}{\index{\-User@{\-User}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!User@{\-User}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-User\-::set\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_user_afd2983930e39003d6d65a909bf36f8b7}
+
+
+\-Set user's \-Name. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \hyperlink{class_user}{\-User}'s \-Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_ab49ad34cb5981d0b646078f8695c6260}{set\-Cpf()}, \hyperlink{class_user_a5b8189e98500dcad4801ed0e6f9a9388}{set\-Role()} and \hyperlink{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}{set\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 47 of file user.\-cpp.
+
+\hypertarget{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}{\index{\-User@{\-User}!set\-Password@{set\-Password}}
+\index{set\-Password@{set\-Password}!User@{\-User}}
+\subsubsection[{set\-Password}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-User\-::set\-Password} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{password}
+\end{DoxyParamCaption}
+)}}\label{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}
+
+
+\-Set user's \-Password. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em password} & \hyperlink{class_user}{\-User}'s \-Password \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_ab49ad34cb5981d0b646078f8695c6260}{set\-Cpf()}, \hyperlink{class_user_a5b8189e98500dcad4801ed0e6f9a9388}{set\-Role()} and \hyperlink{class_user_afd2983930e39003d6d65a909bf36f8b7}{set\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 52 of file user.\-cpp.
+
+\hypertarget{class_user_a5b8189e98500dcad4801ed0e6f9a9388}{\index{\-User@{\-User}!set\-Role@{set\-Role}}
+\index{set\-Role@{set\-Role}!User@{\-User}}
+\subsubsection[{set\-Role}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-User\-::set\-Role} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User\-Role}}]{role}
+\end{DoxyParamCaption}
+)}}\label{class_user_a5b8189e98500dcad4801ed0e6f9a9388}
+
+
+\-Set user's \-Role. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em role} & \hyperlink{class_user}{\-User}'s \-Role \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_ab49ad34cb5981d0b646078f8695c6260}{set\-Cpf()}, \hyperlink{class_user_afd2983930e39003d6d65a909bf36f8b7}{set\-Name()} and \hyperlink{class_user_a2fa7106fd6d96c663e34ebe82526d5ee}{set\-Password()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 42 of file user.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/user.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/user.\-cpp\end{DoxyCompactItemize}

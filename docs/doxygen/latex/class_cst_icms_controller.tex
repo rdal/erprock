@@ -1,0 +1,191 @@
+\hypertarget{class_cst_icms_controller}{\section{\-Cst\-Icms\-Controller \-Class \-Reference}
+\label{class_cst_icms_controller}\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}}
+}
+
+
+\-Controller for product origins.  
+
+
+
+
+{\ttfamily \#include $<$csticmscontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cst_icms_controller_a7034aba6bbb7e0b35f4fa164d3d184ff}{\-Cst\-Icms\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cst_icms_controller_a3d9d750b7c212ecede097c8a5570cea8}{$\sim$\-Cst\-Icms\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{add\-Cst\-Icms} (\hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$cst\-Icms)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{update\-Cst\-Icms} (\-Q\-String code, \hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$cst\-Icms)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{remove\-Cst\-Icms} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$ \hyperlink{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{get\-Cst\-Icms\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$ $>$ $\ast$ \hyperlink{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{get\-Cst\-Icmss} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for product origins. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product origins management. 
+
+\-Definition at line 14 of file csticmscontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cst_icms_controller_a7034aba6bbb7e0b35f4fa164d3d184ff}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}}
+\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{\-Cst\-Icms\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Icms\-Controller\-::\-Cst\-Icms\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_cst_icms_controller_a7034aba6bbb7e0b35f4fa164d3d184ff}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_cst_icms_controller}{\-Cst\-Icms\-Controller}. 
+
+\-Definition at line 3 of file csticmscontroller.\-cpp.
+
+\hypertarget{class_cst_icms_controller_a3d9d750b7c212ecede097c8a5570cea8}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!$\sim$\-Cst\-Icms\-Controller@{$\sim$\-Cst\-Icms\-Controller}}
+\index{$\sim$\-Cst\-Icms\-Controller@{$\sim$\-Cst\-Icms\-Controller}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{$\sim$\-Cst\-Icms\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Icms\-Controller\-::$\sim$\-Cst\-Icms\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_a3d9d750b7c212ecede097c8a5570cea8}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file csticmscontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!add\-Cst\-Icms@{add\-Cst\-Icms}}
+\index{add\-Cst\-Icms@{add\-Cst\-Icms}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{add\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Icms\-Controller\-::add\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Icms} $\ast$}]{cst\-Icms}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}
+\-Beforing adding a product origin, this method checks if there is already a product origins with that code and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Icms} & \-The \hyperlink{class_cst_icms}{\-Cst\-Icms} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{update\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{remove\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file csticmscontroller.\-cpp.
+
+\hypertarget{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!get\-Cst\-Icms\-By\-Code@{get\-Cst\-Icms\-By\-Code}}
+\index{get\-Cst\-Icms\-By\-Code@{get\-Cst\-Icms\-By\-Code}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{get\-Cst\-Icms\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Icms} $\ast$ {\bf \-Cst\-Icms\-Controller\-::get\-Cst\-Icms\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}
+\-Get an product origin by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_cst_icms}{\-Cst\-Icms} code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product origin object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{add\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{update\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{remove\-Cst\-Icms()} and \hyperlink{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file csticmscontroller.\-cpp.
+
+\hypertarget{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!get\-Cst\-Icmss@{get\-Cst\-Icmss}}
+\index{get\-Cst\-Icmss@{get\-Cst\-Icmss}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{get\-Cst\-Icmss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Icms} $\ast$ $>$ $\ast$ {\bf \-Cst\-Icms\-Controller\-::get\-Cst\-Icmss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_a8b064e526706df05297d05e625656072}
+\-This method returns all the product origins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product origins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{add\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{update\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{remove\-Cst\-Icms()} and \hyperlink{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{get\-Cst\-Icms\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file csticmscontroller.\-cpp.
+
+\hypertarget{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!remove\-Cst\-Icms@{remove\-Cst\-Icms}}
+\index{remove\-Cst\-Icms@{remove\-Cst\-Icms}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{remove\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Icms\-Controller\-::remove\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}
+\-Beforing removing an product origin, this method checks if there is a product origin with that code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{add\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{update\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file csticmscontroller.\-cpp.
+
+\hypertarget{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}{\index{\-Cst\-Icms\-Controller@{\-Cst\-Icms\-Controller}!update\-Cst\-Icms@{update\-Cst\-Icms}}
+\index{update\-Cst\-Icms@{update\-Cst\-Icms}!CstIcmsController@{\-Cst\-Icms\-Controller}}
+\subsubsection[{update\-Cst\-Icms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Icms\-Controller\-::update\-Cst\-Icms} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Icms} $\ast$}]{cst\-Icms}
+\end{DoxyParamCaption}
+)}}\label{class_cst_icms_controller_a3e0a72388aac8ffa73ed8d36ab96ef15}
+\-Beforing updating a product origin, this method checks if there is a product origin with that code, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be updated. \\
+\hline
+{\em cst\-Icms} & \-The \hyperlink{class_cst_icms}{\-Cst\-Icms} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_icms_controller_acadcfbfb960bb5fb9798e5bf78403bdc}{add\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a52297e61ec12e15be9b0e0a2d93a23fb}{remove\-Cst\-Icms()}, \hyperlink{class_cst_icms_controller_a8f8804f4e1941b8cd3ef29bcd7813fc1}{get\-Cst\-Icms\-By\-Code()} and \hyperlink{class_cst_icms_controller_a8b064e526706df05297d05e625656072}{get\-Cst\-Icmss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file csticmscontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/csticmscontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/csticmscontroller.\-cpp\end{DoxyCompactItemize}

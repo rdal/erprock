@@ -1,0 +1,185 @@
+\hypertarget{class_physical_customer}{\section{\-Physical\-Customer \-Class \-Reference}
+\label{class_physical_customer}\index{\-Physical\-Customer@{\-Physical\-Customer}}
+}
+
+
+\hyperlink{class_physical_customer}{\-Physical\-Customer} basic class.  
+
+
+
+
+{\ttfamily \#include $<$physicalcustomer.\-h$>$}
+
+\-Inheritance diagram for \-Physical\-Customer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_physical_customer}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_physical_customer_a3b453730c026213aefc519ade61b19e6}{\-Physical\-Customer} (\-Q\-String cpf, \-Q\-String name, \-Q\-Date\-Time birthdate, \-Q\-String phone\-Number, \-Q\-String email, \-Q\-String address\-Street, int address\-Number, \-Q\-String address\-Complement, \-Q\-String address\-Square, \-Q\-String address\-City, \-Q\-String address\-State, \-Q\-String address\-Postal\-Code, \-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_physical_customer_a573e7b6f2be5c56e8c884874e4d59f6c}{get\-Cpf} ()
+\begin{DoxyCompactList}\small\item\em \-Get physical customer's cpf. \end{DoxyCompactList}\item 
+\-Q\-Date\-Time \hyperlink{class_physical_customer_ac430e8c4b009aa13d762aefb36d44f30}{get\-Birth\-Date} ()
+\begin{DoxyCompactList}\small\item\em \-Get physical customer's birth date. \end{DoxyCompactList}\item 
+void \hyperlink{class_physical_customer_a977b839012545099ef2b6e1b01a26b33}{set\-Cpf} (\-Q\-String cpf)
+\begin{DoxyCompactList}\small\item\em \-Set physical customer's cpf. \end{DoxyCompactList}\item 
+void \hyperlink{class_physical_customer_a5da081d4b086b017d3d62073753d6123}{set\-Birth\-Date} (\-Q\-Date\-Time birth\-Date)
+\begin{DoxyCompactList}\small\item\em \-Set physical customer's birth date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \-Q\-String \hyperlink{class_physical_customer_a1aadc9fd1fde92bdadddd8853beb7d74}{\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T} = \char`\"{}dd/\-M\-M/yyyy\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_physical_customer}{\-Physical\-Customer} basic class. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is the data model for \hyperlink{class_physical_customer}{\-Physical\-Customer}. 
+
+\-Definition at line 13 of file physicalcustomer.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_physical_customer_a3b453730c026213aefc519ade61b19e6}{\index{\-Physical\-Customer@{\-Physical\-Customer}!\-Physical\-Customer@{\-Physical\-Customer}}
+\index{\-Physical\-Customer@{\-Physical\-Customer}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{\-Physical\-Customer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Physical\-Customer\-::\-Physical\-Customer} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{\-Q\-String}]{name, }
+\item[{\-Q\-Date\-Time}]{birthdate, }
+\item[{\-Q\-String}]{phone\-Number, }
+\item[{\-Q\-String}]{email, }
+\item[{\-Q\-String}]{address\-Street, }
+\item[{int}]{address\-Number, }
+\item[{\-Q\-String}]{address\-Complement, }
+\item[{\-Q\-String}]{address\-Square, }
+\item[{\-Q\-String}]{address\-City, }
+\item[{\-Q\-String}]{address\-State, }
+\item[{\-Q\-String}]{address\-Postal\-Code, }
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_physical_customer_a3b453730c026213aefc519ade61b19e6}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_physical_customer}{\-Physical\-Customer}. 
+
+\-Definition at line 5 of file physicalcustomer.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_physical_customer_ac430e8c4b009aa13d762aefb36d44f30}{\index{\-Physical\-Customer@{\-Physical\-Customer}!get\-Birth\-Date@{get\-Birth\-Date}}
+\index{get\-Birth\-Date@{get\-Birth\-Date}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{get\-Birth\-Date}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Date\-Time {\bf \-Physical\-Customer\-::get\-Birth\-Date} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_physical_customer_ac430e8c4b009aa13d762aefb36d44f30}
+
+
+\-Get physical customer's birth date. 
+
+\-Return the physical customer's birth date \begin{DoxyReturn}{\-Returns}
+\-Returns the physical customer's birth date 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_physical_customer_a5da081d4b086b017d3d62073753d6123}{set\-Birth\-Date()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 24 of file physicalcustomer.\-cpp.
+
+\hypertarget{class_physical_customer_a573e7b6f2be5c56e8c884874e4d59f6c}{\index{\-Physical\-Customer@{\-Physical\-Customer}!get\-Cpf@{get\-Cpf}}
+\index{get\-Cpf@{get\-Cpf}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{get\-Cpf}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Physical\-Customer\-::get\-Cpf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_physical_customer_a573e7b6f2be5c56e8c884874e4d59f6c}
+
+
+\-Get physical customer's cpf. 
+
+\-Return the physical customer's cpf \begin{DoxyReturn}{\-Returns}
+\-Returns the physical customer's cpf 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_physical_customer_a977b839012545099ef2b6e1b01a26b33}{set\-Cpf()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 19 of file physicalcustomer.\-cpp.
+
+\hypertarget{class_physical_customer_a5da081d4b086b017d3d62073753d6123}{\index{\-Physical\-Customer@{\-Physical\-Customer}!set\-Birth\-Date@{set\-Birth\-Date}}
+\index{set\-Birth\-Date@{set\-Birth\-Date}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{set\-Birth\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Physical\-Customer\-::set\-Birth\-Date} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Date\-Time}]{birth\-Date}
+\end{DoxyParamCaption}
+)}}\label{class_physical_customer_a5da081d4b086b017d3d62073753d6123}
+
+
+\-Set physical customer's birth date. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em birth\-Date} & \-Physical customer's birth date \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_physical_customer_ac430e8c4b009aa13d762aefb36d44f30}{get\-Birth\-Date()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 34 of file physicalcustomer.\-cpp.
+
+\hypertarget{class_physical_customer_a977b839012545099ef2b6e1b01a26b33}{\index{\-Physical\-Customer@{\-Physical\-Customer}!set\-Cpf@{set\-Cpf}}
+\index{set\-Cpf@{set\-Cpf}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{set\-Cpf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Physical\-Customer\-::set\-Cpf} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_physical_customer_a977b839012545099ef2b6e1b01a26b33}
+
+
+\-Set physical customer's cpf. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-Physical customer's cpf \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_physical_customer_a573e7b6f2be5c56e8c884874e4d59f6c}{get\-Cpf()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 29 of file physicalcustomer.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_physical_customer_a1aadc9fd1fde92bdadddd8853beb7d74}{\index{\-Physical\-Customer@{\-Physical\-Customer}!\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T@{\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T}}
+\index{\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T@{\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T}!PhysicalCustomer@{\-Physical\-Customer}}
+\subsubsection[{\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}const \-Q\-String {\bf \-Physical\-Customer\-::\-D\-A\-T\-E\-\_\-\-F\-O\-R\-M\-A\-T} = \char`\"{}dd/\-M\-M/yyyy\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_physical_customer_a1aadc9fd1fde92bdadddd8853beb7d74}
+\-This is a static member that tells the current birth date format. 
+
+\-Definition at line 61 of file physicalcustomer.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/\-Customers/physicalcustomer.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/\-Customers/physicalcustomer.\-cpp\end{DoxyCompactItemize}

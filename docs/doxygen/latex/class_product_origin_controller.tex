@@ -1,0 +1,191 @@
+\hypertarget{class_product_origin_controller}{\section{\-Product\-Origin\-Controller \-Class \-Reference}
+\label{class_product_origin_controller}\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}}
+}
+
+
+\-Controller for product origins.  
+
+
+
+
+{\ttfamily \#include $<$productorigincontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_product_origin_controller_a99784b810eb3699681d124dd73d95e22}{\-Product\-Origin\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_product_origin_controller_af030ea5bddca5d0941cb87debc5b230d}{$\sim$\-Product\-Origin\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{add\-Product\-Origin} (\hyperlink{class_product_origin}{\-Product\-Origin} $\ast$product\-Origin)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{update\-Product\-Origin} (\-Q\-String code, \hyperlink{class_product_origin}{\-Product\-Origin} $\ast$product\-Origin)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{remove\-Product\-Origin} (\-Q\-String code)
+\item 
+\hyperlink{class_product_origin}{\-Product\-Origin} $\ast$ \hyperlink{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{get\-Product\-Origin\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_product_origin}{\-Product\-Origin} $\ast$ $>$ $\ast$ \hyperlink{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{get\-Product\-Origins} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for product origins. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product origins management. 
+
+\-Definition at line 14 of file productorigincontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_product_origin_controller_a99784b810eb3699681d124dd73d95e22}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}}
+\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{\-Product\-Origin\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Origin\-Controller\-::\-Product\-Origin\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_product_origin_controller_a99784b810eb3699681d124dd73d95e22}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_product_origin_controller}{\-Product\-Origin\-Controller}. 
+
+\-Definition at line 3 of file productorigincontroller.\-cpp.
+
+\hypertarget{class_product_origin_controller_af030ea5bddca5d0941cb87debc5b230d}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!$\sim$\-Product\-Origin\-Controller@{$\sim$\-Product\-Origin\-Controller}}
+\index{$\sim$\-Product\-Origin\-Controller@{$\sim$\-Product\-Origin\-Controller}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{$\sim$\-Product\-Origin\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Origin\-Controller\-::$\sim$\-Product\-Origin\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_af030ea5bddca5d0941cb87debc5b230d}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file productorigincontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!add\-Product\-Origin@{add\-Product\-Origin}}
+\index{add\-Product\-Origin@{add\-Product\-Origin}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{add\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Origin\-Controller\-::add\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Origin} $\ast$}]{product\-Origin}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}
+\-Beforing adding a product origin, this method checks if there is already a product origins with that code and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Origin} & \-The \hyperlink{class_product_origin}{\-Product\-Origin} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{update\-Product\-Origin()}, \hyperlink{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{remove\-Product\-Origin()}, \hyperlink{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file productorigincontroller.\-cpp.
+
+\hypertarget{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!get\-Product\-Origin\-By\-Code@{get\-Product\-Origin\-By\-Code}}
+\index{get\-Product\-Origin\-By\-Code@{get\-Product\-Origin\-By\-Code}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{get\-Product\-Origin\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Origin} $\ast$ {\bf \-Product\-Origin\-Controller\-::get\-Product\-Origin\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}
+\-Get an product origin by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_product_origin}{\-Product\-Origin} code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product origin object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{add\-Product\-Origin()}, \hyperlink{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{update\-Product\-Origin()}, \hyperlink{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{remove\-Product\-Origin()} and \hyperlink{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file productorigincontroller.\-cpp.
+
+\hypertarget{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!get\-Product\-Origins@{get\-Product\-Origins}}
+\index{get\-Product\-Origins@{get\-Product\-Origins}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{get\-Product\-Origins}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Product\-Origin} $\ast$ $>$ $\ast$ {\bf \-Product\-Origin\-Controller\-::get\-Product\-Origins} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}
+\-This method returns all the product origins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product origins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{add\-Product\-Origin()}, \hyperlink{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{update\-Product\-Origin()}, \hyperlink{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{remove\-Product\-Origin()} and \hyperlink{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{get\-Product\-Origin\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file productorigincontroller.\-cpp.
+
+\hypertarget{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!remove\-Product\-Origin@{remove\-Product\-Origin}}
+\index{remove\-Product\-Origin@{remove\-Product\-Origin}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{remove\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Origin\-Controller\-::remove\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}
+\-Beforing removing an product origin, this method checks if there is a product origin with that code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{add\-Product\-Origin()}, \hyperlink{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{update\-Product\-Origin()}, \hyperlink{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file productorigincontroller.\-cpp.
+
+\hypertarget{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}{\index{\-Product\-Origin\-Controller@{\-Product\-Origin\-Controller}!update\-Product\-Origin@{update\-Product\-Origin}}
+\index{update\-Product\-Origin@{update\-Product\-Origin}!ProductOriginController@{\-Product\-Origin\-Controller}}
+\subsubsection[{update\-Product\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Origin\-Controller\-::update\-Product\-Origin} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Product\-Origin} $\ast$}]{product\-Origin}
+\end{DoxyParamCaption}
+)}}\label{class_product_origin_controller_ab12c20d21ab2297cb8f4b8005e44abad}
+\-Beforing updating a product origin, this method checks if there is a product origin with that code, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be updated. \\
+\hline
+{\em product\-Origin} & \-The \hyperlink{class_product_origin}{\-Product\-Origin} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_origin_controller_a092b9125bdfa1619bd12a86186d45b76}{add\-Product\-Origin()}, \hyperlink{class_product_origin_controller_aada989302c4724d08a1a40ad91c5c0dd}{remove\-Product\-Origin()}, \hyperlink{class_product_origin_controller_a9832deaef58b447622c3ed3dd2303266}{get\-Product\-Origin\-By\-Code()} and \hyperlink{class_product_origin_controller_a5b824ee84c56e194e62727234983becc}{get\-Product\-Origins()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file productorigincontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/productorigincontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/productorigincontroller.\-cpp\end{DoxyCompactItemize}

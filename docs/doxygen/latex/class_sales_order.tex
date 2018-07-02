@@ -1,0 +1,525 @@
+\hypertarget{class_sales_order}{\section{\-Sales\-Order \-Class \-Reference}
+\label{class_sales_order}\index{\-Sales\-Order@{\-Sales\-Order}}
+}
+
+
+\hyperlink{class_sales_order}{\-Sales\-Order} basic class.  
+
+
+
+
+{\ttfamily \#include $<$salesorder.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744}{\-Payment\-Form} \{ \hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744abfe58e9329c6f3ff37cb0df5db2a2c54}{\-C\-A\-C\-H\-E}, 
+\hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744afd1b7c2de470d776b95150014c6c84c0}{\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T}
+ \}
+\begin{DoxyCompactList}\small\item\em \-Payment \-Form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sales_order_a1eed55622ad0394b8859cf809fbfa8ce}{\-Sales\-Order} (int id, \-Q\-String receipt, \-Q\-Date\-Time date, int payment\-Condition, \hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744}{\-Payment\-Form} payment\-Form, double discount, \-Q\-String observation, double value\-Paid, double value\-Total, \-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_sales_order_aa95abd1377d1d962535eb401b94b5b08}{\-Sales\-Order} (\-Q\-String receipt, \-Q\-Date\-Time date, int payment\-Condition, \hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744}{\-Payment\-Form} payment\-Form, double discount, \-Q\-String observation, double value\-Paid, double value\-Total, \-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_sales_order_a5fed272542f7afd85f5965aadbece7af}{get\-Id} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's id. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_sales_order_ab6eb90c054023558dddb040337cf758a}{get\-Receipt} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's receipt. \end{DoxyCompactList}\item 
+\-Q\-Date\-Time \hyperlink{class_sales_order_ad2e646e4df571a5ce5cf3b2dfe33d839}{get\-Date} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's date. \end{DoxyCompactList}\item 
+int \hyperlink{class_sales_order_aca88f3fc93ddb8e27a6e3acddfce8f6f}{get\-Payment\-Condition} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's payment condition. \end{DoxyCompactList}\item 
+\hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744}{\-Payment\-Form} \hyperlink{class_sales_order_a81e054e101c7ee87258c63e1924c8c19}{get\-Payment\-Form} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's payment form. \end{DoxyCompactList}\item 
+double \hyperlink{class_sales_order_a5fed8bdb94cadce7682ef96aef9d3602}{get\-Discount} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's discount. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{class_sales_order_acd20cb36bde9b7de8755f332b21cc8f4}{get\-Observation} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's observation. \end{DoxyCompactList}\item 
+double \hyperlink{class_sales_order_a22d54843a30f319be357bf52156bb73e}{get\-Value\-Paid} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's value paid. \end{DoxyCompactList}\item 
+double \hyperlink{class_sales_order_ac3ccc93985ddbd4c2bab0fbac84aee18}{get\-Value\-Total} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-Sale\-Order's total value. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_ad58819b9747890112345ecded8cd2821}{set\-Receipt} (\-Q\-String receipt)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's receipt. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_ad977a7351cd1f2300db315c641dcc746}{set\-Date} (\-Q\-Date\-Time date)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's date. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a2a02260c1308f70c60910e41abe67a3d}{set\-Payment\-Condition} (int payment\-Condition)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's payment condition. \-This method sets in how many times the total value was divided. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a6b38c8982ceb3633cc1a024e5ce07fea}{set\-Payment\-Form} (\hyperlink{class_sales_order_aea62d62de9cfe64f734061c664156744}{\-Payment\-Form} payment\-Form)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's payment form. \-If the payment will be done with bank ticket, cache, etc. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a2f14e1b6db1510d203e149c90d2171fe}{set\-Discount} (double discount)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's discount. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a31b856a3da35b31f9dc3f5987110f864}{set\-Observation} (\-Q\-String observation)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's observation. \-Something the user want to tell about this sale order. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a162cf0923d0e1b29b83b1a64e9e7c706}{set\-Value\-Paid} (double value\-Paid)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's value paid. \end{DoxyCompactList}\item 
+void \hyperlink{class_sales_order_a9c930a4155cfdf4b5d460cb9b4233e8a}{set\-Value\-Total} (double value\-Total)
+\begin{DoxyCompactList}\small\item\em \-Set \-Sale\-Order's total value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_sales_order}{\-Sales\-Order} basic class. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is the data model for \hyperlink{class_sales_order}{\-Sales\-Order}. 
+
+\-Definition at line 13 of file salesorder.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_sales_order_aea62d62de9cfe64f734061c664156744}{\index{\-Sales\-Order@{\-Sales\-Order}!\-Payment\-Form@{\-Payment\-Form}}
+\index{\-Payment\-Form@{\-Payment\-Form}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{\-Payment\-Form}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Sales\-Order\-::\-Payment\-Form}}}\label{class_sales_order_aea62d62de9cfe64f734061c664156744}
+
+
+\-Payment \-Form. 
+
+\-This enum is used to indicate which payment form will be used. \begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-A\-C\-H\-E@{\-C\-A\-C\-H\-E}!\-Sales\-Order@{\-Sales\-Order}}\index{\-Sales\-Order@{\-Sales\-Order}!\-C\-A\-C\-H\-E@{\-C\-A\-C\-H\-E}}\item[{\em 
+\hypertarget{class_sales_order_aea62d62de9cfe64f734061c664156744abfe58e9329c6f3ff37cb0df5db2a2c54}{\-C\-A\-C\-H\-E}\label{class_sales_order_aea62d62de9cfe64f734061c664156744abfe58e9329c6f3ff37cb0df5db2a2c54}
+}]\-Payment with money. \index{\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T@{\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T}!\-Sales\-Order@{\-Sales\-Order}}\index{\-Sales\-Order@{\-Sales\-Order}!\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T@{\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T}}\item[{\em 
+\hypertarget{class_sales_order_aea62d62de9cfe64f734061c664156744afd1b7c2de470d776b95150014c6c84c0}{\-B\-A\-N\-K\-\_\-\-T\-I\-C\-K\-E\-T}\label{class_sales_order_aea62d62de9cfe64f734061c664156744afd1b7c2de470d776b95150014c6c84c0}
+}]\-Payment with bak ticket. \end{description}
+\end{Desc}
+
+
+
+\-Definition at line 20 of file salesorder.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_sales_order_a1eed55622ad0394b8859cf809fbfa8ce}{\index{\-Sales\-Order@{\-Sales\-Order}!\-Sales\-Order@{\-Sales\-Order}}
+\index{\-Sales\-Order@{\-Sales\-Order}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{\-Sales\-Order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Sales\-Order\-::\-Sales\-Order} (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{\-Q\-String}]{receipt, }
+\item[{\-Q\-Date\-Time}]{date, }
+\item[{int}]{payment\-Condition, }
+\item[{{\bf \-Payment\-Form}}]{payment\-Form, }
+\item[{double}]{discount, }
+\item[{\-Q\-String}]{observation, }
+\item[{double}]{value\-Paid, }
+\item[{double}]{value\-Total, }
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_sales_order_a1eed55622ad0394b8859cf809fbfa8ce}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_store}{\-Store}. \-Use this constructor when updating a new \hyperlink{class_sales_order}{\-Sales\-Order} \-Object 
+
+\-Definition at line 3 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_aa95abd1377d1d962535eb401b94b5b08}{\index{\-Sales\-Order@{\-Sales\-Order}!\-Sales\-Order@{\-Sales\-Order}}
+\index{\-Sales\-Order@{\-Sales\-Order}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{\-Sales\-Order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Sales\-Order\-::\-Sales\-Order} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{receipt, }
+\item[{\-Q\-Date\-Time}]{date, }
+\item[{int}]{payment\-Condition, }
+\item[{{\bf \-Payment\-Form}}]{payment\-Form, }
+\item[{double}]{discount, }
+\item[{\-Q\-String}]{observation, }
+\item[{double}]{value\-Paid, }
+\item[{double}]{value\-Total, }
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_sales_order_aa95abd1377d1d962535eb401b94b5b08}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_store}{\-Store}. \-Use this constructor when creating a new \hyperlink{class_sales_order}{\-Sales\-Order} \-Object 
+
+\-Definition at line 18 of file salesorder.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_sales_order_ad2e646e4df571a5ce5cf3b2dfe33d839}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Date@{get\-Date}}
+\index{get\-Date@{get\-Date}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Date\-Time {\bf \-Sales\-Order\-::get\-Date} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_ad2e646e4df571a5ce5cf3b2dfe33d839}
+
+
+\-Get \-Sale\-Order's date. 
+
+\-Return the \-Sale\-Order's date \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's date 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_ad977a7351cd1f2300db315c641dcc746}{set\-Date()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 43 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a5fed8bdb94cadce7682ef96aef9d3602}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Discount@{get\-Discount}}
+\index{get\-Discount@{get\-Discount}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Discount}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Sales\-Order\-::get\-Discount} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a5fed8bdb94cadce7682ef96aef9d3602}
+
+
+\-Get \-Sale\-Order's discount. 
+
+\-Return the \-Sale\-Order's discount \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's discount 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a2f14e1b6db1510d203e149c90d2171fe}{set\-Discount()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 58 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a5fed272542f7afd85f5965aadbece7af}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Sales\-Order\-::get\-Id} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a5fed272542f7afd85f5965aadbece7af}
+
+
+\-Get \-Sale\-Order's id. 
+
+\-Return the \-Sale\-Order's id \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's id 
+\end{DoxyReturn}
+
+
+\-Definition at line 33 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_acd20cb36bde9b7de8755f332b21cc8f4}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Observation@{get\-Observation}}
+\index{get\-Observation@{get\-Observation}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Observation}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Sales\-Order\-::get\-Observation} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_acd20cb36bde9b7de8755f332b21cc8f4}
+
+
+\-Get \-Sale\-Order's observation. 
+
+\-Return the \-Sale\-Order's observation. \-Something the user want to tell about this sale order. \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's observation 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a31b856a3da35b31f9dc3f5987110f864}{set\-Observation()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 63 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_aca88f3fc93ddb8e27a6e3acddfce8f6f}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Payment\-Condition@{get\-Payment\-Condition}}
+\index{get\-Payment\-Condition@{get\-Payment\-Condition}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Payment\-Condition}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Sales\-Order\-::get\-Payment\-Condition} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_aca88f3fc93ddb8e27a6e3acddfce8f6f}
+
+
+\-Get \-Sale\-Order's payment condition. 
+
+\-Return the \-Sale\-Order's payment condition. \-This method tells in how many times the total value was divided. \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's payment condition 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a2a02260c1308f70c60910e41abe67a3d}{set\-Payment\-Condition()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 48 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a81e054e101c7ee87258c63e1924c8c19}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Payment\-Form@{get\-Payment\-Form}}
+\index{get\-Payment\-Form@{get\-Payment\-Form}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Payment\-Form}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Sales\-Order\-::\-Payment\-Form} {\bf \-Sales\-Order\-::get\-Payment\-Form} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a81e054e101c7ee87258c63e1924c8c19}
+
+
+\-Get \-Sale\-Order's payment form. 
+
+\-Return the \-Sale\-Order's payment form \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's payment form. \-If the payment will be done with bank ticket, cache, etc. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a2a02260c1308f70c60910e41abe67a3d}{set\-Payment\-Condition()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 53 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_ab6eb90c054023558dddb040337cf758a}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Receipt@{get\-Receipt}}
+\index{get\-Receipt@{get\-Receipt}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Receipt}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Sales\-Order\-::get\-Receipt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_ab6eb90c054023558dddb040337cf758a}
+
+
+\-Get \-Sale\-Order's receipt. 
+
+\-Return the \-Sale\-Order's receipt \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's receipt 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_ad58819b9747890112345ecded8cd2821}{set\-Receipt()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 38 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a22d54843a30f319be357bf52156bb73e}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Value\-Paid@{get\-Value\-Paid}}
+\index{get\-Value\-Paid@{get\-Value\-Paid}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Value\-Paid}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Sales\-Order\-::get\-Value\-Paid} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a22d54843a30f319be357bf52156bb73e}
+
+
+\-Get \-Sale\-Order's value paid. 
+
+\-Return the \-Sale\-Order's value paid \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's value paid 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a162cf0923d0e1b29b83b1a64e9e7c706}{set\-Value\-Paid()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 68 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_ac3ccc93985ddbd4c2bab0fbac84aee18}{\index{\-Sales\-Order@{\-Sales\-Order}!get\-Value\-Total@{get\-Value\-Total}}
+\index{get\-Value\-Total@{get\-Value\-Total}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{get\-Value\-Total}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Sales\-Order\-::get\-Value\-Total} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_ac3ccc93985ddbd4c2bab0fbac84aee18}
+
+
+\-Get \-Sale\-Order's total value. 
+
+\-Return the \-Sale\-Order's total value \begin{DoxyReturn}{\-Returns}
+\-Returns the \-Sale\-Order's total value 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a9c930a4155cfdf4b5d460cb9b4233e8a}{set\-Value\-Total()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 73 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_ad977a7351cd1f2300db315c641dcc746}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Date@{set\-Date}}
+\index{set\-Date@{set\-Date}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Date} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Date\-Time}]{date}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_ad977a7351cd1f2300db315c641dcc746}
+
+
+\-Set \-Sale\-Order's date. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em date} & \-Sale\-Order's date \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_ad2e646e4df571a5ce5cf3b2dfe33d839}{get\-Date()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 83 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a2f14e1b6db1510d203e149c90d2171fe}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Discount@{set\-Discount}}
+\index{set\-Discount@{set\-Discount}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Discount}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Discount} (
+\begin{DoxyParamCaption}
+\item[{double}]{discount}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a2f14e1b6db1510d203e149c90d2171fe}
+
+
+\-Set \-Sale\-Order's discount. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em discount} & \-Sale\-Order's discount \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a5fed8bdb94cadce7682ef96aef9d3602}{get\-Discount()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 98 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a31b856a3da35b31f9dc3f5987110f864}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Observation@{set\-Observation}}
+\index{set\-Observation@{set\-Observation}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Observation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Observation} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{observation}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a31b856a3da35b31f9dc3f5987110f864}
+
+
+\-Set \-Sale\-Order's observation. \-Something the user want to tell about this sale order. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em observation} & \-Sale\-Order's observation \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_acd20cb36bde9b7de8755f332b21cc8f4}{get\-Observation()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 103 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a2a02260c1308f70c60910e41abe67a3d}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Payment\-Condition@{set\-Payment\-Condition}}
+\index{set\-Payment\-Condition@{set\-Payment\-Condition}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Payment\-Condition}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Payment\-Condition} (
+\begin{DoxyParamCaption}
+\item[{int}]{payment\-Condition}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a2a02260c1308f70c60910e41abe67a3d}
+
+
+\-Set \-Sale\-Order's payment condition. \-This method sets in how many times the total value was divided. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em payment\-Condition} & \-Sale\-Order's receipt \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_aca88f3fc93ddb8e27a6e3acddfce8f6f}{get\-Payment\-Condition()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 88 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a6b38c8982ceb3633cc1a024e5ce07fea}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Payment\-Form@{set\-Payment\-Form}}
+\index{set\-Payment\-Form@{set\-Payment\-Form}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Payment\-Form}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Payment\-Form} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Payment\-Form}}]{payment\-Form}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a6b38c8982ceb3633cc1a024e5ce07fea}
+
+
+\-Set \-Sale\-Order's payment form. \-If the payment will be done with bank ticket, cache, etc. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em payment\-Form} & \-Sale\-Order's payment form \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a81e054e101c7ee87258c63e1924c8c19}{get\-Payment\-Form()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 93 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_ad58819b9747890112345ecded8cd2821}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Receipt@{set\-Receipt}}
+\index{set\-Receipt@{set\-Receipt}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Receipt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Receipt} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{receipt}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_ad58819b9747890112345ecded8cd2821}
+
+
+\-Set \-Sale\-Order's receipt. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em receipt} & \-Sale\-Order's receipt \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_ab6eb90c054023558dddb040337cf758a}{get\-Receipt()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 78 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a162cf0923d0e1b29b83b1a64e9e7c706}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Value\-Paid@{set\-Value\-Paid}}
+\index{set\-Value\-Paid@{set\-Value\-Paid}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Value\-Paid}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Value\-Paid} (
+\begin{DoxyParamCaption}
+\item[{double}]{value\-Paid}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a162cf0923d0e1b29b83b1a64e9e7c706}
+
+
+\-Set \-Sale\-Order's value paid. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em value\-Paid} & \-Sale\-Order's value paid \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_a22d54843a30f319be357bf52156bb73e}{get\-Value\-Paid()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 108 of file salesorder.\-cpp.
+
+\hypertarget{class_sales_order_a9c930a4155cfdf4b5d460cb9b4233e8a}{\index{\-Sales\-Order@{\-Sales\-Order}!set\-Value\-Total@{set\-Value\-Total}}
+\index{set\-Value\-Total@{set\-Value\-Total}!SalesOrder@{\-Sales\-Order}}
+\subsubsection[{set\-Value\-Total}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Sales\-Order\-::set\-Value\-Total} (
+\begin{DoxyParamCaption}
+\item[{double}]{value\-Total}
+\end{DoxyParamCaption}
+)}}\label{class_sales_order_a9c930a4155cfdf4b5d460cb9b4233e8a}
+
+
+\-Set \-Sale\-Order's total value. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em value\-Total} & \-Sale\-Order's total value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_sales_order_ac3ccc93985ddbd4c2bab0fbac84aee18}{get\-Value\-Total()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 113 of file salesorder.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/\-Sales/salesorder.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Model/\-Sales/salesorder.\-cpp\end{DoxyCompactItemize}

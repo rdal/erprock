@@ -1,0 +1,188 @@
+\hypertarget{class_manufacturer_controller}{\section{\-Manufacturer\-Controller \-Class \-Reference}
+\label{class_manufacturer_controller}\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}}
+}
+
+
+\-Controller for manufacturer.  
+
+
+
+
+{\ttfamily \#include $<$manufacturercontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_manufacturer_controller_ae8d6561bbc03b036bb2f8ba6eb4ccdce}{\-Manufacturer\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_manufacturer_controller_aecc04a81e98ad2702d640080d148a874}{$\sim$\-Manufacturer\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{add\-Manufacturer} (\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$manufacturer)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{update\-Manufacturer} (\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$manufacturer)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{remove\-Manufacturer} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$ \hyperlink{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{get\-Manufacturer\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_manufacturer}{\-Manufacturer} $\ast$ $>$ $\ast$ \hyperlink{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{get\-Manufacturers} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for manufacturer. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for manufacturer management. 
+
+\-Definition at line 15 of file manufacturercontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_manufacturer_controller_ae8d6561bbc03b036bb2f8ba6eb4ccdce}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!\-Manufacturer\-Controller@{\-Manufacturer\-Controller}}
+\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{\-Manufacturer\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Manufacturer\-Controller\-::\-Manufacturer\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_manufacturer_controller_ae8d6561bbc03b036bb2f8ba6eb4ccdce}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_manufacturer_controller}{\-Manufacturer\-Controller}. 
+
+\-Definition at line 3 of file manufacturercontroller.\-cpp.
+
+\hypertarget{class_manufacturer_controller_aecc04a81e98ad2702d640080d148a874}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!$\sim$\-Manufacturer\-Controller@{$\sim$\-Manufacturer\-Controller}}
+\index{$\sim$\-Manufacturer\-Controller@{$\sim$\-Manufacturer\-Controller}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{$\sim$\-Manufacturer\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Manufacturer\-Controller\-::$\sim$\-Manufacturer\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_aecc04a81e98ad2702d640080d148a874}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file manufacturercontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!add\-Manufacturer@{add\-Manufacturer}}
+\index{add\-Manufacturer@{add\-Manufacturer}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{add\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Manufacturer\-Controller\-::add\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Manufacturer} $\ast$}]{manufacturer}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}
+\-Beforing adding a manufacturer, this method checks if there is already a manufacturer with that \-C\-N\-P\-J, if its name has less than 100 characters, and if the given \-C\-N\-P\-J is valid. 
+\begin{DoxyParams}{\-Parameters}
+{\em manufacturer} & \-The \hyperlink{class_manufacturer}{\-Manufacturer} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{update\-Manufacturer()}, \hyperlink{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{remove\-Manufacturer()}, \hyperlink{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{get\-Manufacturer\-By\-C\-N\-P\-J()} and \hyperlink{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{get\-Manufacturers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 14 of file manufacturercontroller.\-cpp.
+
+\hypertarget{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!get\-Manufacturer\-By\-C\-N\-P\-J@{get\-Manufacturer\-By\-C\-N\-P\-J}}
+\index{get\-Manufacturer\-By\-C\-N\-P\-J@{get\-Manufacturer\-By\-C\-N\-P\-J}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{get\-Manufacturer\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Manufacturer} $\ast$ {\bf \-Manufacturer\-Controller\-::get\-Manufacturer\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}
+\-Get an manufacturer by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_manufacturer}{\-Manufacturer}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the manufacturer object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{add\-Manufacturer()}, \hyperlink{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{update\-Manufacturer()}, \hyperlink{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{remove\-Manufacturer()} and \hyperlink{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{get\-Manufacturers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 100 of file manufacturercontroller.\-cpp.
+
+\hypertarget{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!get\-Manufacturers@{get\-Manufacturers}}
+\index{get\-Manufacturers@{get\-Manufacturers}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{get\-Manufacturers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Manufacturer} $\ast$ $>$ $\ast$ {\bf \-Manufacturer\-Controller\-::get\-Manufacturers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}
+\-This method returns all the manufacturers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored manufacturers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{add\-Manufacturer()}, \hyperlink{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{update\-Manufacturer()}, \hyperlink{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{remove\-Manufacturer()} and \hyperlink{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{get\-Manufacturer\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 110 of file manufacturercontroller.\-cpp.
+
+\hypertarget{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!remove\-Manufacturer@{remove\-Manufacturer}}
+\index{remove\-Manufacturer@{remove\-Manufacturer}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{remove\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Manufacturer\-Controller\-::remove\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}
+\-Beforing removing an manufacturer, this method checks if there is a manufacturer with that \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The cnpj whose manufacturer will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{add\-Manufacturer()}, \hyperlink{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{update\-Manufacturer()}, \hyperlink{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{get\-Manufacturer\-By\-C\-N\-P\-J()} and \hyperlink{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{get\-Manufacturers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 73 of file manufacturercontroller.\-cpp.
+
+\hypertarget{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}{\index{\-Manufacturer\-Controller@{\-Manufacturer\-Controller}!update\-Manufacturer@{update\-Manufacturer}}
+\index{update\-Manufacturer@{update\-Manufacturer}!ManufacturerController@{\-Manufacturer\-Controller}}
+\subsubsection[{update\-Manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Manufacturer\-Controller\-::update\-Manufacturer} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Manufacturer} $\ast$}]{manufacturer}
+\end{DoxyParamCaption}
+)}}\label{class_manufacturer_controller_aeaa8d5409e8bcf5bc74700c4ddc2fc22}
+\-Beforing updating a manufacturer, this method checks if there is a manufacturer with that \-C\-N\-P\-J, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em manufacturer} & \-The \hyperlink{class_manufacturer}{\-Manufacturer} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_manufacturer_controller_a9eebc91527aa1e0367c3113f2f9f5edb}{add\-Manufacturer()}, \hyperlink{class_manufacturer_controller_abd8e03eb4d4d5dac62fb22f06a100e68}{remove\-Manufacturer()}, \hyperlink{class_manufacturer_controller_ab9d81016524a8124812673088aaea1fe}{get\-Manufacturer\-By\-C\-N\-P\-J()} and \hyperlink{class_manufacturer_controller_ac0cb4ccd13d0fa4ab766b54cdae70d9e}{get\-Manufacturers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 46 of file manufacturercontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/manufacturercontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/manufacturercontroller.\-cpp\end{DoxyCompactItemize}

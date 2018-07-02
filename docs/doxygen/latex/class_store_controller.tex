@@ -1,0 +1,188 @@
+\hypertarget{class_store_controller}{\section{\-Store\-Controller \-Class \-Reference}
+\label{class_store_controller}\index{\-Store\-Controller@{\-Store\-Controller}}
+}
+
+
+\-Controller for stores.  
+
+
+
+
+{\ttfamily \#include $<$storecontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_store_controller_a0350d355891c6f006220bd1b9ece4daf}{\-Store\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_store_controller_aacb70684c769795a59ae395af13405c0}{$\sim$\-Store\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{add\-Store} (\hyperlink{class_store}{\-Store} $\ast$store)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{update\-Store} (\hyperlink{class_store}{\-Store} $\ast$store)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{remove\-Store} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_store}{\-Store} $\ast$ \hyperlink{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{get\-Store\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_store}{\-Store} $\ast$ $>$ $\ast$ \hyperlink{class_store_controller_a11bbd758711d536f78b824106835b75d}{get\-Stores} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for stores. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for stores management. 
+
+\-Definition at line 14 of file storecontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_store_controller_a0350d355891c6f006220bd1b9ece4daf}{\index{\-Store\-Controller@{\-Store\-Controller}!\-Store\-Controller@{\-Store\-Controller}}
+\index{\-Store\-Controller@{\-Store\-Controller}!StoreController@{\-Store\-Controller}}
+\subsubsection[{\-Store\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Store\-Controller\-::\-Store\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_store_controller_a0350d355891c6f006220bd1b9ece4daf}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_store_controller}{\-Store\-Controller}. 
+
+\-Definition at line 3 of file storecontroller.\-cpp.
+
+\hypertarget{class_store_controller_aacb70684c769795a59ae395af13405c0}{\index{\-Store\-Controller@{\-Store\-Controller}!$\sim$\-Store\-Controller@{$\sim$\-Store\-Controller}}
+\index{$\sim$\-Store\-Controller@{$\sim$\-Store\-Controller}!StoreController@{\-Store\-Controller}}
+\subsubsection[{$\sim$\-Store\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Store\-Controller\-::$\sim$\-Store\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_aacb70684c769795a59ae395af13405c0}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file storecontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{\index{\-Store\-Controller@{\-Store\-Controller}!add\-Store@{add\-Store}}
+\index{add\-Store@{add\-Store}!StoreController@{\-Store\-Controller}}
+\subsubsection[{add\-Store}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Store\-Controller\-::add\-Store} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}
+\-Beforing adding a store, this method checks if there is already a store with that \-C\-N\-P\-J, if its name has less than 100 characters, and if the given \-C\-N\-P\-J is valid. 
+\begin{DoxyParams}{\-Parameters}
+{\em store} & \-The \hyperlink{class_store}{\-Store} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{update\-Store()}, \hyperlink{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{remove\-Store()}, \hyperlink{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{get\-Store\-By\-C\-N\-P\-J()} and \hyperlink{class_store_controller_a11bbd758711d536f78b824106835b75d}{get\-Stores()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 14 of file storecontroller.\-cpp.
+
+\hypertarget{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{\index{\-Store\-Controller@{\-Store\-Controller}!get\-Store\-By\-C\-N\-P\-J@{get\-Store\-By\-C\-N\-P\-J}}
+\index{get\-Store\-By\-C\-N\-P\-J@{get\-Store\-By\-C\-N\-P\-J}!StoreController@{\-Store\-Controller}}
+\subsubsection[{get\-Store\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Store} $\ast$ {\bf \-Store\-Controller\-::get\-Store\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}
+\-Get an store by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_store}{\-Store}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the store object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{add\-Store()}, \hyperlink{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{update\-Store()}, \hyperlink{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{remove\-Store()} and \hyperlink{class_store_controller_a11bbd758711d536f78b824106835b75d}{get\-Stores()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 104 of file storecontroller.\-cpp.
+
+\hypertarget{class_store_controller_a11bbd758711d536f78b824106835b75d}{\index{\-Store\-Controller@{\-Store\-Controller}!get\-Stores@{get\-Stores}}
+\index{get\-Stores@{get\-Stores}!StoreController@{\-Store\-Controller}}
+\subsubsection[{get\-Stores}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Store} $\ast$ $>$ $\ast$ {\bf \-Store\-Controller\-::get\-Stores} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_a11bbd758711d536f78b824106835b75d}
+\-This method returns all the stores that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored stores. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{add\-Store()}, \hyperlink{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{update\-Store()}, \hyperlink{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{remove\-Store()} and \hyperlink{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{get\-Store\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 114 of file storecontroller.\-cpp.
+
+\hypertarget{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{\index{\-Store\-Controller@{\-Store\-Controller}!remove\-Store@{remove\-Store}}
+\index{remove\-Store@{remove\-Store}!StoreController@{\-Store\-Controller}}
+\subsubsection[{remove\-Store}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Store\-Controller\-::remove\-Store} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_afbc229ebd10ecc6a7d22674448623650}
+\-Beforing removing an store, this method checks if there is a store with that \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The cnpj whose store will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{add\-Store()}, \hyperlink{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{update\-Store()}, \hyperlink{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{get\-Store\-By\-C\-N\-P\-J()} and \hyperlink{class_store_controller_a11bbd758711d536f78b824106835b75d}{get\-Stores()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 73 of file storecontroller.\-cpp.
+
+\hypertarget{class_store_controller_aed632eec1c4624dbffd2d877213477b7}{\index{\-Store\-Controller@{\-Store\-Controller}!update\-Store@{update\-Store}}
+\index{update\-Store@{update\-Store}!StoreController@{\-Store\-Controller}}
+\subsubsection[{update\-Store}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Store\-Controller\-::update\-Store} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}}\label{class_store_controller_aed632eec1c4624dbffd2d877213477b7}
+\-Beforing updating a store, this method checks if there is a store with that \-C\-N\-P\-J, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em store} & \-The \hyperlink{class_store}{\-Store} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_store_controller_ae7cf67c7ea3f7eb39cad31c62582546c}{add\-Store()}, \hyperlink{class_store_controller_afbc229ebd10ecc6a7d22674448623650}{remove\-Store()}, \hyperlink{class_store_controller_a75032b0381cf56c1ee9da56cec93466c}{get\-Store\-By\-C\-N\-P\-J()} and \hyperlink{class_store_controller_a11bbd758711d536f78b824106835b75d}{get\-Stores()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 46 of file storecontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/storecontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/storecontroller.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+\hypertarget{class_cfop_controller}{\section{\-Cfop\-Controller \-Class \-Reference}
+\label{class_cfop_controller}\index{\-Cfop\-Controller@{\-Cfop\-Controller}}
+}
+
+
+\-Controller for cfops.  
+
+
+
+
+{\ttfamily \#include $<$cfopcontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cfop_controller_ad476efe95cbd9fc1589248251ef495cd}{\-Cfop\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cfop_controller_a2c820daab1042178f1b0738fdf840080}{$\sim$\-Cfop\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop} (\hyperlink{class_cfop}{\-Cfop} $\ast$cfop\-Obj)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop} (\-Q\-String cfop, \hyperlink{class_cfop}{\-Cfop} $\ast$cfop\-Obj)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop} (\-Q\-String cfop)
+\item 
+\hyperlink{class_cfop}{\-Cfop} $\ast$ \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop} (\-Q\-String cfop)
+\item 
+\-Q\-List$<$ \hyperlink{class_cfop}{\-Cfop} $\ast$ $>$ $\ast$ \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops} ()
+\item 
+void \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop} (\-Q\-String filepath)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for cfops. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product cfops. 
+
+\-Definition at line 14 of file cfopcontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cfop_controller_ad476efe95cbd9fc1589248251ef495cd}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!\-Cfop\-Controller@{\-Cfop\-Controller}}
+\index{\-Cfop\-Controller@{\-Cfop\-Controller}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{\-Cfop\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cfop\-Controller\-::\-Cfop\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_cfop_controller_ad476efe95cbd9fc1589248251ef495cd}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_cfop_controller}{\-Cfop\-Controller}. 
+
+\-Definition at line 8 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_a2c820daab1042178f1b0738fdf840080}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!$\sim$\-Cfop\-Controller@{$\sim$\-Cfop\-Controller}}
+\index{$\sim$\-Cfop\-Controller@{$\sim$\-Cfop\-Controller}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{$\sim$\-Cfop\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cfop\-Controller\-::$\sim$\-Cfop\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a2c820daab1042178f1b0738fdf840080}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 14 of file cfopcontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!add\-Cfop@{add\-Cfop}}
+\index{add\-Cfop@{add\-Cfop}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{add\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cfop\-Controller\-::add\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cfop} $\ast$}]{cfop\-Obj}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}
+\-Beforing adding a cfop, this method checks if there is already a cfop object with that cfop. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop\-Obj} & \-The \hyperlink{class_cfop}{\-Cfop} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop()}, \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop()}, \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop()}, \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops()} and \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 18 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!get\-Cfop\-By\-Cfop@{get\-Cfop\-By\-Cfop}}
+\index{get\-Cfop\-By\-Cfop@{get\-Cfop\-By\-Cfop}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{get\-Cfop\-By\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cfop} $\ast$ {\bf \-Cfop\-Controller\-::get\-Cfop\-By\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}
+\-Get a cfop object by its cfop. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cfop object associated with the given cfop. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop()}, \hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop()}, \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop()}, \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops()} and \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 84 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!get\-Cfops@{get\-Cfops}}
+\index{get\-Cfops@{get\-Cfops}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{get\-Cfops}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cfop} $\ast$ $>$ $\ast$ {\bf \-Cfop\-Controller\-::get\-Cfops} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}
+\-This method returns all the cfops that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cfops. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop()}, \hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop()}, \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop()}, \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 94 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!import\-Cfop@{import\-Cfop}}
+\index{import\-Cfop@{import\-Cfop}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{import\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Cfop\-Controller\-::import\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{filepath}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}
+\-This method reads the input file's contents, parse it, and store the values into cfop database. 
+\begin{DoxyParams}{\-Parameters}
+{\em filepath} & \-The filepath to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop()}, \hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop()}, \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop()}, \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop()} and \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 105 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!remove\-Cfop@{remove\-Cfop}}
+\index{remove\-Cfop@{remove\-Cfop}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{remove\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cfop\-Controller\-::remove\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}
+\-Beforing removing an cfop, this method checks if there is a cfop with that cfop. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop whose object will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop()}, \hyperlink{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{update\-Cfop()}, \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop()}, \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops()} and \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 65 of file cfopcontroller.\-cpp.
+
+\hypertarget{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}{\index{\-Cfop\-Controller@{\-Cfop\-Controller}!update\-Cfop@{update\-Cfop}}
+\index{update\-Cfop@{update\-Cfop}!CfopController@{\-Cfop\-Controller}}
+\subsubsection[{update\-Cfop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cfop\-Controller\-::update\-Cfop} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cfop, }
+\item[{{\bf \-Cfop} $\ast$}]{cfop\-Obj}
+\end{DoxyParamCaption}
+)}}\label{class_cfop_controller_a2cefd7e14f875750bb7beff692dbba9b}
+\-Beforing updating a cfop, this method checks if there is a cfop with that cfop, and if its cfop has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em cfop} & \-The cfop whose object will be updated. \\
+\hline
+{\em cfop\-Obj} & \-The \hyperlink{class_cfop}{\-Cfop} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cfop_controller_a81aa684f3893d57770c80a4b69e9a8bb}{add\-Cfop()}, \hyperlink{class_cfop_controller_ad8ee3d4f9144dea569f2c008e975a4a8}{remove\-Cfop()}, \hyperlink{class_cfop_controller_a77a53797c307bc1ccc7fb280fd519970}{get\-Cfop\-By\-Cfop()}, \hyperlink{class_cfop_controller_a6979e257fc570c0dc4919ca0880883af}{get\-Cfops()} and \hyperlink{class_cfop_controller_a4cb8ac7330a0063b5df99410088d7fb6}{import\-Cfop()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 46 of file cfopcontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cfopcontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cfopcontroller.\-cpp\end{DoxyCompactItemize}

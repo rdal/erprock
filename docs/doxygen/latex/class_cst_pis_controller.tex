@@ -1,0 +1,191 @@
+\hypertarget{class_cst_pis_controller}{\section{\-Cst\-Pis\-Controller \-Class \-Reference}
+\label{class_cst_pis_controller}\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}}
+}
+
+
+\-Controller for product origins.  
+
+
+
+
+{\ttfamily \#include $<$cstpiscontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cst_pis_controller_a5eed6c26bce7dd54b213bd6085e71b40}{\-Cst\-Pis\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cst_pis_controller_ac96d6599ee664fea0264542d989b112d}{$\sim$\-Cst\-Pis\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{add\-Cst\-Pis} (\hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$cst\-Pis)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{update\-Cst\-Pis} (\-Q\-String code, \hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$cst\-Pis)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{remove\-Cst\-Pis} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$ \hyperlink{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{get\-Cst\-Pis\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$ $>$ $\ast$ \hyperlink{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{get\-Cst\-Piss} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for product origins. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product origins management. 
+
+\-Definition at line 14 of file cstpiscontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cst_pis_controller_a5eed6c26bce7dd54b213bd6085e71b40}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}}
+\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{\-Cst\-Pis\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Pis\-Controller\-::\-Cst\-Pis\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_cst_pis_controller_a5eed6c26bce7dd54b213bd6085e71b40}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_cst_pis_controller}{\-Cst\-Pis\-Controller}. 
+
+\-Definition at line 3 of file cstpiscontroller.\-cpp.
+
+\hypertarget{class_cst_pis_controller_ac96d6599ee664fea0264542d989b112d}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!$\sim$\-Cst\-Pis\-Controller@{$\sim$\-Cst\-Pis\-Controller}}
+\index{$\sim$\-Cst\-Pis\-Controller@{$\sim$\-Cst\-Pis\-Controller}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{$\sim$\-Cst\-Pis\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Pis\-Controller\-::$\sim$\-Cst\-Pis\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_ac96d6599ee664fea0264542d989b112d}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file cstpiscontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!add\-Cst\-Pis@{add\-Cst\-Pis}}
+\index{add\-Cst\-Pis@{add\-Cst\-Pis}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{add\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Pis\-Controller\-::add\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Pis} $\ast$}]{cst\-Pis}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}
+\-Beforing adding a product origin, this method checks if there is already a product origins with that code and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Pis} & \-The \hyperlink{class_cst_pis}{\-Cst\-Pis} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{update\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{remove\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file cstpiscontroller.\-cpp.
+
+\hypertarget{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!get\-Cst\-Pis\-By\-Code@{get\-Cst\-Pis\-By\-Code}}
+\index{get\-Cst\-Pis\-By\-Code@{get\-Cst\-Pis\-By\-Code}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{get\-Cst\-Pis\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Pis} $\ast$ {\bf \-Cst\-Pis\-Controller\-::get\-Cst\-Pis\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}
+\-Get an product origin by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_cst_pis}{\-Cst\-Pis} code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product origin object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{add\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{update\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{remove\-Cst\-Pis()} and \hyperlink{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file cstpiscontroller.\-cpp.
+
+\hypertarget{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!get\-Cst\-Piss@{get\-Cst\-Piss}}
+\index{get\-Cst\-Piss@{get\-Cst\-Piss}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{get\-Cst\-Piss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Pis} $\ast$ $>$ $\ast$ {\bf \-Cst\-Pis\-Controller\-::get\-Cst\-Piss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}
+\-This method returns all the product origins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product origins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{add\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{update\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{remove\-Cst\-Pis()} and \hyperlink{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{get\-Cst\-Pis\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file cstpiscontroller.\-cpp.
+
+\hypertarget{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!remove\-Cst\-Pis@{remove\-Cst\-Pis}}
+\index{remove\-Cst\-Pis@{remove\-Cst\-Pis}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{remove\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Pis\-Controller\-::remove\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}
+\-Beforing removing an product origin, this method checks if there is a product origin with that code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{add\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{update\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file cstpiscontroller.\-cpp.
+
+\hypertarget{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}{\index{\-Cst\-Pis\-Controller@{\-Cst\-Pis\-Controller}!update\-Cst\-Pis@{update\-Cst\-Pis}}
+\index{update\-Cst\-Pis@{update\-Cst\-Pis}!CstPisController@{\-Cst\-Pis\-Controller}}
+\subsubsection[{update\-Cst\-Pis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Pis\-Controller\-::update\-Cst\-Pis} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Pis} $\ast$}]{cst\-Pis}
+\end{DoxyParamCaption}
+)}}\label{class_cst_pis_controller_afdf6e05c0ed6b4ec96f906f3cb9c2a17}
+\-Beforing updating a product origin, this method checks if there is a product origin with that code, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose product origin will be updated. \\
+\hline
+{\em cst\-Pis} & \-The \hyperlink{class_cst_pis}{\-Cst\-Pis} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_pis_controller_a68542595e6de577f92e2834d90314893}{add\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_a855d066f6f9591780191dc246bab9800}{remove\-Cst\-Pis()}, \hyperlink{class_cst_pis_controller_affbb931c6504a681e4bcc250fb276451}{get\-Cst\-Pis\-By\-Code()} and \hyperlink{class_cst_pis_controller_a5565589529f28310cacff31edb85dc95}{get\-Cst\-Piss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file cstpiscontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstpiscontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstpiscontroller.\-cpp\end{DoxyCompactItemize}

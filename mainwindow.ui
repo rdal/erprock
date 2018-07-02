@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ERPRock</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>794</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionManage_Users"/>
+    <addaction name="actionStores"/>
+   </widget>
+   <widget class="QMenu" name="menuStock">
+    <property name="title">
+     <string>Stock</string>
+    </property>
+    <widget class="QMenu" name="menuProducts_Records">
+     <property name="title">
+      <string>Products Records</string>
+     </property>
+     <addaction name="actionProducts"/>
+     <addaction name="actionProduct_Categories"/>
+     <addaction name="actionStock_Units"/>
+     <addaction name="actionProductOrigin"/>
+    </widget>
+    <addaction name="actionManufacturers"/>
+    <addaction name="actionProviders"/>
+    <addaction name="menuProducts_Records"/>
+   </widget>
+   <widget class="QMenu" name="menuCustomers">
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionManage_Customers"/>
+   </widget>
+   <widget class="QMenu" name="menuTax">
+    <property name="title">
+     <string>Tax</string>
+    </property>
+    <widget class="QMenu" name="menuCST">
+     <property name="title">
+      <string>CST</string>
+     </property>
+     <addaction name="actionCST_ICMS"/>
+     <addaction name="actionCST_IPI"/>
+     <addaction name="actionCST_PIS"/>
+     <addaction name="actionCST_COFINS"/>
+    </widget>
+    <addaction name="menuCST"/>
+    <addaction name="actionTax_Rates"/>
+    <addaction name="actionCFOP"/>
+    <addaction name="actionAccounts"/>
+    <addaction name="separator"/>
+    <addaction name="actionHistories"/>
+    <addaction name="actionEntries"/>
+   </widget>
+   <widget class="QMenu" name="menuSales">
+    <property name="title">
+     <string>Sales</string>
+    </property>
+    <addaction name="actionPrices"/>
+    <addaction name="actionSales_Orders"/>
+    <addaction name="actionPurchase_Orders"/>
+   </widget>
+   <addaction name="menuSystem"/>
+   <addaction name="menuStock"/>
+   <addaction name="menuCustomers"/>
+   <addaction name="menuTax"/>
+   <addaction name="menuSales"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionManage_Users">
+   <property name="text">
+    <string>Manage Users</string>
+   </property>
+  </action>
+  <action name="actionManufacturers">
+   <property name="text">
+    <string>Manufacturers</string>
+   </property>
+  </action>
+  <action name="actionProviders">
+   <property name="text">
+    <string>Providers</string>
+   </property>
+  </action>
+  <action name="actionProduct_Categories">
+   <property name="text">
+    <string>Product Categories</string>
+   </property>
+  </action>
+  <action name="actionProducts">
+   <property name="text">
+    <string>Products</string>
+   </property>
+  </action>
+  <action name="actionManage_Customers">
+   <property name="text">
+    <string>Manage Customers</string>
+   </property>
+  </action>
+  <action name="actionStock_Units">
+   <property name="text">
+    <string>Stock Units</string>
+   </property>
+  </action>
+  <action name="actionProductOrigin">
+   <property name="text">
+    <string>Product Origin</string>
+   </property>
+  </action>
+  <action name="actionCST_ICMS">
+   <property name="text">
+    <string>ICMS</string>
+   </property>
+  </action>
+  <action name="actionCST_IPI">
+   <property name="text">
+    <string>IPI</string>
+   </property>
+  </action>
+  <action name="actionCST_PIS">
+   <property name="text">
+    <string>PIS</string>
+   </property>
+  </action>
+  <action name="actionCST_COFINS">
+   <property name="text">
+    <string>COFINS</string>
+   </property>
+  </action>
+  <action name="actionTax_Rates">
+   <property name="text">
+    <string>Tax Rates</string>
+   </property>
+  </action>
+  <action name="actionCFOP">
+   <property name="text">
+    <string>CFOP</string>
+   </property>
+  </action>
+  <action name="actionPrices">
+   <property name="text">
+    <string>Prices</string>
+   </property>
+  </action>
+  <action name="actionStores">
+   <property name="text">
+    <string>Stores</string>
+   </property>
+  </action>
+  <action name="actionSales_Orders">
+   <property name="text">
+    <string>Sales Orders</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Orders">
+   <property name="text">
+    <string>Purchase Orders</string>
+   </property>
+  </action>
+  <action name="actionAccounts">
+   <property name="text">
+    <string>Accounts</string>
+   </property>
+  </action>
+  <action name="actionHistories">
+   <property name="text">
+    <string>Histories</string>
+   </property>
+  </action>
+  <action name="actionEntries">
+   <property name="text">
+    <string>Entries</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

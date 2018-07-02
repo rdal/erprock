@@ -1,0 +1,260 @@
+\hypertarget{class_price_controller}{\section{\-Price\-Controller \-Class \-Reference}
+\label{class_price_controller}\index{\-Price\-Controller@{\-Price\-Controller}}
+}
+
+
+\-Controller for prices.  
+
+
+
+
+{\ttfamily \#include $<$pricecontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_price_controller_ac9bff9c2819caa9807ace53df246945a}{\-Price\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_price_controller_a17ea12d878761fee0b0ecd74ed8b8e4c}{$\sim$\-Price\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price} (\hyperlink{class_price}{\-Price} $\ast$price)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price} (\hyperlink{class_price}{\-Price} $\ast$price)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price} (int id)
+\item 
+\hyperlink{class_price}{\-Price} $\ast$ \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id} (int id)
+\item 
+\hyperlink{class_price}{\-Price} $\ast$ \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name} (\-Q\-String name)
+\item 
+\-Q\-List$<$ \hyperlink{class_price}{\-Price} $\ast$ $>$ $\ast$ \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices} ()
+\item 
+\-Q\-String \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name} (\-Q\-String product\-Code)
+\item 
+\-Q\-String \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name} (\-Q\-String store\-Cnpj)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for prices. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for prices management. 
+
+\-Definition at line 14 of file pricecontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_price_controller_ac9bff9c2819caa9807ace53df246945a}{\index{\-Price\-Controller@{\-Price\-Controller}!\-Price\-Controller@{\-Price\-Controller}}
+\index{\-Price\-Controller@{\-Price\-Controller}!PriceController@{\-Price\-Controller}}
+\subsubsection[{\-Price\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price\-Controller\-::\-Price\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_price_controller_ac9bff9c2819caa9807ace53df246945a}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_price_controller}{\-Price\-Controller}. 
+
+\-Definition at line 5 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a17ea12d878761fee0b0ecd74ed8b8e4c}{\index{\-Price\-Controller@{\-Price\-Controller}!$\sim$\-Price\-Controller@{$\sim$\-Price\-Controller}}
+\index{$\sim$\-Price\-Controller@{$\sim$\-Price\-Controller}!PriceController@{\-Price\-Controller}}
+\subsubsection[{$\sim$\-Price\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price\-Controller\-::$\sim$\-Price\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a17ea12d878761fee0b0ecd74ed8b8e4c}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 11 of file pricecontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{\index{\-Price\-Controller@{\-Price\-Controller}!add\-Price@{add\-Price}}
+\index{add\-Price@{add\-Price}!PriceController@{\-Price\-Controller}}
+\subsubsection[{add\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Price\-Controller\-::add\-Price} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}
+\-Beforing adding a price, this method checks if there is already a price with that name, if his name has less than 50 characters, etc. 
+\begin{DoxyParams}{\-Parameters}
+{\em price} & \-The \hyperlink{class_price}{\-Price} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 15 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{\index{\-Price\-Controller@{\-Price\-Controller}!get\-Price\-By\-Id@{get\-Price\-By\-Id}}
+\index{get\-Price\-By\-Id@{get\-Price\-By\-Id}!PriceController@{\-Price\-Controller}}
+\subsubsection[{get\-Price\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price} $\ast$ {\bf \-Price\-Controller\-::get\-Price\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}
+\-Get a price by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The \hyperlink{class_price}{\-Price}'s id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the price object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 94 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_af589ffa16c349a48298373a11c412cb1}{\index{\-Price\-Controller@{\-Price\-Controller}!get\-Price\-By\-Name@{get\-Price\-By\-Name}}
+\index{get\-Price\-By\-Name@{get\-Price\-By\-Name}!PriceController@{\-Price\-Controller}}
+\subsubsection[{get\-Price\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Price} $\ast$ {\bf \-Price\-Controller\-::get\-Price\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_af589ffa16c349a48298373a11c412cb1}
+\-Get a price by its name. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The \hyperlink{class_price}{\-Price}'s name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the price object associated with the given name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 104 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{\index{\-Price\-Controller@{\-Price\-Controller}!get\-Prices@{get\-Prices}}
+\index{get\-Prices@{get\-Prices}!PriceController@{\-Price\-Controller}}
+\subsubsection[{get\-Prices}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Price} $\ast$ $>$ $\ast$ {\bf \-Price\-Controller\-::get\-Prices} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}
+\-This method returns all the prices that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored prices. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 114 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{\index{\-Price\-Controller@{\-Price\-Controller}!get\-Product\-Name@{get\-Product\-Name}}
+\index{get\-Product\-Name@{get\-Product\-Name}!PriceController@{\-Price\-Controller}}
+\subsubsection[{get\-Product\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Price\-Controller\-::get\-Product\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{product\-Code}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}
+\-This method returns the product's name by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Code} & \-The \hyperlink{class_product}{\-Product}'s code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 125 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{\index{\-Price\-Controller@{\-Price\-Controller}!get\-Store\-Name@{get\-Store\-Name}}
+\index{get\-Store\-Name@{get\-Store\-Name}!PriceController@{\-Price\-Controller}}
+\subsubsection[{get\-Store\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Price\-Controller\-::get\-Store\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{store\-Cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}
+\-This method returns the store's name by its cnpj. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_store}{\-Store}'s cnpj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \hyperlink{class_store}{\-Store} name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()} and \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 135 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{\index{\-Price\-Controller@{\-Price\-Controller}!remove\-Price@{remove\-Price}}
+\index{remove\-Price@{remove\-Price}!PriceController@{\-Price\-Controller}}
+\subsubsection[{remove\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Price\-Controller\-::remove\-Price} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}
+\-Remove a price by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The id whose price will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{update\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 75 of file pricecontroller.\-cpp.
+
+\hypertarget{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}{\index{\-Price\-Controller@{\-Price\-Controller}!update\-Price@{update\-Price}}
+\index{update\-Price@{update\-Price}!PriceController@{\-Price\-Controller}}
+\subsubsection[{update\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Price\-Controller\-::update\-Price} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_price_controller_a65a61ee1bc1dac8c1d47f0015bbde0ef}
+\-Beforing updating a price, this method checks if there is a price with that name, and if his name has less than 50 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em price} & \-The \hyperlink{class_price}{\-Price} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_price_controller_a946a37f3bd5373b02f925197b2834ad4}{add\-Price()}, \hyperlink{class_price_controller_a279fe26e40b8fcce29e71a7b7df59f18}{remove\-Price()}, \hyperlink{class_price_controller_a1fba0279ddf07d61a8189f628e90c2a9}{get\-Price\-By\-Id()}, \hyperlink{class_price_controller_af589ffa16c349a48298373a11c412cb1}{get\-Price\-By\-Name()}, \hyperlink{class_price_controller_a9536701f40121f7e4e7193abf5493fa9}{get\-Prices()}, \hyperlink{class_price_controller_a5fd7025bc7d1e64dc106dcb6631e237d}{get\-Product\-Name()} and \hyperlink{class_price_controller_ad153ccec9544c787d5d25ed135f12e81}{get\-Store\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 48 of file pricecontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/pricecontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/pricecontroller.\-cpp\end{DoxyCompactItemize}

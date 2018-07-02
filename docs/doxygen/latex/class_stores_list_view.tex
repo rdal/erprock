@@ -1,0 +1,164 @@
+\hypertarget{class_stores_list_view}{\section{\-Stores\-List\-View \-Class \-Reference}
+\label{class_stores_list_view}\index{\-Stores\-List\-View@{\-Stores\-List\-View}}
+}
+
+
+\-View for listing stores.  
+
+
+
+
+{\ttfamily \#include $<$storeslistview.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_stores_list_view_a43315e53458b6cb842265c62207e0647}{on\-Add\-New\-Store} ()
+\begin{DoxyCompactList}\small\item\em \-Add new store. \end{DoxyCompactList}\item 
+void \hyperlink{class_stores_list_view_a4930432ffb43bfdbe33530d74f8c0427}{on\-Edit\-Store} ()
+\begin{DoxyCompactList}\small\item\em \-Edit store. \end{DoxyCompactList}\item 
+void \hyperlink{class_stores_list_view_abd6f8c1633e80411cf7dc1f6b718f4f2}{on\-Remove\-Store} ()
+\begin{DoxyCompactList}\small\item\em \-Remove store. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stores_list_view_ac14227c03b1185bd174edcd4d2551c4c}{\-Stores\-List\-View} (\-Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_stores_list_view_ac8a0eb0eb9eb08cf6ffef202a11f03f6}{$\sim$\-Stores\-List\-View} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_stores_list_view_a34e59bf2c028f2e1180056aed411c851}{set\-Parent\-Main\-Window} (\hyperlink{class_i_main_window}{\-I\-Main\-Window} $\ast$parent\-Main\-Window)
+\item 
+void \hyperlink{class_stores_list_view_afabc011bb0c5af45611f8f97e0b8dd63}{list\-Stores} ()
+\begin{DoxyCompactList}\small\item\em \-List all stores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-View for listing stores. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for listing stores. 
+
+\-Definition at line 18 of file storeslistview.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_stores_list_view_ac14227c03b1185bd174edcd4d2551c4c}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!\-Stores\-List\-View@{\-Stores\-List\-View}}
+\index{\-Stores\-List\-View@{\-Stores\-List\-View}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{\-Stores\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stores\-List\-View\-::\-Stores\-List\-View} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_stores_list_view_ac14227c03b1185bd174edcd4d2551c4c}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_stores_list_view}{\-Stores\-List\-View}. 
+
+\-Definition at line 5 of file storeslistview.\-cpp.
+
+\hypertarget{class_stores_list_view_ac8a0eb0eb9eb08cf6ffef202a11f03f6}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!$\sim$\-Stores\-List\-View@{$\sim$\-Stores\-List\-View}}
+\index{$\sim$\-Stores\-List\-View@{$\sim$\-Stores\-List\-View}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{$\sim$\-Stores\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stores\-List\-View\-::$\sim$\-Stores\-List\-View} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stores_list_view_ac8a0eb0eb9eb08cf6ffef202a11f03f6}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 19 of file storeslistview.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_stores_list_view_afabc011bb0c5af45611f8f97e0b8dd63}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!list\-Stores@{list\-Stores}}
+\index{list\-Stores@{list\-Stores}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{list\-Stores}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stores\-List\-View\-::list\-Stores} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stores_list_view_afabc011bb0c5af45611f8f97e0b8dd63}
+
+
+\-List all stores. 
+
+\-This method retrieves all stores from database, and show them in a grid. 
+
+\-Definition at line 31 of file storeslistview.\-cpp.
+
+\hypertarget{class_stores_list_view_a43315e53458b6cb842265c62207e0647}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!on\-Add\-New\-Store@{on\-Add\-New\-Store}}
+\index{on\-Add\-New\-Store@{on\-Add\-New\-Store}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{on\-Add\-New\-Store}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stores\-List\-View\-::on\-Add\-New\-Store} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stores_list_view_a43315e53458b6cb842265c62207e0647}
+
+
+\-Add new store. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Add new store\char`\"{} button. 
+
+\-Definition at line 140 of file storeslistview.\-cpp.
+
+\hypertarget{class_stores_list_view_a4930432ffb43bfdbe33530d74f8c0427}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!on\-Edit\-Store@{on\-Edit\-Store}}
+\index{on\-Edit\-Store@{on\-Edit\-Store}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{on\-Edit\-Store}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stores\-List\-View\-::on\-Edit\-Store} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stores_list_view_a4930432ffb43bfdbe33530d74f8c0427}
+
+
+\-Edit store. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Edit store\char`\"{} button. 
+
+\-Definition at line 145 of file storeslistview.\-cpp.
+
+\hypertarget{class_stores_list_view_abd6f8c1633e80411cf7dc1f6b718f4f2}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!on\-Remove\-Store@{on\-Remove\-Store}}
+\index{on\-Remove\-Store@{on\-Remove\-Store}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{on\-Remove\-Store}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stores\-List\-View\-::on\-Remove\-Store} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stores_list_view_abd6f8c1633e80411cf7dc1f6b718f4f2}
+
+
+\-Remove store. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Remove store\char`\"{} button. 
+
+\-Definition at line 153 of file storeslistview.\-cpp.
+
+\hypertarget{class_stores_list_view_a34e59bf2c028f2e1180056aed411c851}{\index{\-Stores\-List\-View@{\-Stores\-List\-View}!set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}}
+\index{set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}!StoresListView@{\-Stores\-List\-View}}
+\subsubsection[{set\-Parent\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stores\-List\-View\-::set\-Parent\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Main\-Window} $\ast$}]{parent\-Main\-Window}
+\end{DoxyParamCaption}
+)}}\label{class_stores_list_view_a34e59bf2c028f2e1180056aed411c851}
+\-Set parent \hyperlink{class_main_window}{\-Main\-Window}. \-When a dialog is opened, it may be necessary to do some actions at the window who called it. \-Actions like refreshing a list of users or setting the current user logged in, when this dialog is about to close.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em parent\-Main\-Window} & \-Parent \hyperlink{class_main_window}{\-Main\-Window} \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 26 of file storeslistview.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/storeslistview.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/storeslistview.\-cpp\end{DoxyCompactItemize}

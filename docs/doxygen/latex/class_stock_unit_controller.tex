@@ -1,0 +1,188 @@
+\hypertarget{class_stock_unit_controller}{\section{\-Stock\-Unit\-Controller \-Class \-Reference}
+\label{class_stock_unit_controller}\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}}
+}
+
+
+\-Controller for stock units.  
+
+
+
+
+{\ttfamily \#include $<$stockunitcontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stock_unit_controller_aeabfe324acdb8bce667e99862f2ac491}{\-Stock\-Unit\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_stock_unit_controller_aff0ac3b777e48da87d993c6d5287c4b5}{$\sim$\-Stock\-Unit\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{add\-Stock\-Unit} (\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$stock\-Unit)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{update\-Stock\-Unit} (\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$stock\-Unit)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{remove\-Stock\-Unit} (int id)
+\item 
+\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$ \hyperlink{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{get\-Stock\-Unit\-By\-Id} (int id)
+\item 
+\-Q\-List$<$ \hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$ $>$ $\ast$ \hyperlink{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{get\-Stock\-Units} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for stock units. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product stock units. 
+
+\-Definition at line 14 of file stockunitcontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_stock_unit_controller_aeabfe324acdb8bce667e99862f2ac491}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}}
+\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{\-Stock\-Unit\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Unit\-Controller\-::\-Stock\-Unit\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_stock_unit_controller_aeabfe324acdb8bce667e99862f2ac491}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_stock_unit_controller}{\-Stock\-Unit\-Controller}. 
+
+\-Definition at line 3 of file stockunitcontroller.\-cpp.
+
+\hypertarget{class_stock_unit_controller_aff0ac3b777e48da87d993c6d5287c4b5}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!$\sim$\-Stock\-Unit\-Controller@{$\sim$\-Stock\-Unit\-Controller}}
+\index{$\sim$\-Stock\-Unit\-Controller@{$\sim$\-Stock\-Unit\-Controller}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{$\sim$\-Stock\-Unit\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Unit\-Controller\-::$\sim$\-Stock\-Unit\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_aff0ac3b777e48da87d993c6d5287c4b5}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file stockunitcontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!add\-Stock\-Unit@{add\-Stock\-Unit}}
+\index{add\-Stock\-Unit@{add\-Stock\-Unit}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{add\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Stock\-Unit\-Controller\-::add\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Stock\-Unit} $\ast$}]{stock\-Unit}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}
+\-Beforing adding a stock unit, this method checks if there is already a stock unit with that id and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em stock\-Unit} & \-The \hyperlink{class_stock_unit}{\-Stock\-Unit} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{update\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{remove\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file stockunitcontroller.\-cpp.
+
+\hypertarget{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!get\-Stock\-Unit\-By\-Id@{get\-Stock\-Unit\-By\-Id}}
+\index{get\-Stock\-Unit\-By\-Id@{get\-Stock\-Unit\-By\-Id}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{get\-Stock\-Unit\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Unit} $\ast$ {\bf \-Stock\-Unit\-Controller\-::get\-Stock\-Unit\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}
+\-Get an stock unit by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The \hyperlink{class_stock_unit}{\-Stock\-Unit} id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the stock unit object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{add\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{update\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{remove\-Stock\-Unit()} and \hyperlink{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file stockunitcontroller.\-cpp.
+
+\hypertarget{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!get\-Stock\-Units@{get\-Stock\-Units}}
+\index{get\-Stock\-Units@{get\-Stock\-Units}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{get\-Stock\-Units}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Stock\-Unit} $\ast$ $>$ $\ast$ {\bf \-Stock\-Unit\-Controller\-::get\-Stock\-Units} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}
+\-This method returns all the stock units that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored stock units. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{add\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{update\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{remove\-Stock\-Unit()} and \hyperlink{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{get\-Stock\-Unit\-By\-Id()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file stockunitcontroller.\-cpp.
+
+\hypertarget{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!remove\-Stock\-Unit@{remove\-Stock\-Unit}}
+\index{remove\-Stock\-Unit@{remove\-Stock\-Unit}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{remove\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Stock\-Unit\-Controller\-::remove\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}
+\-Beforing removing an stock unit, this method checks if there is a stock unit with that id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The id whose stock unit will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{add\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{update\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file stockunitcontroller.\-cpp.
+
+\hypertarget{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}{\index{\-Stock\-Unit\-Controller@{\-Stock\-Unit\-Controller}!update\-Stock\-Unit@{update\-Stock\-Unit}}
+\index{update\-Stock\-Unit@{update\-Stock\-Unit}!StockUnitController@{\-Stock\-Unit\-Controller}}
+\subsubsection[{update\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Stock\-Unit\-Controller\-::update\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Stock\-Unit} $\ast$}]{stock\-Unit}
+\end{DoxyParamCaption}
+)}}\label{class_stock_unit_controller_a5753ef4120d7fbd16e5fa28ffc74b123}
+\-Beforing updating a stock unit, this method checks if there is a stock unit with that id, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em stock\-Unit} & \-The \hyperlink{class_stock_unit}{\-Stock\-Unit} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_stock_unit_controller_ac75b259718609efe6f077bf2233cc4a6}{add\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_ae68a7652e3d55532342e0847a441a64f}{remove\-Stock\-Unit()}, \hyperlink{class_stock_unit_controller_a249fe2cffae702675436a9ae02413018}{get\-Stock\-Unit\-By\-Id()} and \hyperlink{class_stock_unit_controller_a02c4920ecb6dcda170754b8654516175}{get\-Stock\-Units()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file stockunitcontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/stockunitcontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/stockunitcontroller.\-cpp\end{DoxyCompactItemize}

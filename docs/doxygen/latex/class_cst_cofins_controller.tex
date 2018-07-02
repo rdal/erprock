@@ -1,0 +1,191 @@
+\hypertarget{class_cst_cofins_controller}{\section{\-Cst\-Cofins\-Controller \-Class \-Reference}
+\label{class_cst_cofins_controller}\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}}
+}
+
+
+\-Controller for cofins.  
+
+
+
+
+{\ttfamily \#include $<$cstcofinscontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cst_cofins_controller_a723c892bdc77679d755b037aad04ee66}{\-Cst\-Cofins\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cst_cofins_controller_a2a1133d63528c3ab71f2ce653ba8aa07}{$\sim$\-Cst\-Cofins\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{add\-Cst\-Cofins} (\hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$cst\-Cofins)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{update\-Cst\-Cofins} (\-Q\-String code, \hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$cst\-Cofins)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{remove\-Cst\-Cofins} (\-Q\-String code)
+\item 
+\hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$ \hyperlink{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{get\-Cst\-Cofins\-By\-Code} (\-Q\-String code)
+\item 
+\-Q\-List$<$ \hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$ $>$ $\ast$ \hyperlink{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{get\-Cst\-Cofinss} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for cofins. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for cofins management. 
+
+\-Definition at line 15 of file cstcofinscontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cst_cofins_controller_a723c892bdc77679d755b037aad04ee66}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}}
+\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{\-Cst\-Cofins\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Cofins\-Controller\-::\-Cst\-Cofins\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_cst_cofins_controller_a723c892bdc77679d755b037aad04ee66}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_cst_cofins_controller}{\-Cst\-Cofins\-Controller}. 
+
+\-Definition at line 3 of file cstcofinscontroller.\-cpp.
+
+\hypertarget{class_cst_cofins_controller_a2a1133d63528c3ab71f2ce653ba8aa07}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!$\sim$\-Cst\-Cofins\-Controller@{$\sim$\-Cst\-Cofins\-Controller}}
+\index{$\sim$\-Cst\-Cofins\-Controller@{$\sim$\-Cst\-Cofins\-Controller}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{$\sim$\-Cst\-Cofins\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Cofins\-Controller\-::$\sim$\-Cst\-Cofins\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_a2a1133d63528c3ab71f2ce653ba8aa07}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file cstcofinscontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!add\-Cst\-Cofins@{add\-Cst\-Cofins}}
+\index{add\-Cst\-Cofins@{add\-Cst\-Cofins}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{add\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Cofins\-Controller\-::add\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Cofins} $\ast$}]{cst\-Cofins}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}
+\-Beforing adding a cofins, this method checks if there is already a cofins with that code and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em cst\-Cofins} & \-The \hyperlink{class_cst_cofins}{\-Cst\-Cofins} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{update\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{remove\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file cstcofinscontroller.\-cpp.
+
+\hypertarget{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!get\-Cst\-Cofins\-By\-Code@{get\-Cst\-Cofins\-By\-Code}}
+\index{get\-Cst\-Cofins\-By\-Code@{get\-Cst\-Cofins\-By\-Code}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{get\-Cst\-Cofins\-By\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cst\-Cofins} $\ast$ {\bf \-Cst\-Cofins\-Controller\-::get\-Cst\-Cofins\-By\-Code} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}
+\-Get an cofins by its code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The \hyperlink{class_cst_cofins}{\-Cst\-Cofins} code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the cofins object associated with the given code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{add\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{update\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{remove\-Cst\-Cofins()} and \hyperlink{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file cstcofinscontroller.\-cpp.
+
+\hypertarget{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!get\-Cst\-Cofinss@{get\-Cst\-Cofinss}}
+\index{get\-Cst\-Cofinss@{get\-Cst\-Cofinss}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{get\-Cst\-Cofinss}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Cst\-Cofins} $\ast$ $>$ $\ast$ {\bf \-Cst\-Cofins\-Controller\-::get\-Cst\-Cofinss} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}
+\-This method returns all the cofins that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored cofins. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{add\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{update\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{remove\-Cst\-Cofins()} and \hyperlink{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{get\-Cst\-Cofins\-By\-Code()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file cstcofinscontroller.\-cpp.
+
+\hypertarget{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!remove\-Cst\-Cofins@{remove\-Cst\-Cofins}}
+\index{remove\-Cst\-Cofins@{remove\-Cst\-Cofins}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{remove\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Cofins\-Controller\-::remove\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}
+\-Beforing removing an cofins, this method checks if there is a cofins with that code. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cofins will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{add\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{update\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file cstcofinscontroller.\-cpp.
+
+\hypertarget{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}{\index{\-Cst\-Cofins\-Controller@{\-Cst\-Cofins\-Controller}!update\-Cst\-Cofins@{update\-Cst\-Cofins}}
+\index{update\-Cst\-Cofins@{update\-Cst\-Cofins}!CstCofinsController@{\-Cst\-Cofins\-Controller}}
+\subsubsection[{update\-Cst\-Cofins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Cst\-Cofins\-Controller\-::update\-Cst\-Cofins} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{code, }
+\item[{{\bf \-Cst\-Cofins} $\ast$}]{cst\-Cofins}
+\end{DoxyParamCaption}
+)}}\label{class_cst_cofins_controller_a91b905a71d0f108b6467efabc9f44f4c}
+\-Beforing updating a cofins, this method checks if there is a cofins with that code, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em code} & \-The code whose cofins will be updated. \\
+\hline
+{\em cst\-Cofins} & \-The \hyperlink{class_cst_cofins}{\-Cst\-Cofins} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_cst_cofins_controller_acbde8690ef336c4661bb8e360b6da4e9}{add\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_a906449ac2f9d572134de8393d75450fe}{remove\-Cst\-Cofins()}, \hyperlink{class_cst_cofins_controller_ad1aa8fc8029e78ef875abd0c472008fd}{get\-Cst\-Cofins\-By\-Code()} and \hyperlink{class_cst_cofins_controller_adec50ea27f35ed333518c91cd06f7cce}{get\-Cst\-Cofinss()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file cstcofinscontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstcofinscontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/cstcofinscontroller.\-cpp\end{DoxyCompactItemize}

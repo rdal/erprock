@@ -1,0 +1,188 @@
+\hypertarget{class_product_category_controller}{\section{\-Product\-Category\-Controller \-Class \-Reference}
+\label{class_product_category_controller}\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}}
+}
+
+
+\-Controller for product categories.  
+
+
+
+
+{\ttfamily \#include $<$productcategorycontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_product_category_controller_a60bcf6b0989cd8efb928af1a1e084f33}{\-Product\-Category\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_product_category_controller_a0d6abe70a300d43f70aba5b129bdfc97}{$\sim$\-Product\-Category\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{add\-Product\-Category} (\hyperlink{class_product_category}{\-Product\-Category} $\ast$product\-Category)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{update\-Product\-Category} (\hyperlink{class_product_category}{\-Product\-Category} $\ast$product\-Category)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{remove\-Product\-Category} (int id)
+\item 
+\hyperlink{class_product_category}{\-Product\-Category} $\ast$ \hyperlink{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{get\-Product\-Category\-By\-Id} (int id)
+\item 
+\-Q\-List$<$ \hyperlink{class_product_category}{\-Product\-Category} $\ast$ $>$ $\ast$ \hyperlink{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{get\-Product\-Categories} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for product categories. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product categories management. 
+
+\-Definition at line 14 of file productcategorycontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_product_category_controller_a60bcf6b0989cd8efb928af1a1e084f33}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!\-Product\-Category\-Controller@{\-Product\-Category\-Controller}}
+\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{\-Product\-Category\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Category\-Controller\-::\-Product\-Category\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_product_category_controller_a60bcf6b0989cd8efb928af1a1e084f33}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_product_category_controller}{\-Product\-Category\-Controller}. 
+
+\-Definition at line 3 of file productcategorycontroller.\-cpp.
+
+\hypertarget{class_product_category_controller_a0d6abe70a300d43f70aba5b129bdfc97}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!$\sim$\-Product\-Category\-Controller@{$\sim$\-Product\-Category\-Controller}}
+\index{$\sim$\-Product\-Category\-Controller@{$\sim$\-Product\-Category\-Controller}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{$\sim$\-Product\-Category\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Category\-Controller\-::$\sim$\-Product\-Category\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_a0d6abe70a300d43f70aba5b129bdfc97}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file productcategorycontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!add\-Product\-Category@{add\-Product\-Category}}
+\index{add\-Product\-Category@{add\-Product\-Category}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{add\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Category\-Controller\-::add\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Category} $\ast$}]{product\-Category}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}
+\-Beforing adding a product category, this method checks if there is already a product categories with that id and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Category} & \-The \hyperlink{class_product_category}{\-Product\-Category} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{update\-Product\-Category()}, \hyperlink{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{remove\-Product\-Category()}, \hyperlink{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 14 of file productcategorycontroller.\-cpp.
+
+\hypertarget{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!get\-Product\-Categories@{get\-Product\-Categories}}
+\index{get\-Product\-Categories@{get\-Product\-Categories}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{get\-Product\-Categories}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Product\-Category} $\ast$ $>$ $\ast$ {\bf \-Product\-Category\-Controller\-::get\-Product\-Categories} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}
+\-This method returns all the product categories that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored product categories. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{add\-Product\-Category()}, \hyperlink{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{update\-Product\-Category()}, \hyperlink{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{remove\-Product\-Category()} and \hyperlink{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{get\-Product\-Category\-By\-Id()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 90 of file productcategorycontroller.\-cpp.
+
+\hypertarget{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!get\-Product\-Category\-By\-Id@{get\-Product\-Category\-By\-Id}}
+\index{get\-Product\-Category\-By\-Id@{get\-Product\-Category\-By\-Id}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{get\-Product\-Category\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Product\-Category} $\ast$ {\bf \-Product\-Category\-Controller\-::get\-Product\-Category\-By\-Id} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}
+\-Get an product category by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The \hyperlink{class_product_category}{\-Product\-Category} id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the product category object associated with the given id. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{add\-Product\-Category()}, \hyperlink{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{update\-Product\-Category()}, \hyperlink{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{remove\-Product\-Category()} and \hyperlink{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 80 of file productcategorycontroller.\-cpp.
+
+\hypertarget{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!remove\-Product\-Category@{remove\-Product\-Category}}
+\index{remove\-Product\-Category@{remove\-Product\-Category}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{remove\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Category\-Controller\-::remove\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}
+\-Beforing removing an product category, this method checks if there is a product category with that id. 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-The id whose product category will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{add\-Product\-Category()}, \hyperlink{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{update\-Product\-Category()}, \hyperlink{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 61 of file productcategorycontroller.\-cpp.
+
+\hypertarget{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}{\index{\-Product\-Category\-Controller@{\-Product\-Category\-Controller}!update\-Product\-Category@{update\-Product\-Category}}
+\index{update\-Product\-Category@{update\-Product\-Category}!ProductCategoryController@{\-Product\-Category\-Controller}}
+\subsubsection[{update\-Product\-Category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Product\-Category\-Controller\-::update\-Product\-Category} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Category} $\ast$}]{product\-Category}
+\end{DoxyParamCaption}
+)}}\label{class_product_category_controller_a5e0cc2bae88f7974ee353878e5a89bce}
+\-Beforing updating a product category, this method checks if there is a product category with that id, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em product\-Category} & \-The \hyperlink{class_product_category}{\-Product\-Category} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_product_category_controller_aa785ea1c646e9f71ad60c59124b2f3da}{add\-Product\-Category()}, \hyperlink{class_product_category_controller_ab598ec7ed7e53f303edd1df412e209a9}{remove\-Product\-Category()}, \hyperlink{class_product_category_controller_ae9b08f8a3dac4fb138905a0f398d932d}{get\-Product\-Category\-By\-Id()} and \hyperlink{class_product_category_controller_a9f8c897fc045101568fdf4c882d97d13}{get\-Product\-Categories()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 42 of file productcategorycontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/productcategorycontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/productcategorycontroller.\-cpp\end{DoxyCompactItemize}

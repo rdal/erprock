@@ -1,0 +1,164 @@
+\hypertarget{class_stock_units_list_view}{\section{\-Stock\-Units\-List\-View \-Class \-Reference}
+\label{class_stock_units_list_view}\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}}
+}
+
+
+\-View for listing stock units.  
+
+
+
+
+{\ttfamily \#include $<$stockunitslistview.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_stock_units_list_view_a3743e4bd26d15095c06ee740a6527530}{on\-Add\-New\-Stock\-Unit} ()
+\begin{DoxyCompactList}\small\item\em \-Add new stock unit. \end{DoxyCompactList}\item 
+void \hyperlink{class_stock_units_list_view_af10d28e215b9e7025ece3d736dfb4a87}{on\-Edit\-Stock\-Unit} ()
+\begin{DoxyCompactList}\small\item\em \-Edit stock unit. \end{DoxyCompactList}\item 
+void \hyperlink{class_stock_units_list_view_a595ab5aa6359269e1548e246ac82ae93}{on\-Remove\-Stock\-Unit} ()
+\begin{DoxyCompactList}\small\item\em \-Remove stock unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stock_units_list_view_abca43c1937331efa121f0177a6547deb}{\-Stock\-Units\-List\-View} (\-Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_stock_units_list_view_abb8cd37c88ec8521b62f9ea96668da28}{$\sim$\-Stock\-Units\-List\-View} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_stock_units_list_view_a626f916b318a555f14bea85db50a7942}{set\-Parent\-Main\-Window} (\hyperlink{class_i_main_window}{\-I\-Main\-Window} $\ast$parent\-Main\-Window)
+\item 
+void \hyperlink{class_stock_units_list_view_a26a4b6bf03af4254e5887a6ab7138052}{list\-Stock\-Units} ()
+\begin{DoxyCompactList}\small\item\em \-List all providers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-View for listing stock units. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for listing stock units. 
+
+\-Definition at line 18 of file stockunitslistview.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_stock_units_list_view_abca43c1937331efa121f0177a6547deb}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}}
+\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{\-Stock\-Units\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Units\-List\-View\-::\-Stock\-Units\-List\-View} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_stock_units_list_view_abca43c1937331efa121f0177a6547deb}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_stock_units_list_view}{\-Stock\-Units\-List\-View}. 
+
+\-Definition at line 6 of file stockunitslistview.\-cpp.
+
+\hypertarget{class_stock_units_list_view_abb8cd37c88ec8521b62f9ea96668da28}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!$\sim$\-Stock\-Units\-List\-View@{$\sim$\-Stock\-Units\-List\-View}}
+\index{$\sim$\-Stock\-Units\-List\-View@{$\sim$\-Stock\-Units\-List\-View}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{$\sim$\-Stock\-Units\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stock\-Units\-List\-View\-::$\sim$\-Stock\-Units\-List\-View} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stock_units_list_view_abb8cd37c88ec8521b62f9ea96668da28}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 20 of file stockunitslistview.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_stock_units_list_view_a26a4b6bf03af4254e5887a6ab7138052}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!list\-Stock\-Units@{list\-Stock\-Units}}
+\index{list\-Stock\-Units@{list\-Stock\-Units}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{list\-Stock\-Units}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stock\-Units\-List\-View\-::list\-Stock\-Units} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stock_units_list_view_a26a4b6bf03af4254e5887a6ab7138052}
+
+
+\-List all providers. 
+
+\-This method retrieves all stock units from database, and show them in a grid. 
+
+\-Definition at line 32 of file stockunitslistview.\-cpp.
+
+\hypertarget{class_stock_units_list_view_a3743e4bd26d15095c06ee740a6527530}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!on\-Add\-New\-Stock\-Unit@{on\-Add\-New\-Stock\-Unit}}
+\index{on\-Add\-New\-Stock\-Unit@{on\-Add\-New\-Stock\-Unit}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{on\-Add\-New\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stock\-Units\-List\-View\-::on\-Add\-New\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stock_units_list_view_a3743e4bd26d15095c06ee740a6527530}
+
+
+\-Add new stock unit. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Add new stock unit\char`\"{} button. 
+
+\-Definition at line 63 of file stockunitslistview.\-cpp.
+
+\hypertarget{class_stock_units_list_view_af10d28e215b9e7025ece3d736dfb4a87}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!on\-Edit\-Stock\-Unit@{on\-Edit\-Stock\-Unit}}
+\index{on\-Edit\-Stock\-Unit@{on\-Edit\-Stock\-Unit}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{on\-Edit\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stock\-Units\-List\-View\-::on\-Edit\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stock_units_list_view_af10d28e215b9e7025ece3d736dfb4a87}
+
+
+\-Edit stock unit. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Edit stock unit\char`\"{} button. 
+
+\-Definition at line 68 of file stockunitslistview.\-cpp.
+
+\hypertarget{class_stock_units_list_view_a595ab5aa6359269e1548e246ac82ae93}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!on\-Remove\-Stock\-Unit@{on\-Remove\-Stock\-Unit}}
+\index{on\-Remove\-Stock\-Unit@{on\-Remove\-Stock\-Unit}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{on\-Remove\-Stock\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stock\-Units\-List\-View\-::on\-Remove\-Stock\-Unit} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_stock_units_list_view_a595ab5aa6359269e1548e246ac82ae93}
+
+
+\-Remove stock unit. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Remove stock unit\char`\"{} button. 
+
+\-Definition at line 76 of file stockunitslistview.\-cpp.
+
+\hypertarget{class_stock_units_list_view_a626f916b318a555f14bea85db50a7942}{\index{\-Stock\-Units\-List\-View@{\-Stock\-Units\-List\-View}!set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}}
+\index{set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}!StockUnitsListView@{\-Stock\-Units\-List\-View}}
+\subsubsection[{set\-Parent\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stock\-Units\-List\-View\-::set\-Parent\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Main\-Window} $\ast$}]{parent\-Main\-Window}
+\end{DoxyParamCaption}
+)}}\label{class_stock_units_list_view_a626f916b318a555f14bea85db50a7942}
+\-Set parent \hyperlink{class_main_window}{\-Main\-Window}. \-When a dialog is opened, it may be necessary to do some actions at the window who called it. \-Actions like refreshing a list of users or setting the current user logged in, when this dialog is about to close.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em parent\-Main\-Window} & \-Parent \hyperlink{class_main_window}{\-Main\-Window} \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 27 of file stockunitslistview.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/\-Stock/stockunitslistview.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/\-Stock/stockunitslistview.\-cpp\end{DoxyCompactItemize}

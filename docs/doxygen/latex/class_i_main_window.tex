@@ -1,0 +1,1738 @@
+\hypertarget{class_i_main_window}{\section{\-I\-Main\-Window \-Class \-Reference}
+\label{class_i_main_window}\index{\-I\-Main\-Window@{\-I\-Main\-Window}}
+}
+
+
+\-Main \-Window \-Interface.  
+
+
+
+
+{\ttfamily \#include $<$imainwindow.\-h$>$}
+
+\-Inheritance diagram for \-I\-Main\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_main_window}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{add\-Form\-Manage\-Users\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the user management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_abc38cea87c50d298c1d9dd39f507e580}{add\-Form\-Add\-User\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add an user, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ab097fceace495ca6bfe9eac1bb374e36}{remove\-Form\-Add\-User\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds an user, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a8496779b5688e62e6887e8fa9f236a30}{add\-Form\-Edit\-User\-To\-M\-D\-I} (\hyperlink{class_user}{\-User} $\ast$user)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit an user, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_afdebe819722a44e459fb6798ccb5cf1a}{remove\-Form\-Edit\-User\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits an user, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a611322565db0eb0985a025451a94c2fe}{set\-User} (\hyperlink{class_user}{\-User} $\ast$user)=0
+\begin{DoxyCompactList}\small\item\em \-Sets the user currently logged in. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the manufacturers management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ad8a7353d47d6aa02e9af2df0f60d7fbc}{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a manufacturer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a081759066758a7548d6325d7f7b0af4f}{remove\-Form\-Add\-Manufacturer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a manufacturer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aba30e79e3188e953b5499014fe29b680}{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I} (\hyperlink{class_manufacturer}{\-Manufacturer} $\ast$manufacturer)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a manufacturer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aeb76e51e5e11051cf64d7677242f525a}{remove\-Form\-Edit\-Manufacturer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a manufacturer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{add\-Form\-Manage\-Providers\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the providers management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_abdede6a729dd8826634ad88cd1bfab44}{add\-Form\-Add\-Provider\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a provider, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_addbff5d30645c13e3ede7ca872bc197e}{remove\-Form\-Add\-Provider\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a provider, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a9275b1a3b1cb7511ad4b80912eb2af6f}{add\-Form\-Edit\-Provider\-To\-M\-D\-I} (\hyperlink{class_provider}{\-Provider} $\ast$provider)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a provider, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ae4bc2b8e66c6c90efc9437bbe44ef7b7}{remove\-Form\-Edit\-Provider\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a provider, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the product categories management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a51da70cd0ebe5b880ee44749d5d1f6a5}{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a product category, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a6aa82966df6d492ae833b187f1ed0ccd}{remove\-Form\-Add\-Product\-Category\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a product category, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a84c9ff9eed87ba986f0fa478f6507b6b}{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I} (\hyperlink{class_product_category}{\-Product\-Category} $\ast$product\-Category)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a product category, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a1ecc8cf7cde5c24f8f1ac2285a3c68c8}{remove\-Form\-Edit\-Product\-Category\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a product category, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{add\-Form\-Manage\-Products\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the products management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a4490ff442e06a49c883a292fc4843c65}{add\-Form\-Add\-Product\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a product, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aaa0da58ffa9b7dab11f1847bca566ef8}{remove\-Form\-Add\-Product\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a product, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_abddd3139cedb75c6537fcee72e238f86}{add\-Form\-Edit\-Product\-To\-M\-D\-I} (\hyperlink{class_product}{\-Product} $\ast$product)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a product, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a3f7f2093285cdbdeed8ad1930ed6ddee}{remove\-Form\-Edit\-Product\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a product, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the customers management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a09cc2c103d3b2474fd41c7140e9bf5a6}{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a enterprise customer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a4f019f8d5965c955f069261d35450ba1}{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a enterprise customer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ac0a88b5faa800f8371ae914f726b90bd}{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I} (\hyperlink{class_enterprise_customer}{\-Enterprise\-Customer} $\ast$enterprise\-Customer)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a enterprise customer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a4e822fbb08b1c4afb3b22d533c00e63e}{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a enterprise customer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a70e06540b40c2b01aee10854a5209606}{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a physical customer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_af6ce83fb52514756695479b7b0dfbe53}{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a physical customer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a69a5d1c90da9ee145831417391e86bb2}{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I} (\hyperlink{class_physical_customer}{\-Physical\-Customer} $\ast$physical\-Customer)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a physical customer, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a5a6911f27447a926305af2f4abc797de}{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a physical customer, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the stock units management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a9e0af2acbef270d8bf914cfd6c21b48e}{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a stock unit, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2b31a0b0a7e630275cb6ca0d456d8acc}{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a stock unit, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a7095fce3cfae872391492251d37e7f28}{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I} (\hyperlink{class_stock_unit}{\-Stock\-Unit} $\ast$stock\-Unit)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a stock unit, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aa27a508c59fe82d5024186827eb9a26a}{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a stock unit, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the product origins management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ad737269109ec5d3038d0ba4d39cb76a8}{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a product origin, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a3062fa79be6d9c6a443cf4d7b446af25}{remove\-Form\-Add\-Product\-Origin\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a product origin, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_af58a9a09065bfdf77a0b2f82261289bb}{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I} (\hyperlink{class_product_origin}{\-Product\-Origin} $\ast$product\-Origin)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a product origin, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ae7a04f82355242d60017a0992c6636bf}{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a product origin, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the icms management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ad8543257fb4c87964e1e5a2d7d1baf9a}{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a icms, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_afaf6476daf87714476c94e0e4f17aa28}{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a icms, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ad186178a702f11f2f163f7938db22274}{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I} (\hyperlink{class_cst_icms}{\-Cst\-Icms} $\ast$cst\-Icms)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a icms, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ac3689618848d5675f0fa6882f33fa1a8}{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a icms, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the ipi management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ac6c6e891c1172cee8d58edffa7507d08}{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a ipi, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_af4f15fc15414e3af80a4fef705d1cfcb}{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a ipi, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aa18ed9ef63ad2a71215897aeaa40532b}{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I} (\hyperlink{class_cst_ipi}{\-Cst\-Ipi} $\ast$cst\-Ipi)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a ipi, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ac9e4372f1f05f93d9291a3a64091cf9a}{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a ipi, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the ipi management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ad609e2a82d1c4676531a88b035c33098}{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a pis, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a3afa98d45347f9db8fcb8b7e99fa7451}{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a pis, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a7877db33765ae52c12e527d0867fd50e}{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I} (\hyperlink{class_cst_pis}{\-Cst\-Pis} $\ast$cst\-Pis)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a pis, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ae82a2d23a0e268b8e4950069c1b953a2}{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a pis, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the cofins management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a4cab851778571acaa2b69b3e6be26c03}{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a45ea375512f7dad270bc64fd1cd72062}{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_adfc6e71cde32b9ae6349e0cde20ce392}{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I} (\hyperlink{class_cst_cofins}{\-Cst\-Cofins} $\ast$cst\-Cofins)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ac495161c5a83538d2fe41389b9191863}{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the cofins management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a14edb16f378c2887910a4bf162a6ea34}{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ae3c4110fb7687fb2c26a4e87fade34c4}{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_ab426bef03451b41a34a3125685951a98}{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I} (\hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$tax\-Rate)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2f6d47e171d622a6d17be124821352bd}{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{add\-Form\-Manage\-Cfops\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the cofins management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aebf02f05193d0a792cabca2aba84efc4}{add\-Form\-Add\-Cfop\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2e6a148dfab986283c1554949c68ac31}{remove\-Form\-Add\-Cfop\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a97090176a66059bd3b477dccdf18ceab}{add\-Form\-Edit\-Cfop\-To\-M\-D\-I} (\hyperlink{class_cfop}{\-Cfop} $\ast$cfop)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2827c80d526c9b4ad415080d4c3e5a56}{remove\-Form\-Edit\-Cfop\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{add\-Form\-Manage\-Prices\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the cofins management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a1682e766352ce784fb53f65bb231dd60}{add\-Form\-Add\-Price\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_af5da2039feb274a13cd8d8b902839aa1}{remove\-Form\-Add\-Price\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_acf4fe6bf64051b8192050d5e882c05cc}{add\-Form\-Edit\-Price\-To\-M\-D\-I} (\hyperlink{class_price}{\-Price} $\ast$price)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a cofins, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a29cdeed55c757e02f66b225e5823b176}{remove\-Form\-Edit\-Price\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a cofins, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{add\-Form\-Manage\-Stores\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will handle the stores management, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a5720a2cacab89cb3d29ec7a15bd42386}{add\-Form\-Add\-Store\-To\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will add a store, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aa12aea4d8faf4e394fdb2409895a031f}{remove\-Form\-Add\-Store\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that adds a store, from \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_aa497e0aebc4d7284f96b02c04ba91b00}{add\-Form\-Edit\-Store\-To\-M\-D\-I} (\hyperlink{class_store}{\-Store} $\ast$store)=0
+\begin{DoxyCompactList}\small\item\em \-Adds the form, that will edit a store, into \-M\-D\-I area. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_main_window_a2a8a096f0ad79a8591b36df424876676}{remove\-Form\-Edit\-Store\-M\-D\-I} ()=0
+\begin{DoxyCompactList}\small\item\em \-Removes the form, that edits a store, from \-M\-D\-I area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Main \-Window \-Interface. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This interface tells what methods must be implemented on all \hyperlink{class_main_window}{\-Main\-Window}'s. 
+
+\-Definition at line 28 of file imainwindow.\-h.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_i_main_window_aebf02f05193d0a792cabca2aba84efc4}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Cfop\-To\-M\-D\-I@{add\-Form\-Add\-Cfop\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Cfop\-To\-M\-D\-I@{add\-Form\-Add\-Cfop\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Cfop\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Cfop\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aebf02f05193d0a792cabca2aba84efc4}
+
+
+\-Adds the form, that will add a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add cofins\char`\"{} button, located at \hyperlink{class_add_cfop_view}{\-Add\-Cfop\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more cofins into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{add\-Form\-Manage\-Cfops\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2e6a148dfab986283c1554949c68ac31}{remove\-Form\-Add\-Cfop\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a042e51f04f18e468644654b140fbf441}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a4cab851778571acaa2b69b3e6be26c03}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a4cab851778571acaa2b69b3e6be26c03}
+
+
+\-Adds the form, that will add a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add cofins\char`\"{} button, located at \hyperlink{class_add_cst_cofins_view}{\-Add\-Cst\-Cofins\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more cofins into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a45ea375512f7dad270bc64fd1cd72062}{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aa674ffba1271d527582f5c5297b696f6}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ad8543257fb4c87964e1e5a2d7d1baf9a}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ad8543257fb4c87964e1e5a2d7d1baf9a}
+
+
+\-Adds the form, that will add a icms, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add icms\char`\"{} button, located at \hyperlink{class_add_cst_icms_view}{\-Add\-Cst\-Icms\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more icms into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_afaf6476daf87714476c94e0e4f17aa28}{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a716a1e7dcb604c0368f1a4a19f17a68b}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ac6c6e891c1172cee8d58edffa7507d08}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ac6c6e891c1172cee8d58edffa7507d08}
+
+
+\-Adds the form, that will add a ipi, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add ipi\char`\"{} button, located at \hyperlink{class_add_cst_ipi_view}{\-Add\-Cst\-Ipi\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more ipi into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_af4f15fc15414e3af80a4fef705d1cfcb}{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a73d33f3952cb878de35b6794327990b1}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ad609e2a82d1c4676531a88b035c33098}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I@{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ad609e2a82d1c4676531a88b035c33098}
+
+
+\-Adds the form, that will add a pis, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add pis\char`\"{} button, located at \hyperlink{class_add_cst_pis_view}{\-Add\-Cst\-Pis\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more pis into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a3afa98d45347f9db8fcb8b7e99fa7451}{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a8802fa76b06b8d54a6677009dbd8d523}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a09cc2c103d3b2474fd41c7140e9bf5a6}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I@{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I@{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a09cc2c103d3b2474fd41c7140e9bf5a6}
+
+
+\-Adds the form, that will add a enterprise customer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add enterprise customer\char`\"{} button, located at \hyperlink{class_add_enterprise_customer_view}{\-Add\-Enterprise\-Customer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more enterprise customers into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a4f019f8d5965c955f069261d35450ba1}{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a49e317bd6163c5863de73f3c7f32a281}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ad8a7353d47d6aa02e9af2df0f60d7fbc}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Manufacturer\-To\-M\-D\-I@{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I@{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Manufacturer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ad8a7353d47d6aa02e9af2df0f60d7fbc}
+
+
+\-Adds the form, that will add a manufacturer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add Manufacturer\char`\"{} button, located at \hyperlink{class_add_manufacturer_view}{\-Add\-Manufacturer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more manufacturers into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a081759066758a7548d6325d7f7b0af4f}{remove\-Form\-Add\-Manufacturer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a75a5c0565e11a88130888b226cc9974a}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a70e06540b40c2b01aee10854a5209606}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I@{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I@{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a70e06540b40c2b01aee10854a5209606}
+
+
+\-Adds the form, that will add a physical customer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add physical customer\char`\"{} button, located at \hyperlink{class_add_physical_customer_view}{\-Add\-Physical\-Customer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more physical customers into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_af6ce83fb52514756695479b7b0dfbe53}{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a101f06c27f79ed319cc78c0e55121149}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a1682e766352ce784fb53f65bb231dd60}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Price\-To\-M\-D\-I@{add\-Form\-Add\-Price\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Price\-To\-M\-D\-I@{add\-Form\-Add\-Price\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Price\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Price\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a1682e766352ce784fb53f65bb231dd60}
+
+
+\-Adds the form, that will add a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add price\char`\"{} button, located at \hyperlink{class_prices_list_view}{\-Prices\-List\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more prices into database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{add\-Form\-Manage\-Prices\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_af5da2039feb274a13cd8d8b902839aa1}{remove\-Form\-Add\-Price\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ab23f69a20e7e91fcd042e2bf1990b616}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a51da70cd0ebe5b880ee44749d5d1f6a5}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Product\-Category\-To\-M\-D\-I@{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I@{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Product\-Category\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a51da70cd0ebe5b880ee44749d5d1f6a5}
+
+
+\-Adds the form, that will add a product category, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add product category\char`\"{} button, located at \hyperlink{class_add_product_category_view}{\-Add\-Product\-Category\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more product categories into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a6aa82966df6d492ae833b187f1ed0ccd}{remove\-Form\-Add\-Product\-Category\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_af81bb1c2ebddc26a77519d2711ef166c}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ad737269109ec5d3038d0ba4d39cb76a8}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I@{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I@{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ad737269109ec5d3038d0ba4d39cb76a8}
+
+
+\-Adds the form, that will add a product origin, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add product origin\char`\"{} button, located at \hyperlink{class_add_product_origin_view}{\-Add\-Product\-Origin\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more product origins into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a3062fa79be6d9c6a443cf4d7b446af25}{remove\-Form\-Add\-Product\-Origin\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a401b61dd50a82f85945fc350f1f5e8b0}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a4490ff442e06a49c883a292fc4843c65}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Product\-To\-M\-D\-I@{add\-Form\-Add\-Product\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Product\-To\-M\-D\-I@{add\-Form\-Add\-Product\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Product\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Product\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a4490ff442e06a49c883a292fc4843c65}
+
+
+\-Adds the form, that will add a product, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add product\char`\"{} button, located at \hyperlink{class_add_product_view}{\-Add\-Product\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more products into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{add\-Form\-Manage\-Products\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aaa0da58ffa9b7dab11f1847bca566ef8}{remove\-Form\-Add\-Product\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ab84647f8038b270fcda039c00cc1f041}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_abdede6a729dd8826634ad88cd1bfab44}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Provider\-To\-M\-D\-I@{add\-Form\-Add\-Provider\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Provider\-To\-M\-D\-I@{add\-Form\-Add\-Provider\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Provider\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Provider\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_abdede6a729dd8826634ad88cd1bfab44}
+
+
+\-Adds the form, that will add a provider, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add Provider\char`\"{} button, located at \hyperlink{class_add_provider_view}{\-Add\-Provider\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more providers into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{add\-Form\-Manage\-Providers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_addbff5d30645c13e3ede7ca872bc197e}{remove\-Form\-Add\-Provider\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a065373d448a19ff2cc71aa9257a1d3be}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a9e0af2acbef270d8bf914cfd6c21b48e}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I@{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I@{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a9e0af2acbef270d8bf914cfd6c21b48e}
+
+
+\-Adds the form, that will add a stock unit, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add stock unit\char`\"{} button, located at \hyperlink{class_add_stock_unit_view}{\-Add\-Stock\-Unit\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more stock units into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2b31a0b0a7e630275cb6ca0d456d8acc}{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aa2fbcfe759cc60f31c3cba6738c21c5d}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a5720a2cacab89cb3d29ec7a15bd42386}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Store\-To\-M\-D\-I@{add\-Form\-Add\-Store\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Store\-To\-M\-D\-I@{add\-Form\-Add\-Store\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Store\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Store\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a5720a2cacab89cb3d29ec7a15bd42386}
+
+
+\-Adds the form, that will add a store, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add Store\char`\"{} button, located at \hyperlink{class_stores_list_view}{\-Stores\-List\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more stores into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{add\-Form\-Manage\-Stores\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aa12aea4d8faf4e394fdb2409895a031f}{remove\-Form\-Add\-Store\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ab81ff064e3d4bb24bf93ab41e7b287f8}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a14edb16f378c2887910a4bf162a6ea34}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I@{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I@{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a14edb16f378c2887910a4bf162a6ea34}
+
+
+\-Adds the form, that will add a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add cofins\char`\"{} button, located at \hyperlink{class_add_tax_rate_view}{\-Add\-Tax\-Rate\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the user to add more cofins into database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae3c4110fb7687fb2c26a4e87fade34c4}{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a76dfcc4260d5e61f1809c7e1fa7093de}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_abc38cea87c50d298c1d9dd39f507e580}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Add\-User\-To\-M\-D\-I@{add\-Form\-Add\-User\-To\-M\-D\-I}}
+\index{add\-Form\-Add\-User\-To\-M\-D\-I@{add\-Form\-Add\-User\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Add\-User\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Add\-User\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_abc38cea87c50d298c1d9dd39f507e580}
+
+
+\-Adds the form, that will add an user, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Add User\char`\"{} button, located at \hyperlink{class_add_user_view}{\-Add\-User\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to add more users into database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{add\-Form\-Manage\-Users\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ab097fceace495ca6bfe9eac1bb374e36}{remove\-Form\-Add\-User\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a5ae42a8841868c94ee792e4c8859e4b4}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a97090176a66059bd3b477dccdf18ceab}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Cfop\-To\-M\-D\-I@{add\-Form\-Edit\-Cfop\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Cfop\-To\-M\-D\-I@{add\-Form\-Edit\-Cfop\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Cfop\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Cfop\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cfop} $\ast$}]{cfop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a97090176a66059bd3b477dccdf18ceab}
+
+
+\-Adds the form, that will edit a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit cofins\char`\"{} button, located at \hyperlink{class_add_cfop_view}{\-Add\-Cfop\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit cofins from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{add\-Form\-Manage\-Cfops\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2827c80d526c9b4ad415080d4c3e5a56}{remove\-Form\-Edit\-Cfop\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a74db9d8824dbb9d667e5fad281df71cc}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_adfc6e71cde32b9ae6349e0cde20ce392}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Cofins} $\ast$}]{cst\-Cofins}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_adfc6e71cde32b9ae6349e0cde20ce392}
+
+
+\-Adds the form, that will edit a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit cofins\char`\"{} button, located at \hyperlink{class_add_cst_cofins_view}{\-Add\-Cst\-Cofins\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit cofins from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac495161c5a83538d2fe41389b9191863}{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_af33ee95d3d0c7359310cc54ae84c709d}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ad186178a702f11f2f163f7938db22274}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Icms} $\ast$}]{cst\-Icms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ad186178a702f11f2f163f7938db22274}
+
+
+\-Adds the form, that will edit a icms, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit icms\char`\"{} button, located at \hyperlink{class_add_cst_icms_view}{\-Add\-Cst\-Icms\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit icms from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac3689618848d5675f0fa6882f33fa1a8}{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_acc468571f806592024d195fb4e40ffb6}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aa18ed9ef63ad2a71215897aeaa40532b}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Ipi} $\ast$}]{cst\-Ipi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aa18ed9ef63ad2a71215897aeaa40532b}
+
+
+\-Adds the form, that will edit a ipi, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit ipi\char`\"{} button, located at \hyperlink{class_add_cst_ipi_view}{\-Add\-Cst\-Ipi\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit ipi from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac9e4372f1f05f93d9291a3a64091cf9a}{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a4aa98435db018cbf22136872f3b18bc7}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a7877db33765ae52c12e527d0867fd50e}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I@{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cst\-Pis} $\ast$}]{cst\-Pis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a7877db33765ae52c12e527d0867fd50e}
+
+
+\-Adds the form, that will edit a pis, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit pis\char`\"{} button, located at \hyperlink{class_add_cst_pis_view}{\-Add\-Cst\-Pis\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit pis from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae82a2d23a0e268b8e4950069c1b953a2}{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a81063744242f92e44ce4a8233105d71f}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ac0a88b5faa800f8371ae914f726b90bd}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I@{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I@{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Enterprise\-Customer} $\ast$}]{enterprise\-Customer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ac0a88b5faa800f8371ae914f726b90bd}
+
+
+\-Adds the form, that will edit a enterprise customer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit enterprise customer\char`\"{} button, located at \hyperlink{class_add_enterprise_customer_view}{\-Add\-Enterprise\-Customer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit enterprise customers from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a4e822fbb08b1c4afb3b22d533c00e63e}{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a3d0de47e591b651a51931bdd475e917d}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aba30e79e3188e953b5499014fe29b680}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I@{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I@{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Manufacturer} $\ast$}]{manufacturer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aba30e79e3188e953b5499014fe29b680}
+
+
+\-Adds the form, that will edit a manufacturer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit manufacturer\char`\"{} button, located at \hyperlink{class_add_manufacturer_view}{\-Add\-Manufacturer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit manufacturers from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aeb76e51e5e11051cf64d7677242f525a}{remove\-Form\-Edit\-Manufacturer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ad80df962c0ea1164831e483adb0e5f7d}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a69a5d1c90da9ee145831417391e86bb2}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I@{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I@{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Physical\-Customer} $\ast$}]{physical\-Customer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a69a5d1c90da9ee145831417391e86bb2}
+
+
+\-Adds the form, that will edit a physical customer, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit physical customer\char`\"{} button, located at \hyperlink{class_add_physical_customer_view}{\-Add\-Physical\-Customer\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit physical customers from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a5a6911f27447a926305af2f4abc797de}{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a95bdb567e4f0ee0e5e1ffa64a4f61179}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_acf4fe6bf64051b8192050d5e882c05cc}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Price\-To\-M\-D\-I@{add\-Form\-Edit\-Price\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Price\-To\-M\-D\-I@{add\-Form\-Edit\-Price\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Price\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Price\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Price} $\ast$}]{price}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_acf4fe6bf64051b8192050d5e882c05cc}
+
+
+\-Adds the form, that will edit a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit price\char`\"{} button, located at \hyperlink{class_prices_list_view}{\-Prices\-List\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit price from database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{add\-Form\-Manage\-Prices\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a29cdeed55c757e02f66b225e5823b176}{remove\-Form\-Edit\-Price\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a7165f1367872acbb72668945cfd658d7}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a84c9ff9eed87ba986f0fa478f6507b6b}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Category} $\ast$}]{product\-Category}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a84c9ff9eed87ba986f0fa478f6507b6b}
+
+
+\-Adds the form, that will edit a product category, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit product category\char`\"{} button, located at \hyperlink{class_add_product_category_view}{\-Add\-Product\-Category\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit product categories from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a1ecc8cf7cde5c24f8f1ac2285a3c68c8}{remove\-Form\-Edit\-Product\-Category\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a8d47f21d3ece04d2a791782c10f7c336}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_af58a9a09065bfdf77a0b2f82261289bb}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product\-Origin} $\ast$}]{product\-Origin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_af58a9a09065bfdf77a0b2f82261289bb}
+
+
+\-Adds the form, that will edit a product origin, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit product origin\char`\"{} button, located at \hyperlink{class_add_product_origin_view}{\-Add\-Product\-Origin\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit product origins from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae7a04f82355242d60017a0992c6636bf}{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ada0fcce58de3514c2fb0b45172cab0f4}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_abddd3139cedb75c6537fcee72e238f86}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Product\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Product\-To\-M\-D\-I@{add\-Form\-Edit\-Product\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Product\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Product\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Product} $\ast$}]{product}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_abddd3139cedb75c6537fcee72e238f86}
+
+
+\-Adds the form, that will edit a product, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit product\char`\"{} button, located at \hyperlink{class_add_product_view}{\-Add\-Product\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit products from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{add\-Form\-Manage\-Products\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a3f7f2093285cdbdeed8ad1930ed6ddee}{remove\-Form\-Edit\-Product\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a0f021de03c672261a8bb36e6113dea3a}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a9275b1a3b1cb7511ad4b80912eb2af6f}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Provider\-To\-M\-D\-I@{add\-Form\-Edit\-Provider\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Provider\-To\-M\-D\-I@{add\-Form\-Edit\-Provider\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Provider\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Provider\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Provider} $\ast$}]{provider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a9275b1a3b1cb7511ad4b80912eb2af6f}
+
+
+\-Adds the form, that will edit a provider, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit provider\char`\"{} button, located at \hyperlink{class_add_provider_view}{\-Add\-Provider\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit providers from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{add\-Form\-Manage\-Providers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae4bc2b8e66c6c90efc9437bbe44ef7b7}{remove\-Form\-Edit\-Provider\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a17a3a7ed4c6b3df106c8ee1e7cd65707}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a7095fce3cfae872391492251d37e7f28}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I@{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I@{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Stock\-Unit} $\ast$}]{stock\-Unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a7095fce3cfae872391492251d37e7f28}
+
+
+\-Adds the form, that will edit a stock unit, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit stock unit\char`\"{} button, located at \hyperlink{class_add_stock_unit_view}{\-Add\-Stock\-Unit\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit stock units from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aa27a508c59fe82d5024186827eb9a26a}{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a25bc22720522f43d55913afd82621c83}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aa497e0aebc4d7284f96b02c04ba91b00}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Store\-To\-M\-D\-I@{add\-Form\-Edit\-Store\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Store\-To\-M\-D\-I@{add\-Form\-Edit\-Store\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Store\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Store\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aa497e0aebc4d7284f96b02c04ba91b00}
+
+
+\-Adds the form, that will edit a store, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit store\char`\"{} button, located at \hyperlink{class_stores_list_view}{\-Stores\-List\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit stores from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{add\-Form\-Manage\-Stores\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2a8a096f0ad79a8591b36df424876676}{remove\-Form\-Edit\-Store\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a6c3c439b0cb60c43363b6964f0792cc2}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ab426bef03451b41a34a3125685951a98}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I@{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I@{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Tax\-Rate} $\ast$}]{tax\-Rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ab426bef03451b41a34a3125685951a98}
+
+
+\-Adds the form, that will edit a cofins, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit cofins\char`\"{} button, located at \hyperlink{class_add_tax_rate_view}{\-Add\-Tax\-Rate\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit cofins from database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2f6d47e171d622a6d17be124821352bd}{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a4f7497e54a58bd71a0bb1712e42f3802}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a8496779b5688e62e6887e8fa9f236a30}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Edit\-User\-To\-M\-D\-I@{add\-Form\-Edit\-User\-To\-M\-D\-I}}
+\index{add\-Form\-Edit\-User\-To\-M\-D\-I@{add\-Form\-Edit\-User\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Edit\-User\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Edit\-User\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User} $\ast$}]{user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a8496779b5688e62e6887e8fa9f236a30}
+
+
+\-Adds the form, that will edit an user, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user clicks on \char`\"{}\-Edit User\char`\"{} button, located at \hyperlink{class_add_user_view}{\-Add\-User\-View} form. \-There will be placed a child dialog into \-M\-D\-I to allow the current user to edit users from database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{add\-Form\-Manage\-Users\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_afdebe819722a44e459fb6798ccb5cf1a}{remove\-Form\-Edit\-User\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a1897b0812e32229ec9a4d4c92aebfd2c}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Cfops\-To\-M\-D\-I@{add\-Form\-Manage\-Cfops\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Cfops\-To\-M\-D\-I@{add\-Form\-Manage\-Cfops\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Cfops\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Cfops\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}
+
+
+\-Adds the form, that will handle the cofins management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}cofins\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain cofins database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aebf02f05193d0a792cabca2aba84efc4}{add\-Form\-Add\-Cfop\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a2e6a148dfab986283c1554949c68ac31}{remove\-Form\-Add\-Cfop\-M\-D\-I()}, \hyperlink{class_i_main_window_a97090176a66059bd3b477dccdf18ceab}{add\-Form\-Edit\-Cfop\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2827c80d526c9b4ad415080d4c3e5a56}{remove\-Form\-Edit\-Cfop\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a95ded70f88ab99f4d992693d003b2fbc}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}
+
+
+\-Adds the form, that will handle the cofins management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}cofins\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain cofins database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a4cab851778571acaa2b69b3e6be26c03}{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a45ea375512f7dad270bc64fd1cd72062}{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I()}, \hyperlink{class_i_main_window_adfc6e71cde32b9ae6349e0cde20ce392}{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac495161c5a83538d2fe41389b9191863}{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a6b1c71775bf1a9e4f9b2b2e5239e127b}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}
+
+
+\-Adds the form, that will handle the icms management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}icms\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain icms database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ad8543257fb4c87964e1e5a2d7d1baf9a}{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_afaf6476daf87714476c94e0e4f17aa28}{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I()}, \hyperlink{class_i_main_window_ad186178a702f11f2f163f7938db22274}{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac3689618848d5675f0fa6882f33fa1a8}{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ad93a726211da522ee587b09be724a286}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}
+
+
+\-Adds the form, that will handle the ipi management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}ipi\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain ipi database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ac6c6e891c1172cee8d58edffa7507d08}{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_af4f15fc15414e3af80a4fef705d1cfcb}{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I()}, \hyperlink{class_i_main_window_aa18ed9ef63ad2a71215897aeaa40532b}{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac9e4372f1f05f93d9291a3a64091cf9a}{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_accd554fe78a90bf3154199b9b89b71ee}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I@{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}
+
+
+\-Adds the form, that will handle the ipi management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}pis\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain pis database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ad609e2a82d1c4676531a88b035c33098}{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a3afa98d45347f9db8fcb8b7e99fa7451}{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I()}, \hyperlink{class_i_main_window_a7877db33765ae52c12e527d0867fd50e}{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae82a2d23a0e268b8e4950069c1b953a2}{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a5af909c81673a5374805d5a79f55a3ba}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Customers\-To\-M\-D\-I@{add\-Form\-Manage\-Customers\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Customers\-To\-M\-D\-I@{add\-Form\-Manage\-Customers\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Customers\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Customers\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}
+
+
+\-Adds the form, that will handle the customers management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}\-Canage Customers\char`\"{} context menu, inside \char`\"{}\-Customers\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain customer database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a09cc2c103d3b2474fd41c7140e9bf5a6}{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a4f019f8d5965c955f069261d35450ba1}{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I()}, \hyperlink{class_i_main_window_ac0a88b5faa800f8371ae914f726b90bd}{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a4e822fbb08b1c4afb3b22d533c00e63e}{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I()}, \hyperlink{class_i_main_window_a70e06540b40c2b01aee10854a5209606}{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_af6ce83fb52514756695479b7b0dfbe53}{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I()}, \hyperlink{class_i_main_window_a69a5d1c90da9ee145831417391e86bb2}{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a5a6911f27447a926305af2f4abc797de}{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aebcd938992bd62969fb3640e7b6a5515}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I@{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I@{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}
+
+
+\-Adds the form, that will handle the manufacturers management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}manufacturers\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain manufacturer's database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ad8a7353d47d6aa02e9af2df0f60d7fbc}{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a081759066758a7548d6325d7f7b0af4f}{remove\-Form\-Add\-Manufacturer\-M\-D\-I()}, \hyperlink{class_i_main_window_aba30e79e3188e953b5499014fe29b680}{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aeb76e51e5e11051cf64d7677242f525a}{remove\-Form\-Edit\-Manufacturer\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ac16d7f270d6d08e99e06e4ebf3a4e629}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Prices\-To\-M\-D\-I@{add\-Form\-Manage\-Prices\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Prices\-To\-M\-D\-I@{add\-Form\-Manage\-Prices\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Prices\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Prices\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}
+
+
+\-Adds the form, that will handle the cofins management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}prices\char`\"{} context menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain prices database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a1682e766352ce784fb53f65bb231dd60}{add\-Form\-Add\-Price\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_af5da2039feb274a13cd8d8b902839aa1}{remove\-Form\-Add\-Price\-M\-D\-I()}, \hyperlink{class_i_main_window_acf4fe6bf64051b8192050d5e882c05cc}{add\-Form\-Edit\-Price\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a29cdeed55c757e02f66b225e5823b176}{remove\-Form\-Edit\-Price\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aa7553e70099ea7680ff858f4ef4b19be}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I@{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I@{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}
+
+
+\-Adds the form, that will handle the product categories management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}product categories\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain product category database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a51da70cd0ebe5b880ee44749d5d1f6a5}{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a6aa82966df6d492ae833b187f1ed0ccd}{remove\-Form\-Add\-Product\-Category\-M\-D\-I()}, \hyperlink{class_i_main_window_a84c9ff9eed87ba986f0fa478f6507b6b}{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a1ecc8cf7cde5c24f8f1ac2285a3c68c8}{remove\-Form\-Edit\-Product\-Category\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aaafa1ee1e885547b1d6340e384d34c13}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I@{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I@{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}
+
+
+\-Adds the form, that will handle the product origins management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}product origins\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain product origin database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ad737269109ec5d3038d0ba4d39cb76a8}{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a3062fa79be6d9c6a443cf4d7b446af25}{remove\-Form\-Add\-Product\-Origin\-M\-D\-I()}, \hyperlink{class_i_main_window_af58a9a09065bfdf77a0b2f82261289bb}{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae7a04f82355242d60017a0992c6636bf}{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a2459f04a5842643e412db214ccf12310}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Products\-To\-M\-D\-I@{add\-Form\-Manage\-Products\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Products\-To\-M\-D\-I@{add\-Form\-Manage\-Products\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Products\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Products\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}
+
+
+\-Adds the form, that will handle the products management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}products\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain product database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a4490ff442e06a49c883a292fc4843c65}{add\-Form\-Add\-Product\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_aaa0da58ffa9b7dab11f1847bca566ef8}{remove\-Form\-Add\-Product\-M\-D\-I()}, \hyperlink{class_i_main_window_abddd3139cedb75c6537fcee72e238f86}{add\-Form\-Edit\-Product\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a3f7f2093285cdbdeed8ad1930ed6ddee}{remove\-Form\-Edit\-Product\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a311d00ab9d1311d0d4b87fcb21929805}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Providers\-To\-M\-D\-I@{add\-Form\-Manage\-Providers\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Providers\-To\-M\-D\-I@{add\-Form\-Manage\-Providers\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Providers\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Providers\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}
+
+
+\-Adds the form, that will handle the providers management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}providers\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain provider's database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_abdede6a729dd8826634ad88cd1bfab44}{add\-Form\-Add\-Provider\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_addbff5d30645c13e3ede7ca872bc197e}{remove\-Form\-Add\-Provider\-M\-D\-I()}, \hyperlink{class_i_main_window_a9275b1a3b1cb7511ad4b80912eb2af6f}{add\-Form\-Edit\-Provider\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ae4bc2b8e66c6c90efc9437bbe44ef7b7}{remove\-Form\-Edit\-Provider\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a13351108025ba4832476c7ffa60180a3}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I@{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I@{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}
+
+
+\-Adds the form, that will handle the stock units management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}stock units\char`\"{} context menu, inside \char`\"{}\-Stock\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain stock unit database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a9e0af2acbef270d8bf914cfd6c21b48e}{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_a2b31a0b0a7e630275cb6ca0d456d8acc}{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I()}, \hyperlink{class_i_main_window_a7095fce3cfae872391492251d37e7f28}{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aa27a508c59fe82d5024186827eb9a26a}{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a4c64908f897d5503b7e6b93cfc84f1b8}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Stores\-To\-M\-D\-I@{add\-Form\-Manage\-Stores\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Stores\-To\-M\-D\-I@{add\-Form\-Manage\-Stores\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Stores\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Stores\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}
+
+
+\-Adds the form, that will handle the stores management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}stores\char`\"{} context menu, inside \char`\"{}\-System\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain store's database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a5720a2cacab89cb3d29ec7a15bd42386}{add\-Form\-Add\-Store\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_aa12aea4d8faf4e394fdb2409895a031f}{remove\-Form\-Add\-Store\-M\-D\-I()}, \hyperlink{class_i_main_window_aa497e0aebc4d7284f96b02c04ba91b00}{add\-Form\-Edit\-Store\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2a8a096f0ad79a8591b36df424876676}{remove\-Form\-Edit\-Store\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a92319316f5f2c7d3da1bb1871e9e82f9}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I@{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I@{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}
+
+
+\-Adds the form, that will handle the cofins management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}cofins\char`\"{} context menu, inside \char`\"{}\-Tax\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain cofins database. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a14edb16f378c2887910a4bf162a6ea34}{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_ae3c4110fb7687fb2c26a4e87fade34c4}{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I()}, \hyperlink{class_i_main_window_ab426bef03451b41a34a3125685951a98}{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a2f6d47e171d622a6d17be124821352bd}{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a817a704c164b878a8cfcebb2bfeee33b}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!add\-Form\-Manage\-Users\-To\-M\-D\-I@{add\-Form\-Manage\-Users\-To\-M\-D\-I}}
+\index{add\-Form\-Manage\-Users\-To\-M\-D\-I@{add\-Form\-Manage\-Users\-To\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{add\-Form\-Manage\-Users\-To\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::add\-Form\-Manage\-Users\-To\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}
+
+
+\-Adds the form, that will handle the user management, into \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user select \char`\"{}\-Manage User\char`\"{} context menu, inside \char`\"{}\-System\char`\"{} menu. \-There will be placed a child dialog into \-M\-D\-I to allow user mantain user's database. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_abc38cea87c50d298c1d9dd39f507e580}{add\-Form\-Add\-User\-To\-M\-D\-I()}, \hyperlink{class_i_main_window_ab097fceace495ca6bfe9eac1bb374e36}{remove\-Form\-Add\-User\-M\-D\-I()}, \hyperlink{class_i_main_window_a8496779b5688e62e6887e8fa9f236a30}{add\-Form\-Edit\-User\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_afdebe819722a44e459fb6798ccb5cf1a}{remove\-Form\-Edit\-User\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aa6983780d1dbf4e406a037e058bc3032}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2e6a148dfab986283c1554949c68ac31}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Cfop\-M\-D\-I@{remove\-Form\-Add\-Cfop\-M\-D\-I}}
+\index{remove\-Form\-Add\-Cfop\-M\-D\-I@{remove\-Form\-Add\-Cfop\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Cfop\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Cfop\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2e6a148dfab986283c1554949c68ac31}
+
+
+\-Removes the form, that adds a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{add\-Form\-Manage\-Cfops\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aebf02f05193d0a792cabca2aba84efc4}{add\-Form\-Add\-Cfop\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a2dfb906a11260e99937a96ce2699d4bc}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a45ea375512f7dad270bc64fd1cd72062}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I@{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I}}
+\index{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I@{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Cst\-Cofins\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a45ea375512f7dad270bc64fd1cd72062}
+
+
+\-Removes the form, that adds a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a4cab851778571acaa2b69b3e6be26c03}{add\-Form\-Add\-Cst\-Cofins\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a613284e172eab5779bf6793052de6dce}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_afaf6476daf87714476c94e0e4f17aa28}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Cst\-Icms\-M\-D\-I@{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I}}
+\index{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I@{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Cst\-Icms\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Cst\-Icms\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_afaf6476daf87714476c94e0e4f17aa28}
+
+
+\-Removes the form, that adds a icms, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more icms into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ad8543257fb4c87964e1e5a2d7d1baf9a}{add\-Form\-Add\-Cst\-Icms\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ad17a9c223d3de47ef2995736089c7cb7}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_af4f15fc15414e3af80a4fef705d1cfcb}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I@{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I}}
+\index{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I@{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Cst\-Ipi\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_af4f15fc15414e3af80a4fef705d1cfcb}
+
+
+\-Removes the form, that adds a ipi, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more ipi into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac6c6e891c1172cee8d58edffa7507d08}{add\-Form\-Add\-Cst\-Ipi\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ab4f866cf49cb3167db9c2690dc31e7bd}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a3afa98d45347f9db8fcb8b7e99fa7451}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Cst\-Pis\-M\-D\-I@{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I}}
+\index{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I@{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Cst\-Pis\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Cst\-Pis\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a3afa98d45347f9db8fcb8b7e99fa7451}
+
+
+\-Removes the form, that adds a pis, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more pis into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ad609e2a82d1c4676531a88b035c33098}{add\-Form\-Add\-Cst\-Pis\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aaffa323cfbdfa8a4da6712deee5105fc}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a4f019f8d5965c955f069261d35450ba1}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I@{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I}}
+\index{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I@{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Enterprise\-Customer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a4f019f8d5965c955f069261d35450ba1}
+
+
+\-Removes the form, that adds a enterprise customer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more enterprise customers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a09cc2c103d3b2474fd41c7140e9bf5a6}{add\-Form\-Add\-Enterprise\-Customer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a028116b74e5a065518bffce1b5fa28ca}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a081759066758a7548d6325d7f7b0af4f}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Manufacturer\-M\-D\-I@{remove\-Form\-Add\-Manufacturer\-M\-D\-I}}
+\index{remove\-Form\-Add\-Manufacturer\-M\-D\-I@{remove\-Form\-Add\-Manufacturer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Manufacturer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Manufacturer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a081759066758a7548d6325d7f7b0af4f}
+
+
+\-Removes the form, that adds a manufacturer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more manufacturers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ad8a7353d47d6aa02e9af2df0f60d7fbc}{add\-Form\-Add\-Manufacturer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a6e224e552fcfecab22dcb4bd7679e39e}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_af6ce83fb52514756695479b7b0dfbe53}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Physical\-Customer\-M\-D\-I@{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I}}
+\index{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I@{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Physical\-Customer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Physical\-Customer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_af6ce83fb52514756695479b7b0dfbe53}
+
+
+\-Removes the form, that adds a physical customer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more physical customers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a70e06540b40c2b01aee10854a5209606}{add\-Form\-Add\-Physical\-Customer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a4fc778afcb78c22d250adb32fe9cc9dd}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_af5da2039feb274a13cd8d8b902839aa1}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Price\-M\-D\-I@{remove\-Form\-Add\-Price\-M\-D\-I}}
+\index{remove\-Form\-Add\-Price\-M\-D\-I@{remove\-Form\-Add\-Price\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Price\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Price\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_af5da2039feb274a13cd8d8b902839aa1}
+
+
+\-Removes the form, that adds a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more prices into database, will be removed from \-M\-D\-I. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{add\-Form\-Manage\-Prices\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a1682e766352ce784fb53f65bb231dd60}{add\-Form\-Add\-Price\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a4b1edd84e974286875a2e4da4d2be54c}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a6aa82966df6d492ae833b187f1ed0ccd}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Product\-Category\-M\-D\-I@{remove\-Form\-Add\-Product\-Category\-M\-D\-I}}
+\index{remove\-Form\-Add\-Product\-Category\-M\-D\-I@{remove\-Form\-Add\-Product\-Category\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Product\-Category\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Product\-Category\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a6aa82966df6d492ae833b187f1ed0ccd}
+
+
+\-Removes the form, that adds a product category, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more product categories into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a51da70cd0ebe5b880ee44749d5d1f6a5}{add\-Form\-Add\-Product\-Category\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_aef1d9e51f34909684ba22816124f7f12}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aaa0da58ffa9b7dab11f1847bca566ef8}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Product\-M\-D\-I@{remove\-Form\-Add\-Product\-M\-D\-I}}
+\index{remove\-Form\-Add\-Product\-M\-D\-I@{remove\-Form\-Add\-Product\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Product\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Product\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aaa0da58ffa9b7dab11f1847bca566ef8}
+
+
+\-Removes the form, that adds a product, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more products into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{add\-Form\-Manage\-Products\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a4490ff442e06a49c883a292fc4843c65}{add\-Form\-Add\-Product\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ac13860f71e6a7d580a4da2a0f551ad22}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a3062fa79be6d9c6a443cf4d7b446af25}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Product\-Origin\-M\-D\-I@{remove\-Form\-Add\-Product\-Origin\-M\-D\-I}}
+\index{remove\-Form\-Add\-Product\-Origin\-M\-D\-I@{remove\-Form\-Add\-Product\-Origin\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Product\-Origin\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Product\-Origin\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a3062fa79be6d9c6a443cf4d7b446af25}
+
+
+\-Removes the form, that adds a product origin, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more product origins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ad737269109ec5d3038d0ba4d39cb76a8}{add\-Form\-Add\-Product\-Origin\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ad5449f3e6b4c18e51304ea3490a46b3c}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_addbff5d30645c13e3ede7ca872bc197e}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Provider\-M\-D\-I@{remove\-Form\-Add\-Provider\-M\-D\-I}}
+\index{remove\-Form\-Add\-Provider\-M\-D\-I@{remove\-Form\-Add\-Provider\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Provider\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Provider\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_addbff5d30645c13e3ede7ca872bc197e}
+
+
+\-Removes the form, that adds a provider, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more providers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{add\-Form\-Manage\-Providers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_abdede6a729dd8826634ad88cd1bfab44}{add\-Form\-Add\-Provider\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a8a37a007d05add33d2c1b48c7f26afcb}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2b31a0b0a7e630275cb6ca0d456d8acc}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Stock\-Unit\-M\-D\-I@{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I}}
+\index{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I@{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Stock\-Unit\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Stock\-Unit\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2b31a0b0a7e630275cb6ca0d456d8acc}
+
+
+\-Removes the form, that adds a stock unit, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more stock units into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a9e0af2acbef270d8bf914cfd6c21b48e}{add\-Form\-Add\-Stock\-Unit\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a90d37112d9104dbd367ec409532fc664}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aa12aea4d8faf4e394fdb2409895a031f}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Store\-M\-D\-I@{remove\-Form\-Add\-Store\-M\-D\-I}}
+\index{remove\-Form\-Add\-Store\-M\-D\-I@{remove\-Form\-Add\-Store\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Store\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Store\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aa12aea4d8faf4e394fdb2409895a031f}
+
+
+\-Removes the form, that adds a store, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more stores into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{add\-Form\-Manage\-Stores\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a5720a2cacab89cb3d29ec7a15bd42386}{add\-Form\-Add\-Store\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a02590619171ba5791146649d1ca48c6e}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ae3c4110fb7687fb2c26a4e87fade34c4}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-Tax\-Rate\-M\-D\-I@{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I}}
+\index{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I@{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-Tax\-Rate\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-Tax\-Rate\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ae3c4110fb7687fb2c26a4e87fade34c4}
+
+
+\-Removes the form, that adds a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a14edb16f378c2887910a4bf162a6ea34}{add\-Form\-Add\-Tax\-Rate\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a8f12644abaa86769a3b41204d278670e}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ab097fceace495ca6bfe9eac1bb374e36}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Add\-User\-M\-D\-I@{remove\-Form\-Add\-User\-M\-D\-I}}
+\index{remove\-Form\-Add\-User\-M\-D\-I@{remove\-Form\-Add\-User\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Add\-User\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Add\-User\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ab097fceace495ca6bfe9eac1bb374e36}
+
+
+\-Removes the form, that adds an user, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to add more users into database, will be removed from \-M\-D\-I. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{add\-Form\-Manage\-Users\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_abc38cea87c50d298c1d9dd39f507e580}{add\-Form\-Add\-User\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_adac35805d02f717ae262cec24c403303}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2827c80d526c9b4ad415080d4c3e5a56}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Cfop\-M\-D\-I@{remove\-Form\-Edit\-Cfop\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Cfop\-M\-D\-I@{remove\-Form\-Edit\-Cfop\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Cfop\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Cfop\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2827c80d526c9b4ad415080d4c3e5a56}
+
+
+\-Removes the form, that edits a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aea3adb541f62fa29af136029324ccc9c}{add\-Form\-Manage\-Cfops\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a97090176a66059bd3b477dccdf18ceab}{add\-Form\-Edit\-Cfop\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_af5f39d22f42c5f4a9e85bdc8df96f2da}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ac495161c5a83538d2fe41389b9191863}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Cst\-Cofins\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ac495161c5a83538d2fe41389b9191863}
+
+
+\-Removes the form, that edits a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a2bb709712a8ee748e0475c8ddb511698}{add\-Form\-Manage\-Cst\-Cofinss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_adfc6e71cde32b9ae6349e0cde20ce392}{add\-Form\-Edit\-Cst\-Cofins\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_afc2c090a4461b9276a38cacab572eb64}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ac3689618848d5675f0fa6882f33fa1a8}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Cst\-Icms\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ac3689618848d5675f0fa6882f33fa1a8}
+
+
+\-Removes the form, that edits a icms, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit icms into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a30c7c420c2fca692b6e3e2717608b2cf}{add\-Form\-Manage\-Cst\-Icmss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ad186178a702f11f2f163f7938db22274}{add\-Form\-Edit\-Cst\-Icms\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a9f30febeaa3549bef7a1a299aa5344d7}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ac9e4372f1f05f93d9291a3a64091cf9a}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Cst\-Ipi\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ac9e4372f1f05f93d9291a3a64091cf9a}
+
+
+\-Removes the form, that edits a ipi, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit ipi into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a095c209d1ab4015e27627c7bc28346e8}{add\-Form\-Manage\-Cst\-Ipis\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aa18ed9ef63ad2a71215897aeaa40532b}{add\-Form\-Edit\-Cst\-Ipi\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a52e93a12f2b656182bc0744c274a3646}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ae82a2d23a0e268b8e4950069c1b953a2}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I@{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Cst\-Pis\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ae82a2d23a0e268b8e4950069c1b953a2}
+
+
+\-Removes the form, that edits a pis, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit pis into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aaa32825250e443efedf94ffaaf74b430}{add\-Form\-Manage\-Cst\-Piss\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a7877db33765ae52c12e527d0867fd50e}{add\-Form\-Edit\-Cst\-Pis\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_ab84cc6797774bcdb98dc5a8bfa686271}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a4e822fbb08b1c4afb3b22d533c00e63e}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I@{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I@{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Enterprise\-Customer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a4e822fbb08b1c4afb3b22d533c00e63e}
+
+
+\-Removes the form, that edits a enterprise customer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit enterprise customers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ac0a88b5faa800f8371ae914f726b90bd}{add\-Form\-Edit\-Enterprise\-Customer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a72a91312a375c103c2346ff8263df3bd}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aeb76e51e5e11051cf64d7677242f525a}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Manufacturer\-M\-D\-I@{remove\-Form\-Edit\-Manufacturer\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Manufacturer\-M\-D\-I@{remove\-Form\-Edit\-Manufacturer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Manufacturer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Manufacturer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aeb76e51e5e11051cf64d7677242f525a}
+
+
+\-Removes the form, that edits a manufacturer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit manufacturers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a25b49e7a985f4d0e055b9f688beb515c}{add\-Form\-Manage\-Manufacturers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aba30e79e3188e953b5499014fe29b680}{add\-Form\-Edit\-Manufacturer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a7fb993091418252721335791be86e1d7}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a5a6911f27447a926305af2f4abc797de}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I@{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I@{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Physical\-Customer\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a5a6911f27447a926305af2f4abc797de}
+
+
+\-Removes the form, that edits a physical customer, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit physical customers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a0d84578ab1b61b47dfb56c455b3d0ada}{add\-Form\-Manage\-Customers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a69a5d1c90da9ee145831417391e86bb2}{add\-Form\-Edit\-Physical\-Customer\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a23e545f293e9d1f5fe5b75853548b03b}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a29cdeed55c757e02f66b225e5823b176}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Price\-M\-D\-I@{remove\-Form\-Edit\-Price\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Price\-M\-D\-I@{remove\-Form\-Edit\-Price\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Price\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Price\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a29cdeed55c757e02f66b225e5823b176}
+
+
+\-Removes the form, that edits a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit price into database, will be removed from \-M\-D\-I. \-Only \-Managers and \-Supervisors \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a294e6f6acec66c6b4a12b72f7918eac4}{add\-Form\-Manage\-Prices\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_acf4fe6bf64051b8192050d5e882c05cc}{add\-Form\-Edit\-Price\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a3b4f54e4163f870d665a9c936177806b}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a1ecc8cf7cde5c24f8f1ac2285a3c68c8}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Product\-Category\-M\-D\-I@{remove\-Form\-Edit\-Product\-Category\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Product\-Category\-M\-D\-I@{remove\-Form\-Edit\-Product\-Category\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Product\-Category\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Product\-Category\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a1ecc8cf7cde5c24f8f1ac2285a3c68c8}
+
+
+\-Removes the form, that edits a product category, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit product categories into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afc72f6b8ec3daf845792b04ad8e325a6}{add\-Form\-Manage\-Product\-Categories\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a84c9ff9eed87ba986f0fa478f6507b6b}{add\-Form\-Edit\-Product\-Category\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a2e94bb4802d8fa4f21d8975481febca4}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a3f7f2093285cdbdeed8ad1930ed6ddee}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Product\-M\-D\-I@{remove\-Form\-Edit\-Product\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Product\-M\-D\-I@{remove\-Form\-Edit\-Product\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Product\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Product\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a3f7f2093285cdbdeed8ad1930ed6ddee}
+
+
+\-Removes the form, that edits a product, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit products into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a50de6a3fa5c6d3f6230ef68d76e4c945}{add\-Form\-Manage\-Products\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_abddd3139cedb75c6537fcee72e238f86}{add\-Form\-Edit\-Product\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a2fc6fa78aee375c467c79d90559be17c}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ae7a04f82355242d60017a0992c6636bf}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Product\-Origin\-M\-D\-I@{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I@{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Product\-Origin\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Product\-Origin\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ae7a04f82355242d60017a0992c6636bf}
+
+
+\-Removes the form, that edits a product origin, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit product origins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_ae7b73a3c35cd9f7bbcaeb4e46a39fbc4}{add\-Form\-Manage\-Product\-Origins\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_af58a9a09065bfdf77a0b2f82261289bb}{add\-Form\-Edit\-Product\-Origin\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a07c2bf04aedb01e78aa7adb839f93d16}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_ae4bc2b8e66c6c90efc9437bbe44ef7b7}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Provider\-M\-D\-I@{remove\-Form\-Edit\-Provider\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Provider\-M\-D\-I@{remove\-Form\-Edit\-Provider\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Provider\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Provider\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_ae4bc2b8e66c6c90efc9437bbe44ef7b7}
+
+
+\-Removes the form, that edits a provider, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit providers into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a3258c12b32eb8f3d04df21d1b27565cb}{add\-Form\-Manage\-Providers\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a9275b1a3b1cb7511ad4b80912eb2af6f}{add\-Form\-Edit\-Provider\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a653378b6744dded8fcfeaefc83330272}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_aa27a508c59fe82d5024186827eb9a26a}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I@{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I@{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Stock\-Unit\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_aa27a508c59fe82d5024186827eb9a26a}
+
+
+\-Removes the form, that edits a stock unit, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit stock units into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_aa5acb550059d9e11f4aeae436653834d}{add\-Form\-Manage\-Stock\-Units\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a7095fce3cfae872391492251d37e7f28}{add\-Form\-Edit\-Stock\-Unit\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a86ae6043db2adf28898282cb8abd5483}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2a8a096f0ad79a8591b36df424876676}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Store\-M\-D\-I@{remove\-Form\-Edit\-Store\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Store\-M\-D\-I@{remove\-Form\-Edit\-Store\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Store\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Store\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2a8a096f0ad79a8591b36df424876676}
+
+
+\-Removes the form, that edits a store, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit stores into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_a6613337827ff3adc200cf4353aaedd8e}{add\-Form\-Manage\-Stores\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_aa497e0aebc4d7284f96b02c04ba91b00}{add\-Form\-Edit\-Store\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_af1e2cd14ce14741dec843f199c0fec42}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a2f6d47e171d622a6d17be124821352bd}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I@{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I}}
+\index{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I@{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-Tax\-Rate\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a2f6d47e171d622a6d17be124821352bd}
+
+
+\-Removes the form, that edits a cofins, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit cofins into database, will be removed from \-M\-D\-I. \-Only \-Managers, \-Supervisors and \-Stockers are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_afbcd7e5377b7269fc431975b799e01e9}{add\-Form\-Manage\-Tax\-Rates\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_ab426bef03451b41a34a3125685951a98}{add\-Form\-Edit\-Tax\-Rate\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a25dad48bdb07068fe091061c3176aa90}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_afdebe819722a44e459fb6798ccb5cf1a}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!remove\-Form\-Edit\-User\-M\-D\-I@{remove\-Form\-Edit\-User\-M\-D\-I}}
+\index{remove\-Form\-Edit\-User\-M\-D\-I@{remove\-Form\-Edit\-User\-M\-D\-I}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{remove\-Form\-Edit\-User\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::remove\-Form\-Edit\-User\-M\-D\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_afdebe819722a44e459fb6798ccb5cf1a}
+
+
+\-Removes the form, that edits an user, from \-M\-D\-I area. 
+
+\-This is an abstract method that will get called, when an user dismisses the dialog. \-The child dialog that allows an user to edit users into database, will be removed from \-M\-D\-I. \-Only \-Managers and \-Supervisors are allowed to get into this option. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_i_main_window_af7659d4e738bd2b4519f01a7fc77a2fb}{add\-Form\-Manage\-Users\-To\-M\-D\-I()} and \hyperlink{class_i_main_window_a8496779b5688e62e6887e8fa9f236a30}{add\-Form\-Edit\-User\-To\-M\-D\-I()} 
+\end{DoxySeeAlso}
+
+
+\-Implemented in \hyperlink{class_main_window_a8306654165b9f9020bbf08208d8e0c95}{\-Main\-Window}.
+
+\hypertarget{class_i_main_window_a611322565db0eb0985a025451a94c2fe}{\index{\-I\-Main\-Window@{\-I\-Main\-Window}!set\-User@{set\-User}}
+\index{set\-User@{set\-User}!IMainWindow@{\-I\-Main\-Window}}
+\subsubsection[{set\-User}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-I\-Main\-Window\-::set\-User} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User} $\ast$}]{user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_i_main_window_a611322565db0eb0985a025451a94c2fe}
+
+
+\-Sets the user currently logged in. 
+
+\-This is an abstract method that will get called, when an user logs in successfully. 
+
+\-Implemented in \hyperlink{class_main_window_ad9f37398d16c551d5daf0df7a474a772}{\-Main\-Window}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/imainwindow.\-h\end{DoxyCompactItemize}

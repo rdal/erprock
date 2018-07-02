@@ -1,0 +1,164 @@
+\hypertarget{class_users_list_view}{\section{\-Users\-List\-View \-Class \-Reference}
+\label{class_users_list_view}\index{\-Users\-List\-View@{\-Users\-List\-View}}
+}
+
+
+\-View for user management.  
+
+
+
+
+{\ttfamily \#include $<$userslistview.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_users_list_view_a79959999ef3888941bb81307ecd68aea}{on\-Add\-New\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Add new user. \end{DoxyCompactList}\item 
+void \hyperlink{class_users_list_view_abaebcd202fd977b4c52fae1cb561fecf}{on\-Edit\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Edit user. \end{DoxyCompactList}\item 
+void \hyperlink{class_users_list_view_aea4176cc754f9e062eae4e41b8c3761d}{on\-Remove\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Remove user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_users_list_view_ac08553cff2b680b774809c6010eecf72}{\-Users\-List\-View} (\-Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_users_list_view_a7de500f814a5381db2c8be87ab464dfc}{$\sim$\-Users\-List\-View} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_users_list_view_aef39aa8e53d72ba34e31d39c1171c0ca}{set\-Parent\-Main\-Window} (\hyperlink{class_i_main_window}{\-I\-Main\-Window} $\ast$parent\-Main\-Window)
+\item 
+void \hyperlink{class_users_list_view_a8b688f8cbaa77327a8049b75d184f622}{list\-Users} ()
+\begin{DoxyCompactList}\small\item\em \-List all users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-View for user management. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for user management. 
+
+\-Definition at line 19 of file userslistview.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_users_list_view_ac08553cff2b680b774809c6010eecf72}{\index{\-Users\-List\-View@{\-Users\-List\-View}!\-Users\-List\-View@{\-Users\-List\-View}}
+\index{\-Users\-List\-View@{\-Users\-List\-View}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{\-Users\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Users\-List\-View\-::\-Users\-List\-View} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_users_list_view_ac08553cff2b680b774809c6010eecf72}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_users_list_view}{\-Users\-List\-View}. 
+
+\-Definition at line 5 of file userslistview.\-cpp.
+
+\hypertarget{class_users_list_view_a7de500f814a5381db2c8be87ab464dfc}{\index{\-Users\-List\-View@{\-Users\-List\-View}!$\sim$\-Users\-List\-View@{$\sim$\-Users\-List\-View}}
+\index{$\sim$\-Users\-List\-View@{$\sim$\-Users\-List\-View}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{$\sim$\-Users\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Users\-List\-View\-::$\sim$\-Users\-List\-View} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_users_list_view_a7de500f814a5381db2c8be87ab464dfc}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 19 of file userslistview.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_users_list_view_a8b688f8cbaa77327a8049b75d184f622}{\index{\-Users\-List\-View@{\-Users\-List\-View}!list\-Users@{list\-Users}}
+\index{list\-Users@{list\-Users}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{list\-Users}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Users\-List\-View\-::list\-Users} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_users_list_view_a8b688f8cbaa77327a8049b75d184f622}
+
+
+\-List all users. 
+
+\-This method retrieves all users from database, and show them in a grid. 
+
+\-Definition at line 31 of file userslistview.\-cpp.
+
+\hypertarget{class_users_list_view_a79959999ef3888941bb81307ecd68aea}{\index{\-Users\-List\-View@{\-Users\-List\-View}!on\-Add\-New\-User@{on\-Add\-New\-User}}
+\index{on\-Add\-New\-User@{on\-Add\-New\-User}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{on\-Add\-New\-User}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Users\-List\-View\-::on\-Add\-New\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_users_list_view_a79959999ef3888941bb81307ecd68aea}
+
+
+\-Add new user. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Add new user\char`\"{} button. 
+
+\-Definition at line 92 of file userslistview.\-cpp.
+
+\hypertarget{class_users_list_view_abaebcd202fd977b4c52fae1cb561fecf}{\index{\-Users\-List\-View@{\-Users\-List\-View}!on\-Edit\-User@{on\-Edit\-User}}
+\index{on\-Edit\-User@{on\-Edit\-User}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{on\-Edit\-User}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Users\-List\-View\-::on\-Edit\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_users_list_view_abaebcd202fd977b4c52fae1cb561fecf}
+
+
+\-Edit user. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Edit user\char`\"{} button. 
+
+\-Definition at line 97 of file userslistview.\-cpp.
+
+\hypertarget{class_users_list_view_aea4176cc754f9e062eae4e41b8c3761d}{\index{\-Users\-List\-View@{\-Users\-List\-View}!on\-Remove\-User@{on\-Remove\-User}}
+\index{on\-Remove\-User@{on\-Remove\-User}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{on\-Remove\-User}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Users\-List\-View\-::on\-Remove\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{class_users_list_view_aea4176cc754f9e062eae4e41b8c3761d}
+
+
+\-Remove user. 
+
+\-This slot gets called when user clicks on \char`\"{}\-Remove user\char`\"{} button. 
+
+\-Definition at line 106 of file userslistview.\-cpp.
+
+\hypertarget{class_users_list_view_aef39aa8e53d72ba34e31d39c1171c0ca}{\index{\-Users\-List\-View@{\-Users\-List\-View}!set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}}
+\index{set\-Parent\-Main\-Window@{set\-Parent\-Main\-Window}!UsersListView@{\-Users\-List\-View}}
+\subsubsection[{set\-Parent\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Users\-List\-View\-::set\-Parent\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-I\-Main\-Window} $\ast$}]{parent\-Main\-Window}
+\end{DoxyParamCaption}
+)}}\label{class_users_list_view_aef39aa8e53d72ba34e31d39c1171c0ca}
+\-Set parent \hyperlink{class_main_window}{\-Main\-Window}. \-When a dialog is opened, it may be necessary to do some actions at the window who called it. \-Actions like refreshing a list of users or setting the current user logged in, when this dialog is about to close.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em parent\-Main\-Window} & \-Parent \hyperlink{class_main_window}{\-Main\-Window} \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 26 of file userslistview.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/userslistview.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-View/userslistview.\-cpp\end{DoxyCompactItemize}

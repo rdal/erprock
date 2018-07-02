@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/users/add_user.png</file>
+        <file>images/users/edit_user.png</file>
+        <file>images/users/remove_user.png</file>
+        <file>images/manufacturers/add_manufacturer.png</file>
+        <file>images/manufacturers/edit_manufacturer.png</file>
+        <file>images/manufacturers/remove_manufacturer.png</file>
+        <file>images/cfop/database-import.png</file>
+    </qresource>
+</RCC>

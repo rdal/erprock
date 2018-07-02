@@ -1,0 +1,226 @@
+\hypertarget{class_utilities}{\section{\-Utilities \-Class \-Reference}
+\label{class_utilities}\index{\-Utilities@{\-Utilities}}
+}
+
+
+\hyperlink{class_utilities}{\-Utilities} class.  
+
+
+
+
+{\ttfamily \#include $<$utilities.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Status\-Control} \{ \*
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a401b1c4377779dc72a5046ca7b4bd02a}{\-N\-O\-\_\-\-E\-R\-R}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aa1e17c2f5a7a36fa1d2730d2ec5d2ddc}{\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a7e50e5e4ba0dc0d459203bea7516d14d}{\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a3f2a7c09f27d40e71a35539d78dae5f3}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}, 
+\*
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228acf96c7749b5fc58a0646208835c22c9a}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aff3c4a322caea65bd8410927e4b8c83d}{\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a497c8c8171a373b9aefc41df20927f3a}{\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}, 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228ac3c51b085914ff267deb2b50c32e9341}{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D}, 
+\*
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aeba0ecea2835782b051419e056fb280e}{\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N}
+ \}
+\begin{DoxyCompactList}\small\item\em \-Status \-Control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utilities_a38f1c42a0191015f4031ea2207a4e3d3}{\-Utilities} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \-Q\-String \hyperlink{class_utilities_a2caa66e89881ca149ab59ebd947f03c2}{get\-Bundle\-Path} ()
+\item 
+static \-Q\-String \hyperlink{class_utilities_a11843b163f2780b09cecd308880b3af2}{get\-Resources\-Path} ()
+\item 
+static \-Q\-String \hyperlink{class_utilities_a18ef0b04d52a9ef1a170d162b2b573c7}{strip\-C\-P\-F\-Chars} (\-Q\-String str)
+\item 
+static bool \hyperlink{class_utilities_a18252596785936749f8b573ac9ca1a13}{is\-Cpf\-Valid} (\-Q\-String cpf\-Str)
+\item 
+static \-Q\-String \hyperlink{class_utilities_a62ee1ac606e7c96da2f1819d21dcec03}{strip\-C\-N\-P\-J\-Chars} (\-Q\-String str)
+\item 
+static bool \hyperlink{class_utilities_ae2c1db542d657573973032c5b580e657}{is\-C\-N\-P\-J\-Valid} (\-Q\-String str)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_utilities}{\-Utilities} class. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class has several utilities methods, for general purpose. \-It is intended to ease some developing aspects. 
+
+\-Definition at line 20 of file utilities.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\index{\-Utilities@{\-Utilities}!\-Status\-Control@{\-Status\-Control}}
+\index{\-Status\-Control@{\-Status\-Control}!Utilities@{\-Utilities}}
+\subsubsection[{\-Status\-Control}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Utilities\-::\-Status\-Control}}}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}
+
+
+\-Status \-Control. 
+
+\-This enum is used to indicate types of errors (or no error), to be handled by \-U\-I. \begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-N\-O\-\_\-\-E\-R\-R@{\-N\-O\-\_\-\-E\-R\-R}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-N\-O\-\_\-\-E\-R\-R@{\-N\-O\-\_\-\-E\-R\-R}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a401b1c4377779dc72a5046ca7b4bd02a}{\-N\-O\-\_\-\-E\-R\-R}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a401b1c4377779dc72a5046ca7b4bd02a}
+}]\-No \-Error. \index{\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R@{\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R@{\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aa1e17c2f5a7a36fa1d2730d2ec5d2ddc}{\-U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-R\-R\-O\-R}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aa1e17c2f5a7a36fa1d2730d2ec5d2ddc}
+}]\-Unknown error. \index{\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a7e50e5e4ba0dc0d459203bea7516d14d}{\-D\-B\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a7e50e5e4ba0dc0d459203bea7516d14d}
+}]\-This error happens when database is not connected. \index{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a3f2a7c09f27d40e71a35539d78dae5f3}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a3f2a7c09f27d40e71a35539d78dae5f3}
+}]\-This error happens when the object already exists. \index{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228acf96c7749b5fc58a0646208835c22c9a}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S\-\_\-\-N\-A\-M\-E}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228acf96c7749b5fc58a0646208835c22c9a}
+}]\-This error happens when the object name is already stored. \index{\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S@{\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S@{\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aff3c4a322caea65bd8410927e4b8c83d}{\-B\-A\-R\-\_\-\-C\-O\-D\-E\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-S}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aff3c4a322caea65bd8410927e4b8c83d}
+}]\-This error happens when the object's bar code is already stored. \index{\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T@{\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T@{\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a497c8c8171a373b9aefc41df20927f3a}{\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228a497c8c8171a373b9aefc41df20927f3a}
+}]\-This error happens when the object does not exist. \index{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D@{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D@{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228ac3c51b085914ff267deb2b50c32e9341}{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-I\-D}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228ac3c51b085914ff267deb2b50c32e9341}
+}]\-This error tells that some id is invalid. \index{\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N@{\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N}!\-Utilities@{\-Utilities}}\index{\-Utilities@{\-Utilities}!\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N@{\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N}}\item[{\em 
+\hypertarget{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aeba0ecea2835782b051419e056fb280e}{\-A\-C\-T\-I\-O\-N\-\_\-\-F\-O\-R\-B\-I\-D\-D\-E\-N}\label{class_utilities_a2974f062d85bdb0c444a1cbe554bf228aeba0ecea2835782b051419e056fb280e}
+}]\-This error tells that some action is invalid. \end{description}
+\end{Desc}
+
+
+
+\-Definition at line 27 of file utilities.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_utilities_a38f1c42a0191015f4031ea2207a4e3d3}{\index{\-Utilities@{\-Utilities}!\-Utilities@{\-Utilities}}
+\index{\-Utilities@{\-Utilities}!Utilities@{\-Utilities}}
+\subsubsection[{\-Utilities}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Utilities} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_utilities_a38f1c42a0191015f4031ea2207a4e3d3}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_utilities}{\-Utilities}. 
+
+\-Definition at line 4 of file utilities.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_utilities_a2caa66e89881ca149ab59ebd947f03c2}{\index{\-Utilities@{\-Utilities}!get\-Bundle\-Path@{get\-Bundle\-Path}}
+\index{get\-Bundle\-Path@{get\-Bundle\-Path}!Utilities@{\-Utilities}}
+\subsubsection[{get\-Bundle\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Utilities\-::get\-Bundle\-Path} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_a2caa66e89881ca149ab59ebd947f03c2}
+\-Return the bundle path \begin{DoxyReturn}{\-Returns}
+\-Returns the bundle path from where we can access other directories related to the project. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_utilities_a11843b163f2780b09cecd308880b3af2}{get\-Resources\-Path()} and get\-App\-Path() 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 9 of file utilities.\-cpp.
+
+\hypertarget{class_utilities_a11843b163f2780b09cecd308880b3af2}{\index{\-Utilities@{\-Utilities}!get\-Resources\-Path@{get\-Resources\-Path}}
+\index{get\-Resources\-Path@{get\-Resources\-Path}!Utilities@{\-Utilities}}
+\subsubsection[{get\-Resources\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Utilities\-::get\-Resources\-Path} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_a11843b163f2780b09cecd308880b3af2}
+\-Return the resource path \begin{DoxyReturn}{\-Returns}
+\-Returns the path where the resource files are located. \-An example of a resource file is the config file for setting the database up. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+get\-App\-Path() and \hyperlink{class_utilities_a2caa66e89881ca149ab59ebd947f03c2}{get\-Bundle\-Path()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 31 of file utilities.\-cpp.
+
+\hypertarget{class_utilities_ae2c1db542d657573973032c5b580e657}{\index{\-Utilities@{\-Utilities}!is\-C\-N\-P\-J\-Valid@{is\-C\-N\-P\-J\-Valid}}
+\index{is\-C\-N\-P\-J\-Valid@{is\-C\-N\-P\-J\-Valid}!Utilities@{\-Utilities}}
+\subsubsection[{is\-C\-N\-P\-J\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Utilities\-::is\-C\-N\-P\-J\-Valid} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_ae2c1db542d657573973032c5b580e657}
+\-This method checks the \-C\-N\-P\-J format. \begin{DoxyReturn}{\-Returns}
+\-Returns if it is valid or not. 
+\end{DoxyReturn}
+
+
+\-Definition at line 122 of file utilities.\-cpp.
+
+\hypertarget{class_utilities_a18252596785936749f8b573ac9ca1a13}{\index{\-Utilities@{\-Utilities}!is\-Cpf\-Valid@{is\-Cpf\-Valid}}
+\index{is\-Cpf\-Valid@{is\-Cpf\-Valid}!Utilities@{\-Utilities}}
+\subsubsection[{is\-Cpf\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Utilities\-::is\-Cpf\-Valid} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf\-Str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_a18252596785936749f8b573ac9ca1a13}
+\-This method checks the \-C\-P\-F format. \begin{DoxyReturn}{\-Returns}
+\-Returns if it is valid or not. 
+\end{DoxyReturn}
+
+
+\-Definition at line 50 of file utilities.\-cpp.
+
+\hypertarget{class_utilities_a62ee1ac606e7c96da2f1819d21dcec03}{\index{\-Utilities@{\-Utilities}!strip\-C\-N\-P\-J\-Chars@{strip\-C\-N\-P\-J\-Chars}}
+\index{strip\-C\-N\-P\-J\-Chars@{strip\-C\-N\-P\-J\-Chars}!Utilities@{\-Utilities}}
+\subsubsection[{strip\-C\-N\-P\-J\-Chars}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Utilities\-::strip\-C\-N\-P\-J\-Chars} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_a62ee1ac606e7c96da2f1819d21dcec03}
+\-Removes dots, slash and dash from \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em str} & \-The \-C\-N\-P\-J to get stripped. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The result \-C\-N\-P\-J value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 109 of file utilities.\-cpp.
+
+\hypertarget{class_utilities_a18ef0b04d52a9ef1a170d162b2b573c7}{\index{\-Utilities@{\-Utilities}!strip\-C\-P\-F\-Chars@{strip\-C\-P\-F\-Chars}}
+\index{strip\-C\-P\-F\-Chars@{strip\-C\-P\-F\-Chars}!Utilities@{\-Utilities}}
+\subsubsection[{strip\-C\-P\-F\-Chars}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Utilities\-::strip\-C\-P\-F\-Chars} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_utilities_a18ef0b04d52a9ef1a170d162b2b573c7}
+\-Removes dots and dash from \-C\-P\-F. 
+\begin{DoxyParams}{\-Parameters}
+{\em str} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F to get stripped. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The result \-C\-P\-F value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 38 of file utilities.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Util/utilities.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Util/utilities.\-cpp\end{DoxyCompactItemize}

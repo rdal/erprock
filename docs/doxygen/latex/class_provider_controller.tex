@@ -1,0 +1,188 @@
+\hypertarget{class_provider_controller}{\section{\-Provider\-Controller \-Class \-Reference}
+\label{class_provider_controller}\index{\-Provider\-Controller@{\-Provider\-Controller}}
+}
+
+
+\-Controller for providers.  
+
+
+
+
+{\ttfamily \#include $<$providercontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_provider_controller_acc445d4c4bdb82fc1f401bbb6eec5dd6}{\-Provider\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_provider_controller_a2dd8f33543c566c2dd11af13dc11815a}{$\sim$\-Provider\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{add\-Provider} (\hyperlink{class_provider}{\-Provider} $\ast$provider)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{update\-Provider} (\hyperlink{class_provider}{\-Provider} $\ast$provider)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{remove\-Provider} (\-Q\-String cnpj)
+\item 
+\hyperlink{class_provider}{\-Provider} $\ast$ \hyperlink{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{get\-Provider\-By\-C\-N\-P\-J} (\-Q\-String cnpj)
+\item 
+\-Q\-List$<$ \hyperlink{class_provider}{\-Provider} $\ast$ $>$ $\ast$ \hyperlink{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{get\-Providers} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for providers. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for providers management. 
+
+\-Definition at line 14 of file providercontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_provider_controller_acc445d4c4bdb82fc1f401bbb6eec5dd6}{\index{\-Provider\-Controller@{\-Provider\-Controller}!\-Provider\-Controller@{\-Provider\-Controller}}
+\index{\-Provider\-Controller@{\-Provider\-Controller}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{\-Provider\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Provider\-Controller\-::\-Provider\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_provider_controller_acc445d4c4bdb82fc1f401bbb6eec5dd6}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_provider_controller}{\-Provider\-Controller}. 
+
+\-Definition at line 3 of file providercontroller.\-cpp.
+
+\hypertarget{class_provider_controller_a2dd8f33543c566c2dd11af13dc11815a}{\index{\-Provider\-Controller@{\-Provider\-Controller}!$\sim$\-Provider\-Controller@{$\sim$\-Provider\-Controller}}
+\index{$\sim$\-Provider\-Controller@{$\sim$\-Provider\-Controller}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{$\sim$\-Provider\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Provider\-Controller\-::$\sim$\-Provider\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a2dd8f33543c566c2dd11af13dc11815a}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file providercontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{\index{\-Provider\-Controller@{\-Provider\-Controller}!add\-Provider@{add\-Provider}}
+\index{add\-Provider@{add\-Provider}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{add\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Provider\-Controller\-::add\-Provider} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Provider} $\ast$}]{provider}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}
+\-Beforing adding a provider, this method checks if there is already a provider with that \-C\-N\-P\-J, if its name has less than 100 characters, and if the given \-C\-N\-P\-J is valid. 
+\begin{DoxyParams}{\-Parameters}
+{\em provider} & \-The \hyperlink{class_provider}{\-Provider} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{update\-Provider()}, \hyperlink{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{remove\-Provider()}, \hyperlink{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{get\-Provider\-By\-C\-N\-P\-J()} and \hyperlink{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{get\-Providers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 14 of file providercontroller.\-cpp.
+
+\hypertarget{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{\index{\-Provider\-Controller@{\-Provider\-Controller}!get\-Provider\-By\-C\-N\-P\-J@{get\-Provider\-By\-C\-N\-P\-J}}
+\index{get\-Provider\-By\-C\-N\-P\-J@{get\-Provider\-By\-C\-N\-P\-J}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{get\-Provider\-By\-C\-N\-P\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Provider} $\ast$ {\bf \-Provider\-Controller\-::get\-Provider\-By\-C\-N\-P\-J} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}
+\-Get an provider by its \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The \hyperlink{class_provider}{\-Provider}'s \-C\-N\-P\-J. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the provider object associated with the given \-C\-N\-P\-J. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{add\-Provider()}, \hyperlink{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{update\-Provider()}, \hyperlink{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{remove\-Provider()} and \hyperlink{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{get\-Providers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 100 of file providercontroller.\-cpp.
+
+\hypertarget{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{\index{\-Provider\-Controller@{\-Provider\-Controller}!get\-Providers@{get\-Providers}}
+\index{get\-Providers@{get\-Providers}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{get\-Providers}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Provider} $\ast$ $>$ $\ast$ {\bf \-Provider\-Controller\-::get\-Providers} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a4623508367c6e1254c0834294875fbe8}
+\-This method returns all the providers that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored providers. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{add\-Provider()}, \hyperlink{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{update\-Provider()}, \hyperlink{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{remove\-Provider()} and \hyperlink{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{get\-Provider\-By\-C\-N\-P\-J()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 110 of file providercontroller.\-cpp.
+
+\hypertarget{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{\index{\-Provider\-Controller@{\-Provider\-Controller}!remove\-Provider@{remove\-Provider}}
+\index{remove\-Provider@{remove\-Provider}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{remove\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Provider\-Controller\-::remove\-Provider} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cnpj}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}
+\-Beforing removing an provider, this method checks if there is a provider with that \-C\-N\-P\-J. 
+\begin{DoxyParams}{\-Parameters}
+{\em cnpj} & \-The cnpj whose provider will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{add\-Provider()}, \hyperlink{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{update\-Provider()}, \hyperlink{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{get\-Provider\-By\-C\-N\-P\-J()} and \hyperlink{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{get\-Providers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 73 of file providercontroller.\-cpp.
+
+\hypertarget{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}{\index{\-Provider\-Controller@{\-Provider\-Controller}!update\-Provider@{update\-Provider}}
+\index{update\-Provider@{update\-Provider}!ProviderController@{\-Provider\-Controller}}
+\subsubsection[{update\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Provider\-Controller\-::update\-Provider} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Provider} $\ast$}]{provider}
+\end{DoxyParamCaption}
+)}}\label{class_provider_controller_a215cc537e0e915016245e2ec8692cff8}
+\-Beforing updating a provider, this method checks if there is a provider with that \-C\-N\-P\-J, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em provider} & \-The \hyperlink{class_provider}{\-Provider} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_provider_controller_a7e1a2e9da40bbbd96145b5866d3bf084}{add\-Provider()}, \hyperlink{class_provider_controller_a0f58edcd9e43b7572d1e8b8cf7fb6183}{remove\-Provider()}, \hyperlink{class_provider_controller_a841a5e1a5fc16eb498e9b5a05efa1f87}{get\-Provider\-By\-C\-N\-P\-J()} and \hyperlink{class_provider_controller_a4623508367c6e1254c0834294875fbe8}{get\-Providers()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 46 of file providercontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/providercontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Stock/providercontroller.\-cpp\end{DoxyCompactItemize}

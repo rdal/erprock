@@ -1,0 +1,255 @@
+\hypertarget{class_user_controller}{\section{\-User\-Controller \-Class \-Reference}
+\label{class_user_controller}\index{\-User\-Controller@{\-User\-Controller}}
+}
+
+
+\-Controller for system users.  
+
+
+
+
+{\ttfamily \#include $<$usercontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_controller_aa7bdde30a4cfede2566b3bb96e83d353}{\-User\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_user_controller_ad4e539d1ed1daf0d85f23cfdfdcfd77b}{$\sim$\-User\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User} (\hyperlink{class_user}{\-User} $\ast$user)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User} (\hyperlink{class_user}{\-User} $\ast$user)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User} (\-Q\-String cpf)
+\item 
+\hyperlink{class_user}{\-User} $\ast$ \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F} (\-Q\-String cpf)
+\item 
+\-Q\-List$<$ \hyperlink{class_user}{\-User} $\ast$ $>$ $\ast$ \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users} ()
+\item 
+\-Q\-String \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name} (\hyperlink{class_user_a43f49d6a3bf5f000aea476bc641949b0}{\-User\-::\-User\-Role} role)
+\item 
+\-Q\-String\-List $\ast$ \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles} ()
+\item 
+bool \hyperlink{class_user_controller_adc2d4d5aa0c4da58ebb44f254560fe05}{validate\-Login} (\-Q\-String cpf, \-Q\-String password)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for system users. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for system users management. 
+
+\-Definition at line 14 of file usercontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_user_controller_aa7bdde30a4cfede2566b3bb96e83d353}{\index{\-User\-Controller@{\-User\-Controller}!\-User\-Controller@{\-User\-Controller}}
+\index{\-User\-Controller@{\-User\-Controller}!UserController@{\-User\-Controller}}
+\subsubsection[{\-User\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User\-Controller\-::\-User\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_user_controller_aa7bdde30a4cfede2566b3bb96e83d353}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_user_controller}{\-User\-Controller}. 
+
+\-Definition at line 3 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_ad4e539d1ed1daf0d85f23cfdfdcfd77b}{\index{\-User\-Controller@{\-User\-Controller}!$\sim$\-User\-Controller@{$\sim$\-User\-Controller}}
+\index{$\sim$\-User\-Controller@{$\sim$\-User\-Controller}!UserController@{\-User\-Controller}}
+\subsubsection[{$\sim$\-User\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User\-Controller\-::$\sim$\-User\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_ad4e539d1ed1daf0d85f23cfdfdcfd77b}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file usercontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{\index{\-User\-Controller@{\-User\-Controller}!add\-User@{add\-User}}
+\index{add\-User@{add\-User}!UserController@{\-User\-Controller}}
+\subsubsection[{add\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-User\-Controller\-::add\-User} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User} $\ast$}]{user}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_aeab17c7a3946a903088926f3201db8a3}
+\-Beforing adding an user, this method checks if there is already an user with that \-C\-P\-F, if his name has less than 100 characters, and if the given \-C\-P\-F is valid. 
+\begin{DoxyParams}{\-Parameters}
+{\em user} & \-The \hyperlink{class_user}{\-User} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()}, \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 14 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{\index{\-User\-Controller@{\-User\-Controller}!get\-User\-By\-C\-P\-F@{get\-User\-By\-C\-P\-F}}
+\index{get\-User\-By\-C\-P\-F@{get\-User\-By\-C\-P\-F}!UserController@{\-User\-Controller}}
+\subsubsection[{get\-User\-By\-C\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-User} $\ast$ {\bf \-User\-Controller\-::get\-User\-By\-C\-P\-F} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_add2b9e205d994df7b03c8dafea468b53}
+\-Get an user by his \-C\-P\-F. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the user object associated with the given \-C\-P\-F. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()}, \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 100 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{\index{\-User\-Controller@{\-User\-Controller}!get\-User\-Role\-Name@{get\-User\-Role\-Name}}
+\index{get\-User\-Role\-Name@{get\-User\-Role\-Name}!UserController@{\-User\-Controller}}
+\subsubsection[{get\-User\-Role\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-User\-Controller\-::get\-User\-Role\-Name} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User\-::\-User\-Role}}]{role}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_a732365bc88fe2bb09d13b1e174967326}
+\-This method returns the user's role name by its id. 
+\begin{DoxyParams}{\-Parameters}
+{\em role} & \-The \hyperlink{class_user}{\-User}'s role id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the role name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 121 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{\index{\-User\-Controller@{\-User\-Controller}!get\-Users@{get\-Users}}
+\index{get\-Users@{get\-Users}!UserController@{\-User\-Controller}}
+\subsubsection[{get\-Users}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-User} $\ast$ $>$ $\ast$ {\bf \-User\-Controller\-::get\-Users} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}
+\-This method returns all the users that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored users. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 110 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{\index{\-User\-Controller@{\-User\-Controller}!get\-Users\-Roles@{get\-Users\-Roles}}
+\index{get\-Users\-Roles@{get\-Users\-Roles}!UserController@{\-User\-Controller}}
+\subsubsection[{get\-Users\-Roles}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String\-List $\ast$ {\bf \-User\-Controller\-::get\-Users\-Roles} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}
+\-This method returns all the user's role that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored user's roles. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()} and \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 132 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{\index{\-User\-Controller@{\-User\-Controller}!remove\-User@{remove\-User}}
+\index{remove\-User@{remove\-User}!UserController@{\-User\-Controller}}
+\subsubsection[{remove\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-User\-Controller\-::remove\-User} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_a648915757f93f39b2a6c44a147830c2b}
+\-Beforing removing an user, this method checks if there is an user with that \-C\-P\-F. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The cpf whose user will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{update\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()}, \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 73 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}{\index{\-User\-Controller@{\-User\-Controller}!update\-User@{update\-User}}
+\index{update\-User@{update\-User}!UserController@{\-User\-Controller}}
+\subsubsection[{update\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-User\-Controller\-::update\-User} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-User} $\ast$}]{user}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_a1baa1a34a39160d0ff6e023c2d173343}
+\-Beforing updating an user, this method checks if there is an user with that \-C\-P\-F, and if his name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em user} & \-The \hyperlink{class_user}{\-User} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_user_controller_aeab17c7a3946a903088926f3201db8a3}{add\-User()}, \hyperlink{class_user_controller_a648915757f93f39b2a6c44a147830c2b}{remove\-User()}, \hyperlink{class_user_controller_add2b9e205d994df7b03c8dafea468b53}{get\-User\-By\-C\-P\-F()}, \hyperlink{class_user_controller_aeb561ee6bafc3f106885d5d2384263d6}{get\-Users()}, \hyperlink{class_user_controller_a732365bc88fe2bb09d13b1e174967326}{get\-User\-Role\-Name()} and \hyperlink{class_user_controller_a9888bcd5dfd425a761a5c8f8ef03d8f1}{get\-Users\-Roles()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 46 of file usercontroller.\-cpp.
+
+\hypertarget{class_user_controller_adc2d4d5aa0c4da58ebb44f254560fe05}{\index{\-User\-Controller@{\-User\-Controller}!validate\-Login@{validate\-Login}}
+\index{validate\-Login@{validate\-Login}!UserController@{\-User\-Controller}}
+\subsubsection[{validate\-Login}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-User\-Controller\-::validate\-Login} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{cpf, }
+\item[{\-Q\-String}]{password}
+\end{DoxyParamCaption}
+)}}\label{class_user_controller_adc2d4d5aa0c4da58ebb44f254560fe05}
+\-Validates the user login. 
+\begin{DoxyParams}{\-Parameters}
+{\em cpf} & \-The \hyperlink{class_user}{\-User}'s \-C\-P\-F. \\
+\hline
+{\em password} & \-The \hyperlink{class_user}{\-User}'s encrypted password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns true if the credentials match, otherwise return false. 
+\end{DoxyReturn}
+
+
+\-Definition at line 143 of file usercontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/usercontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/usercontroller.\-cpp\end{DoxyCompactItemize}

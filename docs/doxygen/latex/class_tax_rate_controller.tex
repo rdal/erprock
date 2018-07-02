@@ -1,0 +1,191 @@
+\hypertarget{class_tax_rate_controller}{\section{\-Tax\-Rate\-Controller \-Class \-Reference}
+\label{class_tax_rate_controller}\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}}
+}
+
+
+\-Controller for tax rates.  
+
+
+
+
+{\ttfamily \#include $<$taxratecontroller.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tax_rate_controller_a4efde11912bd5ab9cf055095b621c76d}{\-Tax\-Rate\-Controller} (\-Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tax_rate_controller_a0ee8749ef1749252738a000a65136bf4}{$\sim$\-Tax\-Rate\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{add\-Tax\-Rate} (\hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$tax\-Rate)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{update\-Tax\-Rate} (\-Q\-String name, \hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$tax\-Rate)
+\item 
+\hyperlink{class_utilities_a2974f062d85bdb0c444a1cbe554bf228}{\-Utilities\-::\-Status\-Control} \hyperlink{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{remove\-Tax\-Rate} (\-Q\-String name)
+\item 
+\hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$ \hyperlink{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{get\-Tax\-Rate\-By\-Name} (\-Q\-String name)
+\item 
+\-Q\-List$<$ \hyperlink{class_tax_rate}{\-Tax\-Rate} $\ast$ $>$ $\ast$ \hyperlink{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{get\-Tax\-Rates} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controller for tax rates. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Rafael \-Donato $<$\href{mailto:rafaeldonato@gmail.com}{\tt rafaeldonato@gmail.\-com}$>$
+\end{DoxyAuthor}
+\-This class is responsible for product tax rates. 
+
+\-Definition at line 14 of file taxratecontroller.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_tax_rate_controller_a4efde11912bd5ab9cf055095b621c76d}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}}
+\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{\-Tax\-Rate\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tax\-Rate\-Controller\-::\-Tax\-Rate\-Controller} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_tax_rate_controller_a4efde11912bd5ab9cf055095b621c76d}
+
+
+\-Default constructor. 
+
+\-Create a new instance of \hyperlink{class_tax_rate_controller}{\-Tax\-Rate\-Controller}. 
+
+\-Definition at line 3 of file taxratecontroller.\-cpp.
+
+\hypertarget{class_tax_rate_controller_a0ee8749ef1749252738a000a65136bf4}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!$\sim$\-Tax\-Rate\-Controller@{$\sim$\-Tax\-Rate\-Controller}}
+\index{$\sim$\-Tax\-Rate\-Controller@{$\sim$\-Tax\-Rate\-Controller}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{$\sim$\-Tax\-Rate\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tax\-Rate\-Controller\-::$\sim$\-Tax\-Rate\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_a0ee8749ef1749252738a000a65136bf4}
+
+
+\-Destructor. 
+
+\-Release all resources here. 
+
+\-Definition at line 9 of file taxratecontroller.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!add\-Tax\-Rate@{add\-Tax\-Rate}}
+\index{add\-Tax\-Rate@{add\-Tax\-Rate}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{add\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Tax\-Rate\-Controller\-::add\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Tax\-Rate} $\ast$}]{tax\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}
+\-Beforing adding a tax rate, this method checks if there is already a tax rate with that name and if its name has less than 30 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em tax\-Rate} & \-The \hyperlink{class_tax_rate}{\-Tax\-Rate} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{update\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{remove\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 13 of file taxratecontroller.\-cpp.
+
+\hypertarget{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!get\-Tax\-Rate\-By\-Name@{get\-Tax\-Rate\-By\-Name}}
+\index{get\-Tax\-Rate\-By\-Name@{get\-Tax\-Rate\-By\-Name}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{get\-Tax\-Rate\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tax\-Rate} $\ast$ {\bf \-Tax\-Rate\-Controller\-::get\-Tax\-Rate\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}
+\-Get a tax rate by its name. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The \hyperlink{class_tax_rate}{\-Tax\-Rate} name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the tax rate object associated with the given name. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{add\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{update\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{remove\-Tax\-Rate()} and \hyperlink{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 79 of file taxratecontroller.\-cpp.
+
+\hypertarget{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!get\-Tax\-Rates@{get\-Tax\-Rates}}
+\index{get\-Tax\-Rates@{get\-Tax\-Rates}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{get\-Tax\-Rates}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$ {\bf \-Tax\-Rate} $\ast$ $>$ $\ast$ {\bf \-Tax\-Rate\-Controller\-::get\-Tax\-Rates} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}
+\-This method returns all the tax rates that were previously stored at database. \begin{DoxyReturn}{\-Returns}
+\-Returns all stored tax rates. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{add\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{update\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{remove\-Tax\-Rate()} and \hyperlink{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{get\-Tax\-Rate\-By\-Name()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 89 of file taxratecontroller.\-cpp.
+
+\hypertarget{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!remove\-Tax\-Rate@{remove\-Tax\-Rate}}
+\index{remove\-Tax\-Rate@{remove\-Tax\-Rate}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{remove\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Tax\-Rate\-Controller\-::remove\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}
+\-Beforing removing an tax rate, this method checks if there is a tax rate with that name. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The name whose tax rate will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{add\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{update\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 60 of file taxratecontroller.\-cpp.
+
+\hypertarget{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}{\index{\-Tax\-Rate\-Controller@{\-Tax\-Rate\-Controller}!update\-Tax\-Rate@{update\-Tax\-Rate}}
+\index{update\-Tax\-Rate@{update\-Tax\-Rate}!TaxRateController@{\-Tax\-Rate\-Controller}}
+\subsubsection[{update\-Tax\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Utilities\-::\-Status\-Control} {\bf \-Tax\-Rate\-Controller\-::update\-Tax\-Rate} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{name, }
+\item[{{\bf \-Tax\-Rate} $\ast$}]{tax\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_tax_rate_controller_a9f2f0d6c175127fa95f844d5a2cd1486}
+\-Beforing updating a tax rate, this method checks if there is a tax rate with that name, and if its name has less than 100 characters. 
+\begin{DoxyParams}{\-Parameters}
+{\em name} & \-The name whose tax rate will be updated. \\
+\hline
+{\em tax\-Rate} & \-The \hyperlink{class_tax_rate}{\-Tax\-Rate} object to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \-Status \-Control of the operation. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_tax_rate_controller_a4723ae83382d316b174bf8f71a9bbcc4}{add\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_a500860ca7c99869553bdc33be02f3395}{remove\-Tax\-Rate()}, \hyperlink{class_tax_rate_controller_ab711ebdbb49c88e6db9a485b3d8d96ca}{get\-Tax\-Rate\-By\-Name()} and \hyperlink{class_tax_rate_controller_a8aa8c505aba7542189dabd3d3ef44b23}{get\-Tax\-Rates()} 
+\end{DoxySeeAlso}
+
+
+\-Definition at line 41 of file taxratecontroller.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/taxratecontroller.\-h\item 
+/\-Users/rdal/\-Development/\-E\-R\-P\-Rock/trunk/\-Controllers/\-Tax/taxratecontroller.\-cpp\end{DoxyCompactItemize}
